@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -69,8 +70,7 @@ public class BaseApiClass {
 		token = eu.getDataFromExcel("ezugi", 4, 2);
 		currencyCode = eu.getDataFromExcel("ezugi", 6, 2);
 
-		/* AuthenticationTest */
-		playerTokenAtLaunch = eu.getDataFromExcel("ezugi", 10, 2);
+		
 
 		/* Debit API */
 
@@ -96,6 +96,14 @@ public class BaseApiClass {
 
 		rollbackAmount = 100.11;
 
+	}
+	
+	@BeforeTest
+	public void testVariables() throws EncryptedDocumentException, IOException {
+		
+		/* AuthenticationTest */
+		playerTokenAtLaunch = eu.getDataFromExcel("ezugi", 10, 2);
+		
 	}
 
 }

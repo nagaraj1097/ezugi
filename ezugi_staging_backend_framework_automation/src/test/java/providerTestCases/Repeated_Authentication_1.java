@@ -15,7 +15,7 @@ import pojoutility.GetURLPojo;
 public class Repeated_Authentication_1 extends BaseApiClass {
 
 	@Test
-	public void getURLValidTest() throws Throwable {
+	public void repeat_Auth_getURLValidTest() throws Throwable {
 		GetURLPojo gup = new GetURLPojo(playerId, platformId, "betvita", token, currencyCode,
 				javaLib.getCurrentTimeStamp());
 
@@ -31,7 +31,7 @@ public class Repeated_Authentication_1 extends BaseApiClass {
 	}
 
 	@Test(dependsOnMethods = "getURLValidTest", invocationCount = 2)
-	public void authenticationValidTest() throws Throwable {
+	public void repeat_Auth_AuthenticationValidTest() throws Throwable {
 
 		AuthenticationPojo ap = new AuthenticationPojo(platformId, operatorId, playerTokenAtLaunch,
 				javaLib.getCurrentTimeStamp());

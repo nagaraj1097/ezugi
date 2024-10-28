@@ -3,36 +3,21 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="ezugi_api_Test.AuthenticationTest">
-        <methods>
-          <include name="authenticationValidTest"/>
-          <include name="variables"/>
-        </methods>
-      </class> <!-- ezugi_api_Test.AuthenticationTest -->
-      <class name="ezugi_api_Test.GetUrlAPITest">
+      <class name="providerTestCases.Authentication_0">
         <methods>
           <include name="getURLValidTest"/>
+          <include name="authenticationValidTest"/>
           <include name="variables"/>
+          <include name="testVariables"/>
         </methods>
-      </class> <!-- ezugi_api_Test.GetUrlAPITest -->
-      <class name="ezugi_api_Test.CreditAPITest">
+      </class> <!-- providerTestCases.Authentication_0 -->
+      <class name="providerTestCases.Debit_2">
         <methods>
+          <include name="debitValidTest"/>
           <include name="variables"/>
-          <include name="creditValidTest"/>
+          <include name="testVariables"/>
         </methods>
-      </class> <!-- ezugi_api_Test.CreditAPITest -->
-      <class name="ezugi_api_Test.RollbackAPITest">
-        <methods>
-          <include name="variables"/>
-          <include name="rollbackValidTest"/>
-        </methods>
-      </class> <!-- ezugi_api_Test.RollbackAPITest -->
-      <class name="ezugi_api_Test.DebitAPIForNegativeInputTest">
-        <methods>
-          <include name="debitAPIWith_Invalid_EmptyString_NullGameId"/>
-          <include name="variables"/>
-        </methods>
-      </class> <!-- ezugi_api_Test.DebitAPIForNegativeInputTest -->
+      </class> <!-- providerTestCases.Debit_2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

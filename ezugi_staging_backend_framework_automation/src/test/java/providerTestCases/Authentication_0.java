@@ -17,7 +17,7 @@ public class Authentication_0 extends BaseApiClass {
 	/* Verify Authentication API with all valid parameters */
 
 	@Test
-	public void getURLValidTest() throws Throwable {
+	public void auth0_GetURLValidTest() throws Throwable {
 		GetURLPojo gup = new GetURLPojo(playerId, platformId, "betvita", token, currencyCode,
 				javaLib.getCurrentTimeStamp());
 
@@ -33,7 +33,7 @@ public class Authentication_0 extends BaseApiClass {
 	}
 
 	@Test(dependsOnMethods = "getURLValidTest")
-	public void authenticationValidTest() throws Throwable {
+	public void auth0_AuthenticationValidTest() throws Throwable {
 
 		AuthenticationPojo ap = new AuthenticationPojo(platformId, operatorId, playerTokenAtLaunch,
 				javaLib.getCurrentTimeStamp());
