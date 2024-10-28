@@ -22,7 +22,6 @@ public class LowLevelLogs {
 	public void getLowLevelLogInfo(String infoMessage) {
 
 		UtilityClassObject.getTest().log(Status.INFO, infoMessage);
-
 	}
 
 	public void getLowLevelLogPass(String passMessage) {
