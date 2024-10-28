@@ -12,9 +12,7 @@ import io.restassured.specification.RequestSpecification;
 import pojoutility.AuthenticationPojo;
 import pojoutility.GetURLPojo;
 
-public class Authentication_0 extends BaseApiClass {
-
-	/* Verify Authentication API with all valid parameters */
+public class Authentication_0_Test extends BaseApiClass {
 
 	@Test
 	public void auth0_GetURLValidTest() throws Throwable {
@@ -32,7 +30,7 @@ public class Authentication_0 extends BaseApiClass {
 
 	}
 
-	@Test(dependsOnMethods = "getURLValidTest")
+	@Test(dependsOnMethods = "auth0_GetURLValidTest")
 	public void auth0_AuthenticationValidTest() throws Throwable {
 
 		AuthenticationPojo ap = new AuthenticationPojo(platformId, operatorId, playerTokenAtLaunch,

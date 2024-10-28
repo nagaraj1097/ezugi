@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,40 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 2 failed,  1 skipped,  3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="providerTestCases.Debit_2" class="method navigator-link" hash-for-method="debitValidTest">debitValidTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="providerTestCases.Authentication_0" class="method navigator-link" hash-for-method="getURLValidTest">getURLValidTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="providerTestCases.Authentication_0" class="method navigator-link" hash-for-method="authenticationValidTest">authenticationValidTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -136,17 +103,27 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="providerTestCases.Repeated_Authentication_1" class="method navigator-link" hash-for-method="authenticationValidTest">authenticationValidTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="providerTestCases.Authentication_0_Test" class="method navigator-link" hash-for-method="auth0_AuthenticationValidTest">auth0_AuthenticationValidTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="providerTestCases.Repeated_Authentication_1" class="method navigator-link" hash-for-method="authenticationValidTest">authenticationValidTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="providerTestCases.Authentication_0_Test" class="method navigator-link" hash-for-method="auth0_GetURLValidTest">auth0_GetURLValidTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="providerTestCases.Repeated_Authentication_1" class="method navigator-link" hash-for-method="getURLValidTest">getURLValidTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="providerTestCases.Debit_2_Test" class="method navigator-link" hash-for-method="debitValidTest">debitValidTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="providerTestCases.Repeated_Authentication_1_Test" class="method navigator-link" hash-for-method="repeat_Auth_AuthenticationValidTest">repeat_Auth_AuthenticationValidTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="providerTestCases.Repeated_Authentication_1_Test" class="method navigator-link" hash-for-method="repeat_Auth_getURLValidTest">repeat_Auth_getURLValidTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -161,44 +138,54 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">providerTestCases.Authentication_0</span>
+              <img src="passed.png"/>
+              <span class="class-name">providerTestCases.Authentication_0_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getURLValidTest">
-                  </a> <!-- getURLValidTest -->
-                  <span class="method-name">getURLValidTest</span>
-                  <div class="stack-trace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
-	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
-	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
-	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
-	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
-	at api_genericutility.JsonUtility.getValueJsonFromBody(JsonUtility.java:8)
-	at providerTestCases.Authentication_0.getURLValidTest(Authentication_0.java:30)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
-	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
-	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
-	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
-	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
-	... 31 more
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
+                  <a name="auth0_AuthenticationValidTest">
+                  </a> <!-- auth0_AuthenticationValidTest -->
+                  <span class="method-name">auth0_AuthenticationValidTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="auth0_GetURLValidTest">
+                  </a> <!-- auth0_GetURLValidTest -->
+                  <span class="method-name">auth0_GetURLValidTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">providerTestCases.Debit_2</span>
+              <img src="passed.png"/>
+              <span class="class-name">providerTestCases.Repeated_Authentication_1_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="repeat_Auth_AuthenticationValidTest">
+                  </a> <!-- repeat_Auth_AuthenticationValidTest -->
+                  <span class="method-name">repeat_Auth_AuthenticationValidTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="repeat_Auth_getURLValidTest">
+                  </a> <!-- repeat_Auth_getURLValidTest -->
+                  <span class="method-name">repeat_Auth_getURLValidTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">providerTestCases.Debit_2_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -206,86 +193,6 @@ Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while
                   <a name="debitValidTest">
                   </a> <!-- debitValidTest -->
                   <span class="method-name">debitValidTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;200&gt; but was &lt;502&gt;.
-
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at providerTestCases.Debit_2.debitValidTest(Debit_2.java:33)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">providerTestCases.Authentication_0</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="authenticationValidTest">
-                  </a> <!-- authenticationValidTest -->
-                  <span class="method-name">authenticationValidTest</span>
-                  <div class="stack-trace">java.lang.Throwable: Method providerTestCases.Authentication_0.authenticationValidTest() on instance providerTestCases.Authentication_0@37313c65 depends on not successfully finished methods 
-[providerTestCases.Authentication_0.getURLValidTest() on instance providerTestCases.Authentication_0@37313c65]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 18 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">providerTestCases.Repeated_Authentication_1</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="authenticationValidTest">
-                  </a> <!-- authenticationValidTest -->
-                  <span class="method-name">authenticationValidTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="authenticationValidTest">
-                  </a> <!-- authenticationValidTest -->
-                  <span class="method-name">authenticationValidTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="getURLValidTest">
-                  </a> <!-- getURLValidTest -->
-                  <span class="method-name">getURLValidTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -302,9 +209,9 @@ Expected status code &lt;200&gt; but was &lt;502&gt;.
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;providerTestCases.Repeated_Authentication_1&quot;/&gt;
-      &lt;class name=&quot;providerTestCases.Authentication_0&quot;/&gt;
-      &lt;class name=&quot;providerTestCases.Debit_2&quot;/&gt;
+      &lt;class name=&quot;providerTestCases.Authentication_0_Test&quot;/&gt;
+      &lt;class name=&quot;providerTestCases.Repeated_Authentication_1_Test&quot;/&gt;
+      &lt;class name=&quot;providerTestCases.Debit_2_Test&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -344,31 +251,27 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'getURLValidTest')
-data.setCell(0, 2, 'providerTestCases.Repeated_Authentication_1')
-data.setCell(0, 3, 3493);
+data.setCell(0, 1, 'auth0_GetURLValidTest')
+data.setCell(0, 2, 'providerTestCases.Authentication_0_Test')
+data.setCell(0, 3, 3327);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'getURLValidTest')
-data.setCell(1, 2, 'providerTestCases.Authentication_0')
-data.setCell(1, 3, 1175);
+data.setCell(1, 1, 'repeat_Auth_AuthenticationValidTest')
+data.setCell(1, 2, 'providerTestCases.Repeated_Authentication_1_Test')
+data.setCell(1, 3, 1119);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'authenticationValidTest')
-data.setCell(2, 2, 'providerTestCases.Repeated_Authentication_1')
-data.setCell(2, 3, 1024);
+data.setCell(2, 1, 'debitValidTest')
+data.setCell(2, 2, 'providerTestCases.Debit_2_Test')
+data.setCell(2, 3, 975);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'debitValidTest')
-data.setCell(3, 2, 'providerTestCases.Debit_2')
-data.setCell(3, 3, 910);
+data.setCell(3, 1, 'auth0_AuthenticationValidTest')
+data.setCell(3, 2, 'providerTestCases.Authentication_0_Test')
+data.setCell(3, 3, 971);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'authenticationValidTest')
-data.setCell(4, 2, 'providerTestCases.Repeated_Authentication_1')
-data.setCell(4, 3, 765);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'authenticationValidTest')
-data.setCell(5, 2, 'providerTestCases.Authentication_0')
-data.setCell(5, 3, 0);
+data.setCell(4, 1, 'repeat_Auth_getURLValidTest')
+data.setCell(4, 2, 'providerTestCases.Repeated_Authentication_1_Test')
+data.setCell(4, 3, 948);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -388,27 +291,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">providerTestCases.Authentication_0</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">variables</span>
-                <br/>
-                <span class="ignored-method-name">testVariables</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">providerTestCases.Debit_2</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">variables</span>
-                <br/>
-                <span class="ignored-method-name">testVariables</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -417,44 +302,52 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">providerTestCases.Repeated_Authentication_1</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
+              <div class="chronological-class-name">providerTestCases.Authentication_0_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
                 <span class="method-name">variables</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
-              <div class="configuration-test before">
-                <span class="method-name">testVariables</span>
-                <span class="method-start">784 ms</span>
-              </div> <!-- configuration-test before -->
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">getURLValidTest</span>
-                <span class="method-start">871 ms</span>
+                <span class="method-name">auth0_GetURLValidTest</span>
+                <span class="method-start">744 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">variables</span>
+                <span class="method-start">4078 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">authenticationValidTest</span>
-                <span class="method-start">4373 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">authenticationValidTest</span>
-                <span class="method-start">5399 ms</span>
+                <span class="method-name">auth0_AuthenticationValidTest</span>
+                <span class="method-start">4306 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">providerTestCases.Authentication_0</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">providerTestCases.Repeated_Authentication_1_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">variables</span>
+                <span class="method-start">5280 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">getURLValidTest</span>
-                <span class="method-start">6166 ms</span>
+                <span class="method-name">repeat_Auth_getURLValidTest</span>
+                <span class="method-start">5474 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">variables</span>
+                <span class="method-start">6424 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">repeat_Auth_AuthenticationValidTest</span>
+                <span class="method-start">6594 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">providerTestCases.Debit_2</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">providerTestCases.Debit_2_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">variables</span>
+                <span class="method-start">7715 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">debitValidTest</span>
-                <span class="method-start">7350 ms</span>
+                <span class="method-start">7865 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

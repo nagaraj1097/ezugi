@@ -12,7 +12,10 @@ import io.restassured.specification.RequestSpecification;
 import pojoutility.AuthenticationPojo;
 import pojoutility.GetURLPojo;
 
-public class Repeated_Authentication_1 extends BaseApiClass {
+public class Repeated_Authentication_1_Test extends BaseApiClass {
+
+	static RequestSpecification request = null;
+	static Response resp = null;
 
 	@Test
 	public void repeat_Auth_getURLValidTest() throws Throwable {
@@ -27,19 +30,17 @@ public class Repeated_Authentication_1 extends BaseApiClass {
 
 		String launchToken = (String) jsonLib.getValueJsonFromBody(resp, "launchToken");
 		eu.setDataIntoExcel("ezugi", 10, 2, launchToken);
-
 	}
 
-	@Test(dependsOnMethods = "getURLValidTest", invocationCount = 2)
+	@Test(dependsOnMethods = "repeat_Auth_getURLValidTest")
 	public void repeat_Auth_AuthenticationValidTest() throws Throwable {
 
 		AuthenticationPojo ap = new AuthenticationPojo(platformId, operatorId, playerTokenAtLaunch,
 				javaLib.getCurrentTimeStamp());
+
 		String hash = javaLib.getgenerateHMACSHA256(map.writeValueAsString(ap), secretKey);
-
-		RequestSpecification request = given().contentType(ContentType.JSON).body(ap).header("hash", hash);
-
-		Response resp = request.when().post(baseUrl + EndPoints.authentication);
+		request = given().contentType(ContentType.JSON).body(ap).header("hash", hash);
+		resp = request.when().post(baseUrl + EndPoints.authentication);
 
 		ll.printRequestLogInReport(request);
 		ll.printResponseLogInReport(resp);
