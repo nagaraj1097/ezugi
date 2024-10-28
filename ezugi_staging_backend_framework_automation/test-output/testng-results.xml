@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-28T11:46:11 IST" name="Default suite" finished-at="2024-10-28T11:46:14 IST" duration-ms="3350">
+    <groups>
+    </groups>
+    <test started-at="2024-10-28T11:46:11 IST" name="Default test" finished-at="2024-10-28T11:46:14 IST" duration-ms="3350">
+      <class name="ezugi_api_Test.GetUrlAPITest">
+        <test-method is-config="true" signature="variables()[pri:0, instance:ezugi_api_Test.GetUrlAPITest@41330d4f]" started-at="2024-10-28T11:46:10 IST" name="variables" finished-at="2024-10-28T11:46:11 IST" duration-ms="735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- variables -->
+        <test-method signature="getURLValidTest()[pri:1, instance:ezugi_api_Test.GetUrlAPITest@41330d4f]" started-at="2024-10-28T11:46:11 IST" name="getURLValidTest" finished-at="2024-10-28T11:46:14 IST" duration-ms="3302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getURLValidTest -->
+      </class> <!-- ezugi_api_Test.GetUrlAPITest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
