@@ -45,7 +45,7 @@ public class DebitAPITest extends BaseApiClass {
 		eu.setDataIntoExcel("ezugi", 17, 2, debitTransactionId);
 
 		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, debitTransactionId, currentToken,
-				playerId, betTypeId, tableId, seatId, currency, operatorId, roundID, javaLib.getCurrentTimeStamp());
+				playerId, debitBetTypeId, tableId, seatId, currency, operatorId, roundID, javaLib.getCurrentTimeStamp());
 		
 
 		System.out.println(map.writeValueAsString(dp));
@@ -66,7 +66,7 @@ public class DebitAPITest extends BaseApiClass {
 			throws InvalidKeyException, JsonProcessingException, NoSuchAlgorithmException {
 
 		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, javaLib.getUuid(), currentToken,
-				playerId, betTypeId, tableId, seatId, currency, operatorId, roundID, javaLib.getCurrentTimeStamp());
+				playerId, debitBetTypeId, tableId, seatId, currency, operatorId, roundID, javaLib.getCurrentTimeStamp());
 
 		String hash = javaLib.getgenerateHMACSHA256(map.writeValueAsString(dp), secretKey);
 
@@ -85,7 +85,7 @@ public class DebitAPITest extends BaseApiClass {
 			throws InvalidKeyException, JsonProcessingException, NoSuchAlgorithmException {
 
 		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, javaLib.getUuid(), currentToken,
-				playerId, betTypeId, tableId, seatId, currency, operatorId, roundID, javaLib.getCurrentTimeStamp());
+				playerId, debitBetTypeId, tableId, seatId, currency, operatorId, roundID, javaLib.getCurrentTimeStamp());
 
 		dp.setUid(data);
 		String hash = javaLib.getgenerateHMACSHA256(map.writeValueAsString(dp), secretKey);

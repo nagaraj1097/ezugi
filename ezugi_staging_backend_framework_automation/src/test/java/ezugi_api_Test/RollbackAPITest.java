@@ -28,7 +28,7 @@ public class RollbackAPITest extends BaseApiClass {
 		String roundId = String.valueOf(javaLib.getRandomNum());
 
 		RollBackPojo rp = new RollBackPojo(operatorId, playerId, transactionId, gameId, currentToken, rollbackAmount,
-				betTypeId, serverId, roundId, currency, seatId, platformId, tableId, javaLib.getCurrentTimeStamp());
+				debitBetTypeId, serverId, roundId, currency, seatId, platformId, tableId, javaLib.getCurrentTimeStamp());
 
 		String hash = javaLib.getgenerateHMACSHA256(map.writeValueAsString(rp), secretKey);
 
@@ -54,7 +54,7 @@ public class RollbackAPITest extends BaseApiClass {
 		requestBody.put("gameId", gameId);
 		requestBody.put("token", currentToken);
 		requestBody.put("rollbackAmount", rollbackAmount);
-		requestBody.put("betTypeID", betTypeId);
+		requestBody.put("betTypeID", debitBetTypeId);
 		requestBody.put("serverId", serverId);
 		requestBody.put("roundId", roundId);
 		requestBody.put("currency", currency);

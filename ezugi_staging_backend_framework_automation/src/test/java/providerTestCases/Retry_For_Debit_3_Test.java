@@ -11,22 +11,23 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import pojoutility.DebitPojo;
 
-public class Debit_2_Test extends BaseApiClass {
+public class Retry_For_Debit_3_Test extends BaseApiClass {
+
+	static RequestSpecification header;
+	static Response resp;
 
 	String roundID = String.valueOf(javaLib.getRandomNum());
-	String debitTransactionId = String.valueOf(javaLib.getUuid());
 
-	@Test(priority = 1)
-	public void debit_2_DebitValidTest() throws Throwable {
+	@Test(invocationCount = 2)
+	public void retry_For_Debit_3_debitValidTest() throws Throwable {
 
 		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, debitTransactionId, currentToken,
 				playerId, 1, tableId, seatId, currency, operatorId, roundID, javaLib.getCurrentTimeStamp());
 
 		String hash = javaLib.getgenerateHMACSHA256(map.writeValueAsString(dp), secretKey);
+		header = given().contentType(ContentType.JSON).body(dp).header("hash", hash);
 
-		RequestSpecification header = given().contentType(ContentType.JSON).body(dp).header("hash", hash);
-
-		Response resp = header.when().post(baseUrl + EndPoints.debit);
+		resp = header.when().post(baseUrl + EndPoints.debit);
 
 		ll.printRequestLogInReport(header);
 		ll.printResponseLogInReport(resp);

@@ -18,7 +18,7 @@ public class Repeated_Authentication_1_Test extends BaseApiClass {
 	static Response resp = null;
 
 	@Test
-	public void repeat_Auth_getURLValidTest() throws Throwable {
+	public void repeat_Auth_1_getURLValidTest() throws Throwable {
 		GetURLPojo gup = new GetURLPojo(playerId, platformId, "betvita", token, currencyCode,
 				javaLib.getCurrentTimeStamp());
 
@@ -32,12 +32,11 @@ public class Repeated_Authentication_1_Test extends BaseApiClass {
 		eu.setDataIntoExcel("ezugi", 10, 2, launchToken);
 	}
 
-	@Test(dependsOnMethods = "repeat_Auth_getURLValidTest")
-	public void repeat_Auth_AuthenticationValidTest() throws Throwable {
+	@Test(dependsOnMethods = "repeat_Auth_1_getURLValidTest", invocationCount = 2)
+	public void repeat_Auth_1_AuthenticationValidTest() throws Throwable {
 
 		AuthenticationPojo ap = new AuthenticationPojo(platformId, operatorId, playerTokenAtLaunch,
 				javaLib.getCurrentTimeStamp());
-
 		String hash = javaLib.getgenerateHMACSHA256(map.writeValueAsString(ap), secretKey);
 		request = given().contentType(ContentType.JSON).body(ap).header("hash", hash);
 		resp = request.when().post(baseUrl + EndPoints.authentication);

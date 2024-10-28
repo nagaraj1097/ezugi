@@ -1,0 +1,3523 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>API testing</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">EZUGI</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Oct 28, 2024 07:17:26 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">auth0_GetURLValidTest</p>
+            <p class="text-sm">
+              <span>7:17:27 pm</span> / <span>00:00:04:565</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">auth0_GetURLValidTest</h5>
+<span class='badge badge-success'>10.28.2024 7:17:27 pm</span>
+<span class='badge badge-danger'>10.28.2024 7:17:32 pm</span>
+<span class='badge badge-default'>00:00:04:565</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:27 pm</td>
+        <td>
+          auth0_GetURLValidTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:31 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/getURL</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:31 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:31 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:31 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:31 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:31 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-0'></div>
+ <script>
+  function jsonTreeCreate0() { 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create({"playerId":"1000041","platformId":1,"operatorId":"betvita","token":"7b135b85-e062-4468-9df2-fa2e9afaca8e-1730200427845","currencyCode":"KE","timestamp":1730123247699}); 
+  }
+  jsonTreeCreate0();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:31 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:31 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:31 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Mon, 28 Oct 2024 13:47:32 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>282</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"11a-n2+816IF865p6NFaKnE4ouhhgYE"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:31 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:31 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-1'></div>
+ <script>
+  function jsonTreeCreate1() { 
+   document.getElementById('code-block-json-1').innerHTML = JSONTree.create({
+    "operatorId": "10909001",
+    "uid": "1000041",
+    "launchToken": "16dce6bb-ece9-443d-b99e-41249945985b",
+    "currency": "KE",
+    "url": "https://playint.tableslive.com/auth/?operatorId=10909001&token=16dce6bb-ece9-443d-b99e-41249945985b",
+    "errorCode": 0,
+    "errorDescription": "ok",
+    "timestamp": 1730123252735
+}); 
+  }
+  jsonTreeCreate1();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:17:32 pm</td>
+        <td>
+          auth0_GetURLValidTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">auth0_AuthenticationValidTest</p>
+            <p class="text-sm">
+              <span>7:17:32 pm</span> / <span>00:00:00:997</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">auth0_AuthenticationValidTest</h5>
+<span class='badge badge-success'>10.28.2024 7:17:32 pm</span>
+<span class='badge badge-danger'>10.28.2024 7:17:33 pm</span>
+<span class='badge badge-default'>00:00:00:997</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:32 pm</td>
+        <td>
+          auth0_AuthenticationValidTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:33 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/authentication</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:33 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:33 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:33 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>hash</td><td>hYZnjSdLweVJmQT2Zb5DbynyqMjV229kJWxbtQFRM58=</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:33 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:33 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-2'></div>
+ <script>
+  function jsonTreeCreate2() { 
+   document.getElementById('code-block-json-2').innerHTML = JSONTree.create({"platformId":1,"operatorId":"10909001","token":"16dce6bb-ece9-443d-b99e-41249945985b","timestamp":1730123252468}); 
+  }
+  jsonTreeCreate2();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:33 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:33 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:33 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Mon, 28 Oct 2024 13:47:34 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>270</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"10e-1iV6JzuL8Qc1xZ2G5cq/4YiKCzo"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:33 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:33 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-3'></div>
+ <script>
+  function jsonTreeCreate3() { 
+   document.getElementById('code-block-json-3').innerHTML = JSONTree.create({
+    "operatorId": "10909001",
+    "uid": "1000041",
+    "nickName": "778591025",
+    "token": "dc4d53e0-c135-4246-912f-bb190b3ac3b4",
+    "playerTokenAtLaunch": "16dce6bb-ece9-443d-b99e-41249945985b",
+    "balance": 104538,
+    "currency": "UGX",
+    "errorCode": 0,
+    "errorDescription": "ok",
+    "timestamp": 1730123254867
+}); 
+  }
+  jsonTreeCreate3();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:17:33 pm</td>
+        <td>
+          auth0_AuthenticationValidTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">repeat_Auth_1_getURLValidTest</p>
+            <p class="text-sm">
+              <span>7:17:33 pm</span> / <span>00:00:01:040</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">repeat_Auth_1_getURLValidTest</h5>
+<span class='badge badge-success'>10.28.2024 7:17:33 pm</span>
+<span class='badge badge-danger'>10.28.2024 7:17:34 pm</span>
+<span class='badge badge-default'>00:00:01:040</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:33 pm</td>
+        <td>
+          repeat_Auth_1_getURLValidTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:34 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/getURL</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:34 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:34 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:34 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:34 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:34 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-4'></div>
+ <script>
+  function jsonTreeCreate4() { 
+   document.getElementById('code-block-json-4').innerHTML = JSONTree.create({"playerId":"1000041","platformId":1,"operatorId":"betvita","token":"7b135b85-e062-4468-9df2-fa2e9afaca8e-1730200427845","currencyCode":"KE","timestamp":1730123253640}); 
+  }
+  jsonTreeCreate4();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:34 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:34 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:34 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Mon, 28 Oct 2024 13:47:36 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>282</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"11a-/5Gy7WIentfvUXJsxKHn2RAo5Ks"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:34 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:34 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-5'></div>
+ <script>
+  function jsonTreeCreate5() { 
+   document.getElementById('code-block-json-5').innerHTML = JSONTree.create({
+    "operatorId": "10909001",
+    "uid": "1000041",
+    "launchToken": "7d93caab-cc9b-4429-b64e-496fbf1a859f",
+    "currency": "KE",
+    "url": "https://playint.tableslive.com/auth/?operatorId=10909001&token=7d93caab-cc9b-4429-b64e-496fbf1a859f",
+    "errorCode": 0,
+    "errorDescription": "ok",
+    "timestamp": 1730123256094
+}); 
+  }
+  jsonTreeCreate5();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:17:34 pm</td>
+        <td>
+          repeat_Auth_1_getURLValidTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">repeat_Auth_1_AuthenticationValidTest</p>
+            <p class="text-sm">
+              <span>7:17:34 pm</span> / <span>00:00:01:140</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">repeat_Auth_1_AuthenticationValidTest</h5>
+<span class='badge badge-success'>10.28.2024 7:17:34 pm</span>
+<span class='badge badge-danger'>10.28.2024 7:17:35 pm</span>
+<span class='badge badge-default'>00:00:01:140</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:34 pm</td>
+        <td>
+          repeat_Auth_1_AuthenticationValidTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:35 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/authentication</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:35 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:35 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:35 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>hash</td><td>cAsU0d0I+JbxjUW6aNsjRPcUodbueeGYSHobV1WKvxY=</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:35 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:35 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-6'></div>
+ <script>
+  function jsonTreeCreate6() { 
+   document.getElementById('code-block-json-6').innerHTML = JSONTree.create({"platformId":1,"operatorId":"10909001","token":"7d93caab-cc9b-4429-b64e-496fbf1a859f","timestamp":1730123254825}); 
+  }
+  jsonTreeCreate6();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:35 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:35 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:35 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Mon, 28 Oct 2024 13:47:37 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>270</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"10e-uzUPGGHo1Tty5CShaLL2OfkLoq8"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:35 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:35 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-7'></div>
+ <script>
+  function jsonTreeCreate7() { 
+   document.getElementById('code-block-json-7').innerHTML = JSONTree.create({
+    "operatorId": "10909001",
+    "uid": "1000041",
+    "nickName": "778591025",
+    "token": "6a659246-e34f-413c-88b5-cc9f99f70f62",
+    "playerTokenAtLaunch": "7d93caab-cc9b-4429-b64e-496fbf1a859f",
+    "balance": 104538,
+    "currency": "UGX",
+    "errorCode": 0,
+    "errorDescription": "ok",
+    "timestamp": 1730123257408
+}); 
+  }
+  jsonTreeCreate7();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:17:35 pm</td>
+        <td>
+          repeat_Auth_1_AuthenticationValidTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">repeat_Auth_1_AuthenticationValidTest</p>
+            <p class="text-sm">
+              <span>7:17:36 pm</span> / <span>00:00:00:770</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">repeat_Auth_1_AuthenticationValidTest</h5>
+<span class='badge badge-success'>10.28.2024 7:17:36 pm</span>
+<span class='badge badge-danger'>10.28.2024 7:17:36 pm</span>
+<span class='badge badge-default'>00:00:00:770</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:36 pm</td>
+        <td>
+          repeat_Auth_1_AuthenticationValidTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:36 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/authentication</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:36 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:36 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:36 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>hash</td><td>RhhttpQetGYxxYhSKlSvA8m6w4dlO7M8SwQ6LEJ8UG8=</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:36 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:36 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-8'></div>
+ <script>
+  function jsonTreeCreate8() { 
+   document.getElementById('code-block-json-8').innerHTML = JSONTree.create({"platformId":1,"operatorId":"10909001","token":"7d93caab-cc9b-4429-b64e-496fbf1a859f","timestamp":1730123256091}); 
+  }
+  jsonTreeCreate8();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:36 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:36 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:36 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Mon, 28 Oct 2024 13:47:38 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>102</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"66-fO2F5OCH+HXxX1UIirkTSqMXcK0"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:36 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:36 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-9'></div>
+ <script>
+  function jsonTreeCreate9() { 
+   document.getElementById('code-block-json-9').innerHTML = JSONTree.create({
+    "operatorId": "10909001",
+    "errorCode": 6,
+    "errorDescription": "Token not found",
+    "timestamp": 1730123258310
+}); 
+  }
+  jsonTreeCreate9();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:17:36 pm</td>
+        <td>
+          repeat_Auth_1_AuthenticationValidTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">debit_2_DebitValidTest</p>
+            <p class="text-sm">
+              <span>7:17:36 pm</span> / <span>00:00:05:702</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">debit_2_DebitValidTest</h5>
+<span class='badge badge-success'>10.28.2024 7:17:36 pm</span>
+<span class='badge badge-danger'>10.28.2024 7:17:42 pm</span>
+<span class='badge badge-default'>00:00:05:702</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:36 pm</td>
+        <td>
+          debit_2_DebitValidTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:42 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/debit</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:42 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:42 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:42 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>hash</td><td>0VJEeCuWfcoHsv05ePbI7ChrEyEr6/kOFt/XsdVWo1Q=</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:42 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:42 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-10'></div>
+ <script>
+  function jsonTreeCreate10() { 
+   document.getElementById('code-block-json-10').innerHTML = JSONTree.create({"gameId":1,"debitAmount":100.11,"platformId":1,"serverId":102,"transactionId":"ddd7b499-face-477c-be05-888f312b661c","token":"dc4d53e0-c135-4246-912f-bb190b3ac3b4","uid":"1000041","betTypeID":1,"tableId":1,"seatId":"s6","currency":"KES","operatorId":"10909001","roundId":"2485887594","timestamp":1730123256987}); 
+  }
+  jsonTreeCreate10();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:42 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:42 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:42 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Mon, 28 Oct 2024 13:47:44 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>302</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"12e-gd7FsQhsq1bxUwBk7i3uqzS3ejQ"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:42 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:42 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-11'></div>
+ <script>
+  function jsonTreeCreate11() { 
+   document.getElementById('code-block-json-11').innerHTML = JSONTree.create({
+    "uid": "1000041",
+    "operatorId": 10909001,
+    "nickName": "778591025",
+    "token": "dc4d53e0-c135-4246-912f-bb190b3ac3b4",
+    "balance": 104437.89,
+    "bonusAmount": 0,
+    "roundId": 2485887594,
+    "transactionId": "ddd7b499-face-477c-be05-888f312b661c",
+    "currency": "KES",
+    "errorCode": 0,
+    "errorDescription": "OK",
+    "timestamp": 1730123264133
+}); 
+  }
+  jsonTreeCreate11();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:17:42 pm</td>
+        <td>
+          debit_2_DebitValidTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">retry_For_Debit_3_debitValidTest</p>
+            <p class="text-sm">
+              <span>7:17:42 pm</span> / <span>00:00:01:520</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">retry_For_Debit_3_debitValidTest</h5>
+<span class='badge badge-success'>10.28.2024 7:17:42 pm</span>
+<span class='badge badge-danger'>10.28.2024 7:17:44 pm</span>
+<span class='badge badge-default'>00:00:01:520</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:42 pm</td>
+        <td>
+          retry_For_Debit_3_debitValidTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:44 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/debit</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:44 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:44 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:44 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>hash</td><td>p2XF4i8CRgWxFCIwUniGYL0cC6yF8sZTubp5Xl7K4vU=</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:44 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:44 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-12'></div>
+ <script>
+  function jsonTreeCreate12() { 
+   document.getElementById('code-block-json-12').innerHTML = JSONTree.create({"gameId":1,"debitAmount":100.11,"platformId":1,"serverId":102,"transactionId":"3cf57ad3-d533-4306-98fd-b79de9cad7c1","token":"dc4d53e0-c135-4246-912f-bb190b3ac3b4","uid":"1000041","betTypeID":1,"tableId":1,"seatId":"s6","currency":"KES","operatorId":"10909001","roundId":"9163727350","timestamp":1730123262817}); 
+  }
+  jsonTreeCreate12();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:44 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:44 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:44 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Mon, 28 Oct 2024 13:47:45 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>302</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"12e-TIG8PSzCX6saS8goA5JErLPqECo"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:44 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:44 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-13'></div>
+ <script>
+  function jsonTreeCreate13() { 
+   document.getElementById('code-block-json-13').innerHTML = JSONTree.create({
+    "uid": "1000041",
+    "operatorId": 10909001,
+    "nickName": "778591025",
+    "token": "dc4d53e0-c135-4246-912f-bb190b3ac3b4",
+    "balance": 104337.78,
+    "bonusAmount": 0,
+    "roundId": 9163727350,
+    "transactionId": "3cf57ad3-d533-4306-98fd-b79de9cad7c1",
+    "currency": "KES",
+    "errorCode": 0,
+    "errorDescription": "OK",
+    "timestamp": 1730123265783
+}); 
+  }
+  jsonTreeCreate13();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:17:44 pm</td>
+        <td>
+          retry_For_Debit_3_debitValidTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">retry_For_Debit_3_debitValidTest</p>
+            <p class="text-sm">
+              <span>7:17:44 pm</span> / <span>00:00:00:972</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">retry_For_Debit_3_debitValidTest</h5>
+<span class='badge badge-success'>10.28.2024 7:17:44 pm</span>
+<span class='badge badge-danger'>10.28.2024 7:17:45 pm</span>
+<span class='badge badge-default'>00:00:00:972</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:44 pm</td>
+        <td>
+          retry_For_Debit_3_debitValidTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:45 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/debit</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:45 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:45 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:45 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>hash</td><td>/108n/lSDseUdjAeUTmswSM+mDNox8utycGrNcv1q4I=</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:45 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:45 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-14'></div>
+ <script>
+  function jsonTreeCreate14() { 
+   document.getElementById('code-block-json-14').innerHTML = JSONTree.create({"gameId":1,"debitAmount":100.11,"platformId":1,"serverId":102,"transactionId":"3cf57ad3-d533-4306-98fd-b79de9cad7c1","token":"dc4d53e0-c135-4246-912f-bb190b3ac3b4","uid":"1000041","betTypeID":1,"tableId":1,"seatId":"s6","currency":"KES","operatorId":"10909001","roundId":"9163727350","timestamp":1730123264447}); 
+  }
+  jsonTreeCreate14();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:45 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:45 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:45 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Mon, 28 Oct 2024 13:47:46 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>333</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"14d-JssEcMvxRm0Hs+LdnCnLU84QqGQ"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:45 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:45 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-15'></div>
+ <script>
+  function jsonTreeCreate15() { 
+   document.getElementById('code-block-json-15').innerHTML = JSONTree.create({
+    "uid": "1000041",
+    "operatorId": 10909001,
+    "nickName": "778591025",
+    "token": "dc4d53e0-c135-4246-912f-bb190b3ac3b4",
+    "balance": 104337.78,
+    "bonusAmount": 0,
+    "roundId": 9163727350,
+    "transactionId": "3cf57ad3-d533-4306-98fd-b79de9cad7c1",
+    "currency": "KES",
+    "errorCode": 0,
+    "errorDescription": "Transaction has already processed",
+    "timestamp": 1730123266865
+}); 
+  }
+  jsonTreeCreate15();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:17:45 pm</td>
+        <td>
+          retry_For_Debit_3_debitValidTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">rollback_4_DebitValidTest</p>
+            <p class="text-sm">
+              <span>7:17:45 pm</span> / <span>00:00:01:150</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">rollback_4_DebitValidTest</h5>
+<span class='badge badge-success'>10.28.2024 7:17:45 pm</span>
+<span class='badge badge-danger'>10.28.2024 7:17:46 pm</span>
+<span class='badge badge-default'>00:00:01:150</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:45 pm</td>
+        <td>
+          rollback_4_DebitValidTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:46 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/debit</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:46 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:46 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:46 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>hash</td><td>gfBGct3u2EeiEw/JVSoapmZC4vc5osOQx6Qu+yY0j7I=</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:46 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:46 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-16'></div>
+ <script>
+  function jsonTreeCreate16() { 
+   document.getElementById('code-block-json-16').innerHTML = JSONTree.create({"gameId":1,"debitAmount":100.11,"platformId":1,"serverId":102,"transactionId":"0661a18f-fb1b-4852-a131-be1f3819b53b","token":"dc4d53e0-c135-4246-912f-bb190b3ac3b4","uid":"1000041","betTypeID":1,"tableId":1,"seatId":"s6","currency":"KES","operatorId":"10909001","roundId":"3913616589","timestamp":1730123265542}); 
+  }
+  jsonTreeCreate16();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:46 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:46 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:46 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Mon, 28 Oct 2024 13:47:48 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>302</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"12e-S7JrY8GA/whUZCDCi87x2rBTMR8"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:46 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:46 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-17'></div>
+ <script>
+  function jsonTreeCreate17() { 
+   document.getElementById('code-block-json-17').innerHTML = JSONTree.create({
+    "uid": "1000041",
+    "operatorId": 10909001,
+    "nickName": "778591025",
+    "token": "dc4d53e0-c135-4246-912f-bb190b3ac3b4",
+    "balance": 104237.67,
+    "bonusAmount": 0,
+    "roundId": 3913616589,
+    "transactionId": "0661a18f-fb1b-4852-a131-be1f3819b53b",
+    "currency": "KES",
+    "errorCode": 0,
+    "errorDescription": "OK",
+    "timestamp": 1730123268112
+}); 
+  }
+  jsonTreeCreate17();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:17:46 pm</td>
+        <td>
+          rollback_4_DebitValidTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">rollback_4_RollbackTest</p>
+            <p class="text-sm">
+              <span>7:17:46 pm</span> / <span>00:00:02:228</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">rollback_4_RollbackTest</h5>
+<span class='badge badge-success'>10.28.2024 7:17:46 pm</span>
+<span class='badge badge-danger'>10.28.2024 7:17:49 pm</span>
+<span class='badge badge-default'>00:00:02:228</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:46 pm</td>
+        <td>
+          rollback_4_RollbackTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:49 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/rollback</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:49 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:49 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:49 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>hash</td><td>ZmJl9cpOxOVv4l6lydMn3cuW7+2RBA3WCPm/RgPb/KM=</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:49 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:49 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-18'></div>
+ <script>
+  function jsonTreeCreate18() { 
+   document.getElementById('code-block-json-18').innerHTML = JSONTree.create({"operatorId":"10909001","uid":"1000041","transactionId":"0661a18f-fb1b-4852-a131-be1f3819b53b","gameId":1,"token":"dc4d53e0-c135-4246-912f-bb190b3ac3b4","rollbackAmount":100.11,"betTypeID":1,"serverId":102,"roundId":"3913616589","currency":"KES","seatId":"s6","platformId":1,"tableId":1,"timestamp":1730123266786}); 
+  }
+  jsonTreeCreate18();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:49 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:49 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:49 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Mon, 28 Oct 2024 13:47:50 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>302</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"12e-XaK8KrXDRXHHGNVcPIEz6207yME"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:49 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:49 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-19'></div>
+ <script>
+  function jsonTreeCreate19() { 
+   document.getElementById('code-block-json-19').innerHTML = JSONTree.create({
+    "uid": "1000041",
+    "operatorId": 10909001,
+    "nickName": "778591025",
+    "token": "dc4d53e0-c135-4246-912f-bb190b3ac3b4",
+    "balance": 104337.78,
+    "bonusAmount": 0,
+    "roundId": 3913616589,
+    "transactionId": "0661a18f-fb1b-4852-a131-be1f3819b53b",
+    "currency": "KES",
+    "errorCode": 0,
+    "errorDescription": "ok",
+    "timestamp": 1730123270465
+}); 
+  }
+  jsonTreeCreate19();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:17:49 pm</td>
+        <td>
+          rollback_4_RollbackTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Retry_For_Rollback_5_DebitValidTest</p>
+            <p class="text-sm">
+              <span>7:17:49 pm</span> / <span>00:00:03:579</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Retry_For_Rollback_5_DebitValidTest</h5>
+<span class='badge badge-success'>10.28.2024 7:17:49 pm</span>
+<span class='badge badge-danger'>10.28.2024 7:17:52 pm</span>
+<span class='badge badge-default'>00:00:03:579</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:49 pm</td>
+        <td>
+          Retry_For_Rollback_5_DebitValidTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:52 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/debit</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:52 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:52 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:52 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>hash</td><td>gVQQ/Uhj9l90U2L7t7sQFt1WHa7Fx/DiQdUZvgtf9sM=</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:52 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:52 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-20'></div>
+ <script>
+  function jsonTreeCreate20() { 
+   document.getElementById('code-block-json-20').innerHTML = JSONTree.create({"gameId":1,"debitAmount":100.11,"platformId":1,"serverId":102,"transactionId":"3de6e360-8ff4-4beb-86ed-4947d5a09f09","token":"dc4d53e0-c135-4246-912f-bb190b3ac3b4","uid":"1000041","betTypeID":1,"tableId":1,"seatId":"s6","currency":"KES","operatorId":"10909001","roundId":"5383664543","timestamp":1730123269129}); 
+  }
+  jsonTreeCreate20();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:52 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:52 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:52 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Mon, 28 Oct 2024 13:47:54 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>302</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"12e-GCYea2WVZtqnjSNZkZwqHbjiYDU"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:52 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:52 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-21'></div>
+ <script>
+  function jsonTreeCreate21() { 
+   document.getElementById('code-block-json-21').innerHTML = JSONTree.create({
+    "uid": "1000041",
+    "operatorId": 10909001,
+    "nickName": "778591025",
+    "token": "dc4d53e0-c135-4246-912f-bb190b3ac3b4",
+    "balance": 104237.67,
+    "bonusAmount": 0,
+    "roundId": 5383664543,
+    "transactionId": "3de6e360-8ff4-4beb-86ed-4947d5a09f09",
+    "currency": "KES",
+    "errorCode": 0,
+    "errorDescription": "OK",
+    "timestamp": 1730123274141
+}); 
+  }
+  jsonTreeCreate21();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:17:52 pm</td>
+        <td>
+          Retry_For_Rollback_5_DebitValidTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Retry_For_Rollback_5_RollbackTest</p>
+            <p class="text-sm">
+              <span>7:17:52 pm</span> / <span>00:00:01:959</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Retry_For_Rollback_5_RollbackTest</h5>
+<span class='badge badge-success'>10.28.2024 7:17:52 pm</span>
+<span class='badge badge-danger'>10.28.2024 7:17:54 pm</span>
+<span class='badge badge-default'>00:00:01:959</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:52 pm</td>
+        <td>
+          Retry_For_Rollback_5_RollbackTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:54 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/rollback</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:54 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:54 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:54 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>hash</td><td>zfdGRJDTtbJetIdSAzy3O5zFk+jOx4Ox5C1WOMHnfdM=</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:54 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:54 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-22'></div>
+ <script>
+  function jsonTreeCreate22() { 
+   document.getElementById('code-block-json-22').innerHTML = JSONTree.create({"operatorId":"10909001","uid":"1000041","transactionId":"3de6e360-8ff4-4beb-86ed-4947d5a09f09","gameId":1,"token":"dc4d53e0-c135-4246-912f-bb190b3ac3b4","rollbackAmount":100.11,"betTypeID":1,"serverId":102,"roundId":"5383664543","currency":"KES","seatId":"s6","platformId":1,"tableId":1,"timestamp":1730123272784}); 
+  }
+  jsonTreeCreate22();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:54 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:54 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:54 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Mon, 28 Oct 2024 13:47:56 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>302</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"12e-yfWd7anO3hw8HLFukbGF1SUDp7o"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:54 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:54 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-23'></div>
+ <script>
+  function jsonTreeCreate23() { 
+   document.getElementById('code-block-json-23').innerHTML = JSONTree.create({
+    "uid": "1000041",
+    "operatorId": 10909001,
+    "nickName": "778591025",
+    "token": "dc4d53e0-c135-4246-912f-bb190b3ac3b4",
+    "balance": 104337.78,
+    "bonusAmount": 0,
+    "roundId": 5383664543,
+    "transactionId": "3de6e360-8ff4-4beb-86ed-4947d5a09f09",
+    "currency": "KES",
+    "errorCode": 0,
+    "errorDescription": "ok",
+    "timestamp": 1730123276192
+}); 
+  }
+  jsonTreeCreate23();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:17:54 pm</td>
+        <td>
+          Retry_For_Rollback_5_RollbackTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Rollback_Before_Debit_6_RollbackTest</p>
+            <p class="text-sm">
+              <span>7:17:54 pm</span> / <span>00:00:00:874</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Rollback_Before_Debit_6_RollbackTest</h5>
+<span class='badge badge-success'>10.28.2024 7:17:54 pm</span>
+<span class='badge badge-danger'>10.28.2024 7:17:55 pm</span>
+<span class='badge badge-default'>00:00:00:874</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:54 pm</td>
+        <td>
+          Rollback_Before_Debit_6_RollbackTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:55 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/rollback</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:55 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:55 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:55 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>hash</td><td>dI7zwIl7KrmJQ7Od3Z3+w+pZwNNixGEzORbRzlqrBPc=</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:55 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:55 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-24'></div>
+ <script>
+  function jsonTreeCreate24() { 
+   document.getElementById('code-block-json-24').innerHTML = JSONTree.create({"operatorId":"10909001","uid":"1000041","transactionId":"889e4ae4-acf8-4e2b-9a81-f24daafff98e","gameId":1,"token":"dc4d53e0-c135-4246-912f-bb190b3ac3b4","rollbackAmount":100.11,"betTypeID":1,"serverId":102,"roundId":"2679819381","currency":"KES","seatId":"s6","platformId":1,"tableId":1,"timestamp":1730123274870}); 
+  }
+  jsonTreeCreate24();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:55 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:55 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:55 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Mon, 28 Oct 2024 13:47:57 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>282</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"11a-JSPBi3SNBJWZNTe/Ud29AJT0HC0"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:55 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:55 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-25'></div>
+ <script>
+  function jsonTreeCreate25() { 
+   document.getElementById('code-block-json-25').innerHTML = JSONTree.create({
+    "uid": "1000041",
+    "operatorId": 10909001,
+    "token": "dc4d53e0-c135-4246-912f-bb190b3ac3b4",
+    "balance": 104337.78,
+    "roundId": 2679819381,
+    "transactionId": "889e4ae4-acf8-4e2b-9a81-f24daafff98e",
+    "currency": "KES",
+    "errorCode": 9,
+    "errorDescription": "Transaction not found",
+    "timestamp": 1730123277195
+}); 
+  }
+  jsonTreeCreate25();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:17:55 pm</td>
+        <td>
+          Rollback_Before_Debit_6_RollbackTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Debit_After_Rollback_7_RollbackTest</p>
+            <p class="text-sm">
+              <span>7:17:55 pm</span> / <span>00:00:00:869</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Debit_After_Rollback_7_RollbackTest</h5>
+<span class='badge badge-success'>10.28.2024 7:17:55 pm</span>
+<span class='badge badge-danger'>10.28.2024 7:17:56 pm</span>
+<span class='badge badge-default'>00:00:00:869</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:55 pm</td>
+        <td>
+          Debit_After_Rollback_7_RollbackTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:56 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/rollback</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:56 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:56 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:56 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>hash</td><td>UDmtbTq5FHyINSY3XNUVILivBcwr65j5WpC4pWzGSKw=</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:56 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:56 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-26'></div>
+ <script>
+  function jsonTreeCreate26() { 
+   document.getElementById('code-block-json-26').innerHTML = JSONTree.create({"operatorId":"10909001","uid":"1000041","transactionId":"11a44427-c410-467d-9fbe-c657d0bdf639","gameId":1,"token":"dc4d53e0-c135-4246-912f-bb190b3ac3b4","rollbackAmount":100.11,"betTypeID":1,"serverId":102,"roundId":"7615573014","currency":"KES","seatId":"s6","platformId":1,"tableId":1,"timestamp":1730123275829}); 
+  }
+  jsonTreeCreate26();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:56 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:56 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:56 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Mon, 28 Oct 2024 13:47:58 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>282</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"11a-LzLTIKfjcsRt5fPlID9GT6fA/uQ"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:56 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:56 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-27'></div>
+ <script>
+  function jsonTreeCreate27() { 
+   document.getElementById('code-block-json-27').innerHTML = JSONTree.create({
+    "uid": "1000041",
+    "operatorId": 10909001,
+    "token": "dc4d53e0-c135-4246-912f-bb190b3ac3b4",
+    "balance": 104337.78,
+    "roundId": 7615573014,
+    "transactionId": "11a44427-c410-467d-9fbe-c657d0bdf639",
+    "currency": "KES",
+    "errorCode": 9,
+    "errorDescription": "Transaction not found",
+    "timestamp": 1730123278148
+}); 
+  }
+  jsonTreeCreate27();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:17:56 pm</td>
+        <td>
+          Debit_After_Rollback_7_RollbackTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="15"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Debit_After_Rollback_7_DebitValidTest</p>
+            <p class="text-sm">
+              <span>7:17:56 pm</span> / <span>00:00:00:899</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Debit_After_Rollback_7_DebitValidTest</h5>
+<span class='badge badge-success'>10.28.2024 7:17:56 pm</span>
+<span class='badge badge-danger'>10.28.2024 7:17:57 pm</span>
+<span class='badge badge-default'>00:00:00:899</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:56 pm</td>
+        <td>
+          Debit_After_Rollback_7_DebitValidTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:57 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/debit</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:57 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:57 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:57 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>hash</td><td>Q48+JTDnraJvR+d3i39NkXudMTUrrGw9iyLjJQwp7qI=</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:57 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:57 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-28'></div>
+ <script>
+  function jsonTreeCreate28() { 
+   document.getElementById('code-block-json-28').innerHTML = JSONTree.create({"gameId":1,"debitAmount":100.11,"platformId":1,"serverId":102,"transactionId":"11a44427-c410-467d-9fbe-c657d0bdf639","token":"dc4d53e0-c135-4246-912f-bb190b3ac3b4","uid":"1000041","betTypeID":1,"tableId":1,"seatId":"s6","currency":"KES","operatorId":"10909001","roundId":"7615573014","timestamp":1730123276783}); 
+  }
+  jsonTreeCreate28();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:57 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:57 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:57 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Mon, 28 Oct 2024 13:47:59 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>320</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"140-JDpgx/DSzoc9UCd3I8vmI1C0N6M"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:57 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:57 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-29'></div>
+ <script>
+  function jsonTreeCreate29() { 
+   document.getElementById('code-block-json-29').innerHTML = JSONTree.create({
+    "uid": "1000041",
+    "operatorId": 10909001,
+    "nickName": "778591025",
+    "token": "dc4d53e0-c135-4246-912f-bb190b3ac3b4",
+    "balance": 104337.78,
+    "bonusAmount": 0,
+    "roundId": 7615573014,
+    "transactionId": "11a44427-c410-467d-9fbe-c657d0bdf639",
+    "currency": "KES",
+    "errorCode": 1,
+    "errorDescription": "Debit after rollback",
+    "timestamp": 1730123279130
+}); 
+  }
+  jsonTreeCreate29();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:17:57 pm</td>
+        <td>
+          Debit_After_Rollback_7_DebitValidTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="16"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Credit_8_CreditValidTest</p>
+            <p class="text-sm">
+              <span>7:17:57 pm</span> / <span>00:00:00:963</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Credit_8_CreditValidTest</h5>
+<span class='badge badge-success'>10.28.2024 7:17:57 pm</span>
+<span class='badge badge-danger'>10.28.2024 7:17:58 pm</span>
+<span class='badge badge-default'>00:00:00:963</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:57 pm</td>
+        <td>
+          Credit_8_CreditValidTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:58 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/credit</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:58 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:58 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:58 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>hash</td><td>Tc9iBpL6BrDJo9H7SrEMhLhggSOzw+weHOiR93XVtwU=</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:58 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:58 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-30'></div>
+ <script>
+  function jsonTreeCreate30() { 
+   document.getElementById('code-block-json-30').innerHTML = JSONTree.create({"gameId":1,"debitTransactionId":"4da02b21-d339-4930-abe4-d6466da34f58","isEndRound":false,"creditIndex":"1|1","gameDataString":"","platformId":1,"serverId":102,"transactionId":"bbb2c951-c676-4c5d-a604-aee4c3538105","token":"dc4d53e0-c135-4246-912f-bb190b3ac3b4","uid":"1000041","returnReason":0,"betTypeID":101,"tableId":1,"seatId":"s6","currency":"KES","creditAmount":100.11,"operatorId":"10909001","roundId":"9471228000","timestamp":1730123277793,"endRound":false}); 
+  }
+  jsonTreeCreate30();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:58 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:58 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:58 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Mon, 28 Oct 2024 13:48:00 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>330</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"14a-ylxXPK4bLthEYpbqIx5+NN8aGQg"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:58 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:58 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-31'></div>
+ <script>
+  function jsonTreeCreate31() { 
+   document.getElementById('code-block-json-31').innerHTML = JSONTree.create({
+    "uid": "1000041",
+    "operatorId": 10909001,
+    "nickName": "778591025",
+    "token": "dc4d53e0-c135-4246-912f-bb190b3ac3b4",
+    "balance": 104337.78,
+    "bonusAmount": 0,
+    "roundId": 9471228000,
+    "transactionId": "bbb2c951-c676-4c5d-a604-aee4c3538105",
+    "currency": "KES",
+    "errorCode": 9,
+    "errorDescription": "Debit transaction ID not found",
+    "timestamp": 1730123280186
+}); 
+  }
+  jsonTreeCreate31();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:17:58 pm</td>
+        <td>
+          Credit_8_CreditValidTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Credit_8_DebitValidTest</p>
+            <p class="text-sm">
+              <span>7:17:58 pm</span> / <span>00:00:01:351</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Credit_8_DebitValidTest</h5>
+<span class='badge badge-success'>10.28.2024 7:17:58 pm</span>
+<span class='badge badge-danger'>10.28.2024 7:18:00 pm</span>
+<span class='badge badge-default'>00:00:01:351</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:17:58 pm</td>
+        <td>
+          Credit_8_DebitValidTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:00 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/debit</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:00 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:00 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:00 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>hash</td><td>Ab33GAC8jQGN4EXKOSpFq7eyXnKSFIQHmkEa4sJW8Vk=</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:00 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:00 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-32'></div>
+ <script>
+  function jsonTreeCreate32() { 
+   document.getElementById('code-block-json-32').innerHTML = JSONTree.create({"gameId":1,"debitAmount":100.11,"platformId":1,"serverId":102,"transactionId":"4da02b21-d339-4930-abe4-d6466da34f58","token":"dc4d53e0-c135-4246-912f-bb190b3ac3b4","uid":"1000041","betTypeID":1,"tableId":1,"seatId":"s6","currency":"KES","operatorId":"10909001","roundId":"9471228000","timestamp":1730123278820}); 
+  }
+  jsonTreeCreate32();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:00 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:00 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:00 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Mon, 28 Oct 2024 13:48:01 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>302</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"12e-Q8R4ooZn5zd6qMr07DU/AT+8eMU"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:00 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:00 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-33'></div>
+ <script>
+  function jsonTreeCreate33() { 
+   document.getElementById('code-block-json-33').innerHTML = JSONTree.create({
+    "uid": "1000041",
+    "operatorId": 10909001,
+    "nickName": "778591025",
+    "token": "dc4d53e0-c135-4246-912f-bb190b3ac3b4",
+    "balance": 104237.67,
+    "bonusAmount": 0,
+    "roundId": 9471228000,
+    "transactionId": "4da02b21-d339-4930-abe4-d6466da34f58",
+    "currency": "KES",
+    "errorCode": 0,
+    "errorDescription": "OK",
+    "timestamp": 1730123281622
+}); 
+  }
+  jsonTreeCreate33();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:18:00 pm</td>
+        <td>
+          Credit_8_DebitValidTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Retry_For_Credit_9_CreditValidTest</p>
+            <p class="text-sm">
+              <span>7:18:00 pm</span> / <span>00:00:00:901</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Retry_For_Credit_9_CreditValidTest</h5>
+<span class='badge badge-success'>10.28.2024 7:18:00 pm</span>
+<span class='badge badge-danger'>10.28.2024 7:18:01 pm</span>
+<span class='badge badge-default'>00:00:00:901</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:00 pm</td>
+        <td>
+          Retry_For_Credit_9_CreditValidTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:01 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/credit</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:01 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:01 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:01 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>hash</td><td>1EVoayXe+yjv/0BWyuZRyixtwIItV5UpqFuEPDxR8pM=</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:01 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:01 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-34'></div>
+ <script>
+  function jsonTreeCreate34() { 
+   document.getElementById('code-block-json-34').innerHTML = JSONTree.create({"gameId":1,"debitTransactionId":"ebeeda0f-4f99-4616-8ce3-73b21f1b7e48","isEndRound":false,"creditIndex":"1|1","gameDataString":"","platformId":1,"serverId":102,"transactionId":"ee6851c4-8051-4da5-81e9-d1507299f0b8","token":"dc4d53e0-c135-4246-912f-bb190b3ac3b4","uid":"1000041","returnReason":0,"betTypeID":101,"tableId":1,"seatId":"s6","currency":"KES","creditAmount":100.11,"operatorId":"10909001","roundId":"4051652711","timestamp":1730123280273,"endRound":false}); 
+  }
+  jsonTreeCreate34();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:01 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:01 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:01 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Mon, 28 Oct 2024 13:48:02 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>330</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"14a-ajXeoeQn75TV/HanGHwo5C0vbJU"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:01 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:01 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-35'></div>
+ <script>
+  function jsonTreeCreate35() { 
+   document.getElementById('code-block-json-35').innerHTML = JSONTree.create({
+    "uid": "1000041",
+    "operatorId": 10909001,
+    "nickName": "778591025",
+    "token": "dc4d53e0-c135-4246-912f-bb190b3ac3b4",
+    "balance": 104237.67,
+    "bonusAmount": 0,
+    "roundId": 4051652711,
+    "transactionId": "ee6851c4-8051-4da5-81e9-d1507299f0b8",
+    "currency": "KES",
+    "errorCode": 9,
+    "errorDescription": "Debit transaction ID not found",
+    "timestamp": 1730123282627
+}); 
+  }
+  jsonTreeCreate35();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:18:01 pm</td>
+        <td>
+          Retry_For_Credit_9_CreditValidTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Retry_For_Credit_9_CreditValidTest</p>
+            <p class="text-sm">
+              <span>7:18:01 pm</span> / <span>00:00:00:853</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Retry_For_Credit_9_CreditValidTest</h5>
+<span class='badge badge-success'>10.28.2024 7:18:01 pm</span>
+<span class='badge badge-danger'>10.28.2024 7:18:02 pm</span>
+<span class='badge badge-default'>00:00:00:853</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:01 pm</td>
+        <td>
+          Retry_For_Credit_9_CreditValidTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:02 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/credit</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:02 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:02 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:02 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>hash</td><td>qX4RlSJbZqWVOfc37MXzFcVnl63P2YM9jNvjMZRhWPU=</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:02 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:02 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-36'></div>
+ <script>
+  function jsonTreeCreate36() { 
+   document.getElementById('code-block-json-36').innerHTML = JSONTree.create({"gameId":1,"debitTransactionId":"ebeeda0f-4f99-4616-8ce3-73b21f1b7e48","isEndRound":false,"creditIndex":"1|1","gameDataString":"","platformId":1,"serverId":102,"transactionId":"ea00372c-c71d-42c9-a60d-197bd07a0f60","token":"dc4d53e0-c135-4246-912f-bb190b3ac3b4","uid":"1000041","returnReason":0,"betTypeID":101,"tableId":1,"seatId":"s6","currency":"KES","creditAmount":100.11,"operatorId":"10909001","roundId":"4051652711","timestamp":1730123281251,"endRound":false}); 
+  }
+  jsonTreeCreate36();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:02 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:02 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:02 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Mon, 28 Oct 2024 13:48:03 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>330</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"14a-h6nVuucgHpv0bgOxZo38t2UXHcI"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:02 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:02 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-37'></div>
+ <script>
+  function jsonTreeCreate37() { 
+   document.getElementById('code-block-json-37').innerHTML = JSONTree.create({
+    "uid": "1000041",
+    "operatorId": 10909001,
+    "nickName": "778591025",
+    "token": "dc4d53e0-c135-4246-912f-bb190b3ac3b4",
+    "balance": 104237.67,
+    "bonusAmount": 0,
+    "roundId": 4051652711,
+    "transactionId": "ea00372c-c71d-42c9-a60d-197bd07a0f60",
+    "currency": "KES",
+    "errorCode": 9,
+    "errorDescription": "Debit transaction ID not found",
+    "timestamp": 1730123283558
+}); 
+  }
+  jsonTreeCreate37();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:18:02 pm</td>
+        <td>
+          Retry_For_Credit_9_CreditValidTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="20"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Retry_For_Credit_9_DebitValidTest</p>
+            <p class="text-sm">
+              <span>7:18:02 pm</span> / <span>00:00:01:125</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Retry_For_Credit_9_DebitValidTest</h5>
+<span class='badge badge-success'>10.28.2024 7:18:02 pm</span>
+<span class='badge badge-danger'>10.28.2024 7:18:03 pm</span>
+<span class='badge badge-default'>00:00:01:125</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:02 pm</td>
+        <td>
+          Retry_For_Credit_9_DebitValidTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:03 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/debit</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:03 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:03 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:03 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>hash</td><td>6P+ummOL3NiP+yPTR22wbn5ygmgNncdtdfMD5m6ElYY=</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:03 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:03 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-38'></div>
+ <script>
+  function jsonTreeCreate38() { 
+   document.getElementById('code-block-json-38').innerHTML = JSONTree.create({"gameId":1,"debitAmount":100.11,"platformId":1,"serverId":102,"transactionId":"ebeeda0f-4f99-4616-8ce3-73b21f1b7e48","token":"dc4d53e0-c135-4246-912f-bb190b3ac3b4","uid":"1000041","betTypeID":1,"tableId":1,"seatId":"s6","currency":"KES","operatorId":"10909001","roundId":"4051652711","timestamp":1730123282188}); 
+  }
+  jsonTreeCreate38();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:03 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:03 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:03 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Mon, 28 Oct 2024 13:48:04 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>302</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"12e-ko4VQmeZ/2wtejaP/HrQcsWAmTk"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:03 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:03 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-39'></div>
+ <script>
+  function jsonTreeCreate39() { 
+   document.getElementById('code-block-json-39').innerHTML = JSONTree.create({
+    "uid": "1000041",
+    "operatorId": 10909001,
+    "nickName": "778591025",
+    "token": "dc4d53e0-c135-4246-912f-bb190b3ac3b4",
+    "balance": 104137.56,
+    "bonusAmount": 0,
+    "roundId": 4051652711,
+    "transactionId": "ebeeda0f-4f99-4616-8ce3-73b21f1b7e48",
+    "currency": "KES",
+    "errorCode": 0,
+    "errorDescription": "OK",
+    "timestamp": 1730123284761
+}); 
+  }
+  jsonTreeCreate39();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:18:03 pm</td>
+        <td>
+          Retry_For_Credit_9_DebitValidTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="21"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Credit_With_Amount_Zero_10_CreditValidTest</p>
+            <p class="text-sm">
+              <span>7:18:03 pm</span> / <span>00:00:00:742</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Credit_With_Amount_Zero_10_CreditValidTest</h5>
+<span class='badge badge-success'>10.28.2024 7:18:03 pm</span>
+<span class='badge badge-danger'>10.28.2024 7:18:04 pm</span>
+<span class='badge badge-default'>00:00:00:742</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:03 pm</td>
+        <td>
+          Credit_With_Amount_Zero_10_CreditValidTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:04 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/credit</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:04 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:04 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:04 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>hash</td><td>LtAoM29tIOa/kDDq0xj45kIvY1H3vqx0ioHC3G3Jbjw=</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:04 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:04 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-40'></div>
+ <script>
+  function jsonTreeCreate40() { 
+   document.getElementById('code-block-json-40').innerHTML = JSONTree.create({"gameId":1,"debitTransactionId":"2c7ea3f3-474b-4d60-8466-1cd5971a57b3","isEndRound":false,"creditIndex":"1|1","gameDataString":"","platformId":1,"serverId":102,"transactionId":"41e6626e-400b-4d4c-a121-b85611acba1c","token":"dc4d53e0-c135-4246-912f-bb190b3ac3b4","uid":"1000041","returnReason":0,"betTypeID":101,"tableId":1,"seatId":"s6","currency":"KES","creditAmount":0.0,"operatorId":"10909001","roundId":"8596314758","timestamp":1730123283384,"endRound":false}); 
+  }
+  jsonTreeCreate40();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:04 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:04 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:04 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Mon, 28 Oct 2024 13:48:05 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>269</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"10d-n6qo2fh0Lo9jd8BMnYzuoigF5kw"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:04 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:04 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-41'></div>
+ <script>
+  function jsonTreeCreate41() { 
+   document.getElementById('code-block-json-41').innerHTML = JSONTree.create({
+    "operatorId": "10909001",
+    "roundId": "8596314758",
+    "uid": "1000041",
+    "token": "dc4d53e0-c135-4246-912f-bb190b3ac3b4",
+    "balance": 0,
+    "transactionId": "41e6626e-400b-4d4c-a121-b85611acba1c",
+    "currency": "KES",
+    "errorCode": 1,
+    "errorDescription": "Invalid Hash",
+    "timestamp": 1730123285581
+}); 
+  }
+  jsonTreeCreate41();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:18:04 pm</td>
+        <td>
+          Credit_With_Amount_Zero_10_CreditValidTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="22"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Credit_With_Amount_Zero_10_DebitValidTest</p>
+            <p class="text-sm">
+              <span>7:18:04 pm</span> / <span>00:00:01:098</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Credit_With_Amount_Zero_10_DebitValidTest</h5>
+<span class='badge badge-success'>10.28.2024 7:18:04 pm</span>
+<span class='badge badge-danger'>10.28.2024 7:18:05 pm</span>
+<span class='badge badge-default'>00:00:01:098</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:04 pm</td>
+        <td>
+          Credit_With_Amount_Zero_10_DebitValidTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:05 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/debit</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:05 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:05 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:05 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>hash</td><td>/v+9zTFpxpJ/T7u/PlvFRwD/bbSUVHFagTfc5yGU66c=</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:05 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:05 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-42'></div>
+ <script>
+  function jsonTreeCreate42() { 
+   document.getElementById('code-block-json-42').innerHTML = JSONTree.create({"gameId":1,"debitAmount":100.11,"platformId":1,"serverId":102,"transactionId":"2c7ea3f3-474b-4d60-8466-1cd5971a57b3","token":"dc4d53e0-c135-4246-912f-bb190b3ac3b4","uid":"1000041","betTypeID":1,"tableId":1,"seatId":"s6","currency":"KES","operatorId":"10909001","roundId":"8596314758","timestamp":1730123284207}); 
+  }
+  jsonTreeCreate42();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:05 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:05 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:05 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Mon, 28 Oct 2024 13:48:06 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>302</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"12e-kBn5iGEraA0WLJDh+5ksCTbspBg"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:05 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:18:05 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-43'></div>
+ <script>
+  function jsonTreeCreate43() { 
+   document.getElementById('code-block-json-43').innerHTML = JSONTree.create({
+    "uid": "1000041",
+    "operatorId": 10909001,
+    "nickName": "778591025",
+    "token": "dc4d53e0-c135-4246-912f-bb190b3ac3b4",
+    "balance": 104037.45,
+    "bonusAmount": 0,
+    "roundId": 8596314758,
+    "transactionId": "2c7ea3f3-474b-4d60-8466-1cd5971a57b3",
+    "currency": "KES",
+    "errorCode": 0,
+    "errorDescription": "OK",
+    "timestamp": 1730123286749
+}); 
+  }
+  jsonTreeCreate43();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:18:05 pm</td>
+        <td>
+          Credit_With_Amount_Zero_10_DebitValidTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Oct 28, 2024 07:17:26 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Oct 28, 2024 07:18:05 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>22</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>22</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='7%'><b>22</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>264</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"auth0_GetURLValidTest":4.565,"auth0_AuthenticationValidTest":0.997,"repeat_Auth_1_getURLValidTest":1.04,"repeat_Auth_1_AuthenticationValidTest":1.14,"repeat_Auth_1_AuthenticationValidTest":0.77,"debit_2_DebitValidTest":5.702,"retry_For_Debit_3_debitValidTest":1.52,"retry_For_Debit_3_debitValidTest":0.972,"rollback_4_DebitValidTest":1.15,"rollback_4_RollbackTest":2.228,"Retry_For_Rollback_5_DebitValidTest":3.579,"Retry_For_Rollback_5_RollbackTest":1.959,"Rollback_Before_Debit_6_RollbackTest":0.874,"Debit_After_Rollback_7_RollbackTest":0.869,"Debit_After_Rollback_7_DebitValidTest":0.899,"Credit_8_CreditValidTest":0.963,"Credit_8_DebitValidTest":1.351,"Retry_For_Credit_9_CreditValidTest":0.901,"Retry_For_Credit_9_CreditValidTest":0.853,"Retry_For_Credit_9_DebitValidTest":1.125,"Credit_With_Amount_Zero_10_CreditValidTest":0.742,"Credit_With_Amount_Zero_10_DebitValidTest":1.098
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 22,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 22,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 264
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c05cd28cde1617b9d0c05a831daff6cb97fd9fd5/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

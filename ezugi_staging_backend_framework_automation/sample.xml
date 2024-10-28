@@ -6,6 +6,14 @@
 			<class name="providerTestCases.Authentication_0_Test" />
 			<class name="providerTestCases.Repeated_Authentication_1_Test" />
 			<class name="providerTestCases.Debit_2_Test" />
+			<class name="providerTestCases.Retry_For_Debit_3_Test" />
+			<class name="providerTestCases.Rollback_4_Test" />
+			<class name="providerTestCases.Retry_For_Rollback_5_Test" />
+			<class name="providerTestCases.Rollback_Before_Debit_6_Test" />
+			<class name="providerTestCases.Debit_After_Rollback_7_Test" />
+			<class name="providerTestCases.Credit_8_Test" />
+			<class name="providerTestCases.Retry_For_Credit_9_Test" />
+			<class name="providerTestCases.Credit_With_Amount_Zero_10_Test" />
 		</classes>
 	</test> <!--
 	Test -->

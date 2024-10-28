@@ -45,7 +45,8 @@ public class BaseApiClass {
 	public double creditAmount;
 	public String debitTransactionId;
 	public String seatId;
-	public int betTypeId;
+	public int debitBetTypeId;
+	public int creditBetTypeId;
 	public int returnReason;
 	public boolean isEndRound;
 	public String gameDataString;
@@ -80,6 +81,7 @@ public class BaseApiClass {
 		serverId = Integer.valueOf(eu.getDataFromExcel("ezugi", 12, 2));
 		seatId = eu.getDataFromExcel("ezugi", 13, 2);
 		currency = eu.getDataFromExcel("ezugi", 3, 2);
+		debitBetTypeId=1;
 
 		/* credit API */
 
@@ -88,7 +90,7 @@ public class BaseApiClass {
 		creditIndex = "1|1";
 		gameDataString = "";
 		returnReason = 0;
-		betTypeId = 101;
+		creditBetTypeId = 101;
 		tableId = 1;
 		creditAmount = 100.11;
 

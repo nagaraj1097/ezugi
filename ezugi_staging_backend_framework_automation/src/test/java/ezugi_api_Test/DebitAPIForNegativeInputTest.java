@@ -42,7 +42,7 @@ public class DebitAPIForNegativeInputTest extends BaseApiClass {
 			throws InvalidKeyException, JsonProcessingException, NoSuchAlgorithmException {
 
 		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, javaLib.getUuid(), currentToken,
-				playerId, betTypeId, tableId, seatId, currency, operatorId, roundID, javaLib.getCurrentTimeStamp());
+				playerId, debitBetTypeId, tableId, seatId, currency, operatorId, roundID, javaLib.getCurrentTimeStamp());
 		dp.setToken(data);
 		ll.getLowLevelLogInfo("TokenTest for : "+data);
 
@@ -62,7 +62,7 @@ public class DebitAPIForNegativeInputTest extends BaseApiClass {
 			throws InvalidKeyException, JsonProcessingException, NoSuchAlgorithmException {
 
 		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, javaLib.getUuid(), currentToken,
-				playerId, betTypeId, tableId, seatId, currency, operatorId, roundID, javaLib.getCurrentTimeStamp());
+				playerId, debitBetTypeId, tableId, seatId, currency, operatorId, roundID, javaLib.getCurrentTimeStamp());
 
 		dp.setUid(data);
 		String hash = javaLib.getgenerateHMACSHA256(map.writeValueAsString(dp), secretKey);
@@ -81,7 +81,7 @@ public class DebitAPIForNegativeInputTest extends BaseApiClass {
 			throws InvalidKeyException, JsonProcessingException, NoSuchAlgorithmException {
 
 		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, javaLib.getUuid(), currentToken,
-				playerId, betTypeId, tableId, seatId, currency, operatorId, roundID, javaLib.getCurrentTimeStamp());
+				playerId, debitBetTypeId, tableId, seatId, currency, operatorId, roundID, javaLib.getCurrentTimeStamp());
 
 		dp.setGameId(data);
 		String hash = javaLib.getgenerateHMACSHA256(map.writeValueAsString(dp), secretKey);

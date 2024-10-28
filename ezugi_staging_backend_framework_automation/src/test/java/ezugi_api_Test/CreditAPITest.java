@@ -29,7 +29,7 @@ public class CreditAPITest extends BaseApiClass {
 		/* Debit API */
 
 		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, debitTransactionId, currentToken,
-				playerId, betTypeId, tableId, seatId, currency, operatorId, roundID, javaLib.getCurrentTimeStamp());
+				playerId, debitBetTypeId, tableId, seatId, currency, operatorId, roundID, javaLib.getCurrentTimeStamp());
 	
 
 		String hash = javaLib.getgenerateHMACSHA256(map.writeValueAsString(dp), secretKey);
@@ -42,7 +42,7 @@ public class CreditAPITest extends BaseApiClass {
 		/* Credit API */
 
 		CreditPojo cp = new CreditPojo(gameId, debitTransactionId, isEndRound, creditIndex, gameDataString, platformId,
-				serverId, javaLib.getUuid(), currentToken, playerId, returnReason, betTypeId, tableId, seatId, currency,
+				serverId, javaLib.getUuid(), currentToken, playerId, returnReason, creditBetTypeId, tableId, seatId, currency,
 				creditAmount, operatorId, roundID, javaLib.getCurrentTimeStamp());
 
 		String hashc = javaLib.getgenerateHMACSHA256(map.writeValueAsString(cp), secretKey);
@@ -58,7 +58,7 @@ public class CreditAPITest extends BaseApiClass {
 			throws InvalidKeyException, JsonProcessingException, NoSuchAlgorithmException {
 
 		CreditPojo cp = new CreditPojo(gameId, debitTransactionId, isEndRound, creditIndex, gameDataString, platformId,
-				serverId, javaLib.getUuid(), currentToken, playerId, returnReason, betTypeId, tableId, seatId, currency,
+				serverId, javaLib.getUuid(), currentToken, playerId, returnReason, creditBetTypeId, tableId, seatId, currency,
 				creditAmount, operatorId, roundID, javaLib.getCurrentTimeStamp());
 
 		String hashc = javaLib.getgenerateHMACSHA256(map.writeValueAsString(cp), secretKey);
@@ -87,7 +87,7 @@ public class CreditAPITest extends BaseApiClass {
 		requestBody.put("token", currentToken);
 		requestBody.put("uid", playerId);
 		requestBody.put("returnReason", returnReason);
-		requestBody.put("betTypeID", betTypeId);
+		requestBody.put("betTypeID", creditBetTypeId);
 		requestBody.put("tableId", tableId);
 		requestBody.put("seatId", seatId);
 		requestBody.put("currency", currency);
