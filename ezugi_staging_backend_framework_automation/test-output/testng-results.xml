@@ -1,209 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="22" passed="22" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-28T20:00:46 IST" name="Suite" finished-at="2024-10-28T20:01:14 IST" duration-ms="28609">
+  <suite started-at="2024-10-29T14:26:31 IST" name="Default suite" finished-at="2024-10-29T14:26:37 IST" duration-ms="6454">
     <groups>
     </groups>
-    <test started-at="2024-10-28T20:00:46 IST" name="Test" finished-at="2024-10-28T20:01:14 IST" duration-ms="28609">
-      <class name="providerTestCases.Debit_After_Rollback_7_Test">
-        <test-method is-config="true" signature="variables()[pri:0, instance:providerTestCases.Debit_After_Rollback_7_Test@21be3395]" started-at="2024-10-28T20:01:05 IST" name="variables" finished-at="2024-10-28T20:01:05 IST" duration-ms="97" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="Debit_After_Rollback_7_RollbackTest()[pri:0, instance:providerTestCases.Debit_After_Rollback_7_Test@21be3395]" started-at="2024-10-28T20:01:05 IST" name="Debit_After_Rollback_7_RollbackTest" finished-at="2024-10-28T20:01:06 IST" duration-ms="859" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Debit_After_Rollback_7_RollbackTest -->
-        <test-method is-config="true" signature="variables()[pri:0, instance:providerTestCases.Debit_After_Rollback_7_Test@21be3395]" started-at="2024-10-28T20:01:06 IST" name="variables" finished-at="2024-10-28T20:01:06 IST" duration-ms="104" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="Debit_After_Rollback_7_DebitValidTest()[pri:0, instance:providerTestCases.Debit_After_Rollback_7_Test@21be3395]" started-at="2024-10-28T20:01:06 IST" name="Debit_After_Rollback_7_DebitValidTest" finished-at="2024-10-28T20:01:07 IST" depends-on-methods="providerTestCases.Debit_After_Rollback_7_Test.Debit_After_Rollback_7_RollbackTest" duration-ms="891" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Debit_After_Rollback_7_DebitValidTest -->
-      </class> <!-- providerTestCases.Debit_After_Rollback_7_Test -->
-      <class name="providerTestCases.Retry_For_Rollback_5_Test">
-        <test-method is-config="true" signature="variables()[pri:0, instance:providerTestCases.Retry_For_Rollback_5_Test@5be1d0a4]" started-at="2024-10-28T20:01:02 IST" name="variables" finished-at="2024-10-28T20:01:02 IST" duration-ms="130" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="Retry_For_Rollback_5_DebitValidTest()[pri:0, instance:providerTestCases.Retry_For_Rollback_5_Test@5be1d0a4]" started-at="2024-10-28T20:01:02 IST" name="Retry_For_Rollback_5_DebitValidTest" finished-at="2024-10-28T20:01:03 IST" duration-ms="1017" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Retry_For_Rollback_5_DebitValidTest -->
-        <test-method is-config="true" signature="variables()[pri:0, instance:providerTestCases.Retry_For_Rollback_5_Test@5be1d0a4]" started-at="2024-10-28T20:01:03 IST" name="variables" finished-at="2024-10-28T20:01:03 IST" duration-ms="133" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="Retry_For_Rollback_5_RollbackTest()[pri:0, instance:providerTestCases.Retry_For_Rollback_5_Test@5be1d0a4]" started-at="2024-10-28T20:01:03 IST" name="Retry_For_Rollback_5_RollbackTest" finished-at="2024-10-28T20:01:04 IST" depends-on-methods="providerTestCases.Retry_For_Rollback_5_Test.Retry_For_Rollback_5_DebitValidTest" duration-ms="981" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Retry_For_Rollback_5_RollbackTest -->
-      </class> <!-- providerTestCases.Retry_For_Rollback_5_Test -->
-      <class name="providerTestCases.Retry_For_Credit_9_Test">
-        <test-method is-config="true" signature="variables()[pri:0, instance:providerTestCases.Retry_For_Credit_9_Test@15d49048]" started-at="2024-10-28T20:01:09 IST" name="variables" finished-at="2024-10-28T20:01:09 IST" duration-ms="93" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="Retry_For_Credit_9_CreditValidTest()[pri:0, instance:providerTestCases.Retry_For_Credit_9_Test@15d49048]" started-at="2024-10-28T20:01:09 IST" name="Retry_For_Credit_9_CreditValidTest" finished-at="2024-10-28T20:01:10 IST" duration-ms="876" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Retry_For_Credit_9_CreditValidTest -->
-        <test-method is-config="true" signature="variables()[pri:0, instance:providerTestCases.Retry_For_Credit_9_Test@15d49048]" started-at="2024-10-28T20:01:10 IST" name="variables" finished-at="2024-10-28T20:01:10 IST" duration-ms="86" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="Retry_For_Credit_9_CreditValidTest()[pri:0, instance:providerTestCases.Retry_For_Credit_9_Test@15d49048]" started-at="2024-10-28T20:01:10 IST" name="Retry_For_Credit_9_CreditValidTest" finished-at="2024-10-28T20:01:11 IST" duration-ms="865" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Retry_For_Credit_9_CreditValidTest -->
-        <test-method is-config="true" signature="variables()[pri:0, instance:providerTestCases.Retry_For_Credit_9_Test@15d49048]" started-at="2024-10-28T20:01:11 IST" name="variables" finished-at="2024-10-28T20:01:11 IST" duration-ms="102" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="Retry_For_Credit_9_DebitValidTest()[pri:1, instance:providerTestCases.Retry_For_Credit_9_Test@15d49048]" started-at="2024-10-28T20:01:11 IST" name="Retry_For_Credit_9_DebitValidTest" finished-at="2024-10-28T20:01:12 IST" duration-ms="1034" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Retry_For_Credit_9_DebitValidTest -->
-      </class> <!-- providerTestCases.Retry_For_Credit_9_Test -->
-      <class name="providerTestCases.Credit_8_Test">
-        <test-method is-config="true" signature="variables()[pri:0, instance:providerTestCases.Credit_8_Test@147e2ae7]" started-at="2024-10-28T20:01:07 IST" name="variables" finished-at="2024-10-28T20:01:07 IST" duration-ms="95" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="Credit_8_CreditValidTest()[pri:0, instance:providerTestCases.Credit_8_Test@147e2ae7]" started-at="2024-10-28T20:01:07 IST" name="Credit_8_CreditValidTest" finished-at="2024-10-28T20:01:08 IST" duration-ms="873" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Credit_8_CreditValidTest -->
-        <test-method is-config="true" signature="variables()[pri:0, instance:providerTestCases.Credit_8_Test@147e2ae7]" started-at="2024-10-28T20:01:08 IST" name="variables" finished-at="2024-10-28T20:01:08 IST" duration-ms="79" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="Credit_8_DebitValidTest()[pri:1, instance:providerTestCases.Credit_8_Test@147e2ae7]" started-at="2024-10-28T20:01:08 IST" name="Credit_8_DebitValidTest" finished-at="2024-10-28T20:01:09 IST" duration-ms="1013" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Credit_8_DebitValidTest -->
-      </class> <!-- providerTestCases.Credit_8_Test -->
-      <class name="providerTestCases.Credit_With_Amount_Zero_10_Test">
-        <test-method is-config="true" signature="variables()[pri:0, instance:providerTestCases.Credit_With_Amount_Zero_10_Test@13526e59]" started-at="2024-10-28T20:01:12 IST" name="variables" finished-at="2024-10-28T20:01:12 IST" duration-ms="78" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="Credit_With_Amount_Zero_10_CreditValidTest()[pri:0, instance:providerTestCases.Credit_With_Amount_Zero_10_Test@13526e59]" started-at="2024-10-28T20:01:12 IST" name="Credit_With_Amount_Zero_10_CreditValidTest" finished-at="2024-10-28T20:01:13 IST" duration-ms="746" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Credit_With_Amount_Zero_10_CreditValidTest -->
-        <test-method is-config="true" signature="variables()[pri:0, instance:providerTestCases.Credit_With_Amount_Zero_10_Test@13526e59]" started-at="2024-10-28T20:01:13 IST" name="variables" finished-at="2024-10-28T20:01:13 IST" duration-ms="74" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="Credit_With_Amount_Zero_10_DebitValidTest()[pri:1, instance:providerTestCases.Credit_With_Amount_Zero_10_Test@13526e59]" started-at="2024-10-28T20:01:13 IST" name="Credit_With_Amount_Zero_10_DebitValidTest" finished-at="2024-10-28T20:01:14 IST" duration-ms="1031" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Credit_With_Amount_Zero_10_DebitValidTest -->
-      </class> <!-- providerTestCases.Credit_With_Amount_Zero_10_Test -->
-      <class name="providerTestCases.Rollback_4_Test">
-        <test-method is-config="true" signature="variables()[pri:0, instance:providerTestCases.Rollback_4_Test@5e3f861]" started-at="2024-10-28T20:00:59 IST" name="variables" finished-at="2024-10-28T20:00:59 IST" duration-ms="103" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="rollback_4_DebitValidTest()[pri:0, instance:providerTestCases.Rollback_4_Test@5e3f861]" started-at="2024-10-28T20:00:59 IST" name="rollback_4_DebitValidTest" finished-at="2024-10-28T20:01:00 IST" duration-ms="1054" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- rollback_4_DebitValidTest -->
-        <test-method is-config="true" signature="variables()[pri:0, instance:providerTestCases.Rollback_4_Test@5e3f861]" started-at="2024-10-28T20:01:00 IST" name="variables" finished-at="2024-10-28T20:01:00 IST" duration-ms="107" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="rollback_4_RollbackTest()[pri:0, instance:providerTestCases.Rollback_4_Test@5e3f861]" started-at="2024-10-28T20:01:00 IST" name="rollback_4_RollbackTest" finished-at="2024-10-28T20:01:02 IST" depends-on-methods="providerTestCases.Rollback_4_Test.rollback_4_DebitValidTest" duration-ms="1800" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- rollback_4_RollbackTest -->
-      </class> <!-- providerTestCases.Rollback_4_Test -->
+    <test started-at="2024-10-29T14:26:31 IST" name="Default test" finished-at="2024-10-29T14:26:37 IST" duration-ms="6454">
       <class name="providerTestCases.Authentication_0_Test">
-        <test-method is-config="true" signature="variables()[pri:0, instance:providerTestCases.Authentication_0_Test@2657d4dd]" started-at="2024-10-28T20:00:46 IST" name="variables" finished-at="2024-10-28T20:00:47 IST" duration-ms="965" status="PASS">
+        <test-method is-config="true" signature="variables()[pri:0, instance:providerTestCases.Authentication_0_Test@624ea235]" started-at="2024-10-29T14:26:31 IST" name="variables" finished-at="2024-10-29T14:26:31 IST" duration-ms="796" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- variables -->
-        <test-method signature="auth0_GetURLValidTest()[pri:0, instance:providerTestCases.Authentication_0_Test@2657d4dd]" started-at="2024-10-28T20:00:47 IST" name="auth0_GetURLValidTest" finished-at="2024-10-28T20:00:51 IST" duration-ms="4099" status="PASS">
+        <test-method signature="auth0_GetURLValidTest()[pri:0, instance:providerTestCases.Authentication_0_Test@624ea235]" started-at="2024-10-29T14:26:31 IST" name="auth0_GetURLValidTest" finished-at="2024-10-29T14:26:35 IST" duration-ms="4046" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- auth0_GetURLValidTest -->
-        <test-method is-config="true" signature="variables()[pri:0, instance:providerTestCases.Authentication_0_Test@2657d4dd]" started-at="2024-10-28T20:00:51 IST" name="variables" finished-at="2024-10-28T20:00:51 IST" duration-ms="218" status="PASS">
+        <test-method is-config="true" signature="variables()[pri:0, instance:providerTestCases.Authentication_0_Test@624ea235]" started-at="2024-10-29T14:26:35 IST" name="variables" finished-at="2024-10-29T14:26:36 IST" duration-ms="241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- variables -->
-        <test-method signature="auth0_AuthenticationValidTest()[pri:0, instance:providerTestCases.Authentication_0_Test@2657d4dd]" started-at="2024-10-28T20:00:51 IST" name="auth0_AuthenticationValidTest" finished-at="2024-10-28T20:00:52 IST" depends-on-methods="providerTestCases.Authentication_0_Test.auth0_GetURLValidTest" duration-ms="933" status="PASS">
+        <test-method signature="auth0_AuthenticationValidTest()[pri:0, instance:providerTestCases.Authentication_0_Test@624ea235]" started-at="2024-10-29T14:26:36 IST" name="auth0_AuthenticationValidTest" finished-at="2024-10-29T14:26:37 IST" depends-on-methods="providerTestCases.Authentication_0_Test.auth0_GetURLValidTest" duration-ms="1319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- auth0_AuthenticationValidTest -->
       </class> <!-- providerTestCases.Authentication_0_Test -->
-      <class name="providerTestCases.Rollback_Before_Debit_6_Test">
-        <test-method is-config="true" signature="variables()[pri:0, instance:providerTestCases.Rollback_Before_Debit_6_Test@311bf055]" started-at="2024-10-28T20:01:04 IST" name="variables" finished-at="2024-10-28T20:01:04 IST" duration-ms="95" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="Rollback_Before_Debit_6_RollbackTest()[pri:0, instance:providerTestCases.Rollback_Before_Debit_6_Test@311bf055]" started-at="2024-10-28T20:01:04 IST" name="Rollback_Before_Debit_6_RollbackTest" finished-at="2024-10-28T20:01:05 IST" depends-on-methods="Retry_For_Rollback_5_DebitValidTest" duration-ms="919" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Rollback_Before_Debit_6_RollbackTest -->
-      </class> <!-- providerTestCases.Rollback_Before_Debit_6_Test -->
-      <class name="providerTestCases.Retry_For_Debit_3_Test">
-        <test-method is-config="true" signature="variables()[pri:0, instance:providerTestCases.Retry_For_Debit_3_Test@565f390]" started-at="2024-10-28T20:00:57 IST" name="variables" finished-at="2024-10-28T20:00:57 IST" duration-ms="109" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="retry_For_Debit_3_debitValidTest()[pri:0, instance:providerTestCases.Retry_For_Debit_3_Test@565f390]" started-at="2024-10-28T20:00:57 IST" name="retry_For_Debit_3_debitValidTest" finished-at="2024-10-28T20:00:58 IST" duration-ms="1014" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- retry_For_Debit_3_debitValidTest -->
-        <test-method is-config="true" signature="variables()[pri:0, instance:providerTestCases.Retry_For_Debit_3_Test@565f390]" started-at="2024-10-28T20:00:58 IST" name="variables" finished-at="2024-10-28T20:00:58 IST" duration-ms="109" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="retry_For_Debit_3_debitValidTest()[pri:0, instance:providerTestCases.Retry_For_Debit_3_Test@565f390]" started-at="2024-10-28T20:00:58 IST" name="retry_For_Debit_3_debitValidTest" finished-at="2024-10-28T20:00:59 IST" duration-ms="935" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- retry_For_Debit_3_debitValidTest -->
-      </class> <!-- providerTestCases.Retry_For_Debit_3_Test -->
-      <class name="providerTestCases.Debit_2_Test">
-        <test-method is-config="true" signature="variables()[pri:0, instance:providerTestCases.Debit_2_Test@9816741]" started-at="2024-10-28T20:00:55 IST" name="variables" finished-at="2024-10-28T20:00:55 IST" duration-ms="157" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="debit_2_DebitValidTest()[pri:1, instance:providerTestCases.Debit_2_Test@9816741]" started-at="2024-10-28T20:00:55 IST" name="debit_2_DebitValidTest" finished-at="2024-10-28T20:00:57 IST" duration-ms="1605" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- debit_2_DebitValidTest -->
-      </class> <!-- providerTestCases.Debit_2_Test -->
-      <class name="providerTestCases.Repeated_Authentication_1_Test">
-        <test-method is-config="true" signature="variables()[pri:0, instance:providerTestCases.Repeated_Authentication_1_Test@29f7cefd]" started-at="2024-10-28T20:00:52 IST" name="variables" finished-at="2024-10-28T20:00:52 IST" duration-ms="180" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="repeat_Auth_1_getURLValidTest()[pri:0, instance:providerTestCases.Repeated_Authentication_1_Test@29f7cefd]" started-at="2024-10-28T20:00:52 IST" name="repeat_Auth_1_getURLValidTest" finished-at="2024-10-28T20:00:53 IST" duration-ms="882" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- repeat_Auth_1_getURLValidTest -->
-        <test-method is-config="true" signature="variables()[pri:0, instance:providerTestCases.Repeated_Authentication_1_Test@29f7cefd]" started-at="2024-10-28T20:00:53 IST" name="variables" finished-at="2024-10-28T20:00:53 IST" duration-ms="162" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="repeat_Auth_1_AuthenticationValidTest()[pri:0, instance:providerTestCases.Repeated_Authentication_1_Test@29f7cefd]" started-at="2024-10-28T20:00:53 IST" name="repeat_Auth_1_AuthenticationValidTest" finished-at="2024-10-28T20:00:54 IST" depends-on-methods="providerTestCases.Repeated_Authentication_1_Test.repeat_Auth_1_getURLValidTest" duration-ms="889" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- repeat_Auth_1_AuthenticationValidTest -->
-        <test-method is-config="true" signature="variables()[pri:0, instance:providerTestCases.Repeated_Authentication_1_Test@29f7cefd]" started-at="2024-10-28T20:00:54 IST" name="variables" finished-at="2024-10-28T20:00:54 IST" duration-ms="140" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="repeat_Auth_1_AuthenticationValidTest()[pri:0, instance:providerTestCases.Repeated_Authentication_1_Test@29f7cefd]" started-at="2024-10-28T20:00:54 IST" name="repeat_Auth_1_AuthenticationValidTest" finished-at="2024-10-28T20:00:55 IST" depends-on-methods="providerTestCases.Repeated_Authentication_1_Test.repeat_Auth_1_getURLValidTest" duration-ms="783" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- repeat_Auth_1_AuthenticationValidTest -->
-      </class> <!-- providerTestCases.Repeated_Authentication_1_Test -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

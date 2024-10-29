@@ -27,6 +27,8 @@ public class Authentication_0_Test extends BaseApiClass {
 
 		String launchToken = (String) jsonLib.getValueJsonFromBody(resp, "launchToken");
 		eu.setDataIntoExcel("ezugi", 10, 2, launchToken);
+		
+		
 
 	}
 
@@ -46,6 +48,8 @@ public class Authentication_0_Test extends BaseApiClass {
 
 		String token = (String) jsonLib.getValueJsonFromBody(resp, "token");
 		eu.setDataIntoExcel("ezugi", 11, 2, token);
+		
+		jsonLib.getVerifyDataOnJsonPath(resp, ".operatorId","operatorId", "10909001");
 	}
 
 }

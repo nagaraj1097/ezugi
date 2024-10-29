@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="providerTestCases.Insufficient_Funds_11_Test">
+      <class name="providerTestCases.Authentication_0_Test">
         <methods>
+          <include name="auth0_GetURLValidTest"/>
           <include name="variables"/>
-          <include name="Insufficient_Funds_11_DebitValidTest"/>
+          <include name="auth0_AuthenticationValidTest"/>
         </methods>
-      </class> <!-- providerTestCases.Insufficient_Funds_11_Test -->
+      </class> <!-- providerTestCases.Authentication_0_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
