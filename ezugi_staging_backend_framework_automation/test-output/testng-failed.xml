@@ -1,28 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="providerTestCases.Authentication_0_Test">
-        <methods>
-          <include name="auth0_GetURLValidTest"/>
-          <include name="variables"/>
-          <include name="auth0_AuthenticationValidTest"/>
-        </methods>
-      </class> <!-- providerTestCases.Authentication_0_Test -->
-      <class name="providerTestCases.Repeated_Authentication_1_Test">
-        <methods>
-          <include name="repeat_Auth_getURLValidTest"/>
-          <include name="variables"/>
-          <include name="repeat_Auth_AuthenticationValidTest"/>
-        </methods>
-      </class> <!-- providerTestCases.Repeated_Authentication_1_Test -->
-      <class name="providerTestCases.Debit_2_Test">
+      <class name="providerTestCases.Insufficient_Funds_11_Test">
         <methods>
           <include name="variables"/>
-          <include name="debitValidTest"/>
+          <include name="Insufficient_Funds_11_DebitValidTest"/>
         </methods>
-      </class> <!-- providerTestCases.Debit_2_Test -->
+      </class> <!-- providerTestCases.Insufficient_Funds_11_Test -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
