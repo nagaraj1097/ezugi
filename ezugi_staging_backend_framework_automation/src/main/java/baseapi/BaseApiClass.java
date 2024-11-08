@@ -76,7 +76,8 @@ public class BaseApiClass {
 		/* Debit API */
 
 		gameId = Integer.valueOf(eu.getDataFromExcel("ezugi", 7, 2));
-		debitAmount = Double.valueOf(eu.getDataFromExcel("ezugi", 16, 2));
+//		debitAmount = Double.valueOf(eu.getDataFromExcel("ezugi", 16, 2));
+		debitAmount = 10.11;
 		currentToken = eu.getDataFromExcel("ezugi", 11, 2);
 		serverId = Integer.valueOf(eu.getDataFromExcel("ezugi", 12, 2));
 		seatId = eu.getDataFromExcel("ezugi", 13, 2);
@@ -92,7 +93,7 @@ public class BaseApiClass {
 		returnReason = 0;
 		creditBetTypeId = 101;
 		tableId = 1;
-		creditAmount = 100.11;
+		creditAmount = 11.11;
 
 		/* RollBack API */
 

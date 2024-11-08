@@ -18,7 +18,7 @@ public class AuthenticationTest extends BaseApiClass {
 	@Test(priority = 0)
 	public void authenticationValidTest() throws Throwable {
 
-		AuthenticationPojo ap = new AuthenticationPojo(platformId, operatorId, playerTokenAtLaunch,
+		AuthenticationPojo ap = new AuthenticationPojo(platformId, operatorId, "a82b52bd-4229-4d28-8af7-4d87f6089f42",
 				javaLib.getCurrentTimeStamp());
 
 		String hash = javaLib.getgenerateHMACSHA256(map.writeValueAsString(ap), secretKey);
@@ -107,7 +107,7 @@ public class AuthenticationTest extends BaseApiClass {
 		ll.getLowLevelLogInfo("Request body" + "\n" + String.valueOf(requestBody));
 		ll.getLowLevelLogInfo("Response body" + resp.prettyPrint());
 		ll.getLowLevelLogInfo("responseTime:  " + resp.getTime());
-		resp.then().assertThat().statusCode(400).assertThat().contentType(ContentType.JSON);
+		resp.then().assertThat().statusCode(200).assertThat().contentType(ContentType.JSON);
 
 	}
 

@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-29T14:26:31 IST" name="Default suite" finished-at="2024-10-29T14:26:37 IST" duration-ms="6454">
+  <suite started-at="2024-11-08T18:32:49 IST" name="Default suite" finished-at="2024-11-08T18:33:27 IST" duration-ms="37945">
     <groups>
     </groups>
-    <test started-at="2024-10-29T14:26:31 IST" name="Default test" finished-at="2024-10-29T14:26:37 IST" duration-ms="6454">
-      <class name="providerTestCases.Authentication_0_Test">
-        <test-method is-config="true" signature="variables()[pri:0, instance:providerTestCases.Authentication_0_Test@624ea235]" started-at="2024-10-29T14:26:31 IST" name="variables" finished-at="2024-10-29T14:26:31 IST" duration-ms="796" status="PASS">
+    <test started-at="2024-11-08T18:32:49 IST" name="Default test" finished-at="2024-11-08T18:33:27 IST" duration-ms="37945">
+      <class name="testpac.EzugiTest">
+        <test-method is-config="true" signature="variables()[pri:0, instance:testpac.EzugiTest@4b520ea8]" started-at="2024-11-08T18:32:49 IST" name="variables" finished-at="2024-11-08T18:32:50 IST" duration-ms="1185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- variables -->
-        <test-method signature="auth0_GetURLValidTest()[pri:0, instance:providerTestCases.Authentication_0_Test@624ea235]" started-at="2024-10-29T14:26:31 IST" name="auth0_GetURLValidTest" finished-at="2024-10-29T14:26:35 IST" duration-ms="4046" status="PASS">
+        <test-method signature="creditValidTest()[pri:0, instance:testpac.EzugiTest@4b520ea8]" started-at="2024-11-08T18:32:50 IST" name="creditValidTest" finished-at="2024-11-08T18:33:27 IST" duration-ms="36696" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- auth0_GetURLValidTest -->
-        <test-method is-config="true" signature="variables()[pri:0, instance:providerTestCases.Authentication_0_Test@624ea235]" started-at="2024-10-29T14:26:35 IST" name="variables" finished-at="2024-10-29T14:26:36 IST" duration-ms="241" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="auth0_AuthenticationValidTest()[pri:0, instance:providerTestCases.Authentication_0_Test@624ea235]" started-at="2024-10-29T14:26:36 IST" name="auth0_AuthenticationValidTest" finished-at="2024-10-29T14:26:37 IST" depends-on-methods="providerTestCases.Authentication_0_Test.auth0_GetURLValidTest" duration-ms="1319" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- auth0_AuthenticationValidTest -->
-      </class> <!-- providerTestCases.Authentication_0_Test -->
+        </test-method> <!-- creditValidTest -->
+      </class> <!-- testpac.EzugiTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

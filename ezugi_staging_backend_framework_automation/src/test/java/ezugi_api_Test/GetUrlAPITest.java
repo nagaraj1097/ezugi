@@ -154,7 +154,6 @@ public class GetUrlAPITest extends BaseApiClass {
 			ll.getLowLevelLogInfo("Response body" + resp.prettyPrint());
 			ll.getLowLevelLogInfo("responseTime:  " + resp.getTime());
 			resp.then().assertThat().statusCode(400).assertThat().contentType(ContentType.JSON);
-
 		}
 
 	}

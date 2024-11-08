@@ -92,6 +92,7 @@ public class LowLevelLogs {
 
 	public void printResponseLogInReport(Response response) {
 		LowLevelLogs.logInfoDetails("Response status is :	" + response.getStatusCode());
+		LowLevelLogs.logInfoDetails("Response time is :	"+ response.getTime());
 		LowLevelLogs.logInfoDetails("Response Headers are :	");
 		LowLevelLogs.logHeaders(response.getHeaders().asList());
 		LowLevelLogs.logInfoDetails("Response body is :");

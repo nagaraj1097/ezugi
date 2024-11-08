@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="providerTestCases.Authentication_0_Test">
+      <class name="testpac.EzugiTest">
         <methods>
-          <include name="auth0_GetURLValidTest"/>
+          <include name="creditValidTest"/>
           <include name="variables"/>
-          <include name="auth0_AuthenticationValidTest"/>
         </methods>
-      </class> <!-- providerTestCases.Authentication_0_Test -->
+      </class> <!-- testpac.EzugiTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
