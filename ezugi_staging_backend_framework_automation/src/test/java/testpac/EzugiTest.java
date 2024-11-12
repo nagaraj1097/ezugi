@@ -23,10 +23,12 @@ public class EzugiTest extends BaseApiClass {
 
 		String roundID = String.valueOf(javaLib.getRandomNum());
 		String debitTransactionId = javaLib.getUuid();
+		
+		
 
 		/* Debit API */
 
-		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, debitTransactionId, currentToken,
+		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, debitTransactionId, authToken,
 				playerId, debitBetTypeId, tableId, seatId, currency, operatorId, roundID,
 				javaLib.getCurrentTimeStamp());
 
@@ -45,7 +47,7 @@ public class EzugiTest extends BaseApiClass {
 		/* Credit API */
 
 		CreditPojo cp = new CreditPojo(gameId, debitTransactionId, isEndRound, creditIndex, gameDataString, platformId,
-				serverId, javaLib.getUuid(), currentToken, playerId, returnReason, creditBetTypeId, tableId, seatId,
+				serverId, javaLib.getUuid(), authToken, playerId, returnReason, creditBetTypeId, tableId, seatId,
 				currency, creditAmount, operatorId, roundID, javaLib.getCurrentTimeStamp());
 
 		String hashc = javaLib.getgenerateHMACSHA256(map.writeValueAsString(cp), secretKey);

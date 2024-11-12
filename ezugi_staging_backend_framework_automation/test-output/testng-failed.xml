@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testpac.EzugiTest">
+      <class name="ezugi_api_Test.GetUrlAPITest">
         <methods>
-          <include name="creditValidTest"/>
+          <include name="getURLAPIMissingParametersTest"/>
           <include name="variables"/>
         </methods>
-      </class> <!-- testpac.EzugiTest -->
+      </class> <!-- ezugi_api_Test.GetUrlAPITest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

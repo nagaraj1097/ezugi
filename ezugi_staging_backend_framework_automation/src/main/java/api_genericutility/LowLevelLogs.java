@@ -20,32 +20,28 @@ public class LowLevelLogs {
 	public ObjectMapper map = new ObjectMapper();
 
 	public void getLowLevelLogInfo(String infoMessage) {
-
-		UtilityClassObject.getTest().log(Status.INFO, infoMessage);
+		UtilityClassObject.getTest().info(MarkupHelper.createLabel(infoMessage, ExtentColor.BROWN));
 	}
 
 	public void getLowLevelLogPass(String passMessage) {
-
-		UtilityClassObject.getTest().log(Status.PASS, passMessage);
-
+		UtilityClassObject.getTest().pass(MarkupHelper.createLabel(passMessage, ExtentColor.GREEN));
 	}
 
 	public void getLowLevelLogFail(String failMessage) {
-
-		UtilityClassObject.getTest().log(Status.FAIL, failMessage);
+		UtilityClassObject.getTest().fail(MarkupHelper.createLabel(failMessage, ExtentColor.RED));
 	}
 
-	public void getLowLevelReportOfReq_Res_ResTime(Response resp, Object o) throws JsonProcessingException {
-		String requestBody = map.writeValueAsString(o);
-		String responseBody = resp.getBody().prettyPrint();
-
-		System.out.println(requestBody);
-		System.out.println(responseBody);
-
-		logJson("Request body" + requestBody);
-		logJson("Response body" + responseBody);
-		getLowLevelLogInfo("responseTime:  " + resp.getTime());
-	}
+//	public void getLowLevelReportOfReq_Res_ResTime(Response resp, Object o) throws JsonProcessingException {
+//		String requestBody = map.writeValueAsString(o);
+//		String responseBody = resp.getBody().prettyPrint();
+//
+//		System.out.println(requestBody);
+//		System.out.println(responseBody);
+//
+//		logJson("Request body" + requestBody);
+//		logJson("Response body" + responseBody);
+//		getLowLevelLogInfo("responseTime:  " + resp.getTime());
+//	}
 
 	/* log methods */
 

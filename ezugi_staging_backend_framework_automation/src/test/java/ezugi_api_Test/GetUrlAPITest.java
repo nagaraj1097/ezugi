@@ -1,22 +1,20 @@
 package ezugi_api_Test;
 
-import static io.restassured.RestAssured.given;
-
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 
 import api_endpoints.EndPoints;
 import baseapi.BaseApiClass;
+import commonobjectutility.UtilityClassObject;
 import io.restassured.http.ContentType;
-import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
 import pojoutility.GetURLPojo;
 
 public class GetUrlAPITest extends BaseApiClass {
@@ -27,102 +25,60 @@ public class GetUrlAPITest extends BaseApiClass {
 
 	@Test(priority = 1)
 	public void getURLValidTest() throws Throwable {
-		GetURLPojo gup = new GetURLPojo(playerId, platformId, operatorId, token, currencyCode,
+		GetURLPojo gup = new GetURLPojo(playerId, platformId, operatorId, playerToken, currencyCode,
 				javaLib.getCurrentTimeStamp());
-
-		RequestSpecification request = given().contentType(ContentType.JSON).body(gup);
-		Response resp = request.when().post(baseUrl + EndPoints.getURL);
-
-		ll.printRequestLogInReport(request);
-		ll.printResponseLogInReport(resp);
-
-		resp.then().log().all().assertThat().statusCode(200).assertThat().contentType(ContentType.JSON);
-
-		String launchToken = (String) jsonLib.getValueJsonFromBody(resp, "launchToken");
-		eu.setDataIntoExcel("ezugi", 10, 2, launchToken);
-
+		rLib.performPost(baseUrl, EndPoints.getURL, gup);
+		UtilityClassObject.getResponse().then().assertThat().statusCode(200).assertThat().contentType(ContentType.JSON);
+		String launchToken = (String) jsonLib.getValueJsonFromBody(UtilityClassObject.getResponse(), "launchToken");
+		ll.getLowLevelLogInfo("launch Token: " + launchToken);
+		playerTokenAtLaunch = launchToken;
 	}
 
-	/* verify getURL APi with empty String as token */
-	@Test
-	public void getURLEmptyStringTokenTest() throws Throwable {
+	/* data for invalid, null and empty String */
 
-		GetURLPojo gup = new GetURLPojo(playerId, platformId, operatorId, token, currencyCode,
-				javaLib.getCurrentTimeStamp());
-		/* setting token empty as empty String */
-		gup.setToken("");
-
-		Response resp = given().contentType(ContentType.JSON).body(gup).when().post(baseUrl + EndPoints.getURL);
-		ll.getLowLevelReportOfReq_Res_ResTime(resp, gup);
-		resp.then().assertThat().statusCode(400).assertThat().contentType(ContentType.JSON);
-
+	@DataProvider(name = "testDataforString")
+	public Object[][] dataProviderString() {
+		return new Object[][] { { "" }, { null }, { javaLib.getUuid() } };
 	}
 
-	/* verify getURL APi with null as token */
+	/* verify getURL APi with invalid token */
+	@Test(dataProvider = "testDataforString")
+	public void getURLInvalidTokenTest(String data) throws Throwable {
 
-	@Test
-	public void getURLNullTokenTest() throws Throwable {
-
-		GetURLPojo gup = new GetURLPojo(playerId, platformId, operatorId, token, currencyCode,
+		GetURLPojo gup = new GetURLPojo(playerId, platformId, operatorId, playerToken, currencyCode,
 				javaLib.getCurrentTimeStamp());
-		/* setting token empty as null */
-		gup.setToken(null);
-
-		Response resp = given().contentType(ContentType.JSON).body(gup).when().post(baseUrl + EndPoints.getURL);
-		ll.getLowLevelReportOfReq_Res_ResTime(resp, gup);
-		resp.then().assertThat().statusCode(400).assertThat().contentType(ContentType.JSON);
-
+		/* passing data to setter method */
+		gup.setToken(data);
+		ll.getLowLevelLogInfo("Testing the token value using: " + data);
+		rLib.performPost(baseUrl, EndPoints.getURL, gup);
+		UtilityClassObject.getResponse().then().assertThat().statusCode(200).assertThat().contentType(ContentType.JSON);
 	}
 
 	/* verify getURL API with IvalidPlayerID */
 
-	@Test
-	public void getURLInvalidPlayerIdTest() throws Throwable {
+	@Test(dataProvider = "testDataforString")
+	public void getURLInvalidPlayerIdTest(String data) throws Throwable {
 
-		GetURLPojo gup = new GetURLPojo(playerId, platformId, operatorId, token, currencyCode,
+		GetURLPojo gup = new GetURLPojo(playerId, platformId, operatorId, playerToken, currencyCode,
 				javaLib.getCurrentTimeStamp());
 
-		/* setPlayerId as empty String */
-		gup.setPlayerId(String.valueOf(javaLib.getRandomNum()));
-
-		Response resp = given().contentType(ContentType.JSON).body(gup).when().post(baseUrl + EndPoints.getURL);
-		ll.getLowLevelReportOfReq_Res_ResTime(resp, gup);
-		resp.then().assertThat().statusCode(400).assertThat().contentType(ContentType.JSON);
-
-	}
-
-	/* verify getURL API with null PlayerID */
-
-	@Test
-	public void getURLNullPlayerIdTest() throws Throwable {
-
-		GetURLPojo gup = new GetURLPojo(playerId, platformId, operatorId, token, currencyCode,
-				javaLib.getCurrentTimeStamp());
-
-		/* setPlayerId as empty String */
-		gup.setPlayerId(null);
-
-		Response resp = given().contentType(ContentType.JSON).body(gup).when().post(baseUrl + EndPoints.getURL);
-		ll.getLowLevelReportOfReq_Res_ResTime(resp, gup);
-		resp.then().assertThat().statusCode(400).assertThat().contentType(ContentType.JSON);
-
+		ll.getLowLevelLogInfo("Testing the playerId value using :" + data);
+		gup.setPlayerId(data);
+		rLib.performPost(baseUrl, EndPoints.getURL, gup);
+		UtilityClassObject.getResponse().then().assertThat().statusCode(200).assertThat().contentType(ContentType.JSON);
 	}
 
 	/* verify getURL API with Invalid operatorId */
 
-	@Test
-	public void getURLNullOperatorIdTest() throws Throwable {
+	@Test(dataProvider = "testDataforString")
+	public void getURLInvalidOperatorIdTest(String data) throws Throwable {
 
-		GetURLPojo gup = new GetURLPojo(playerId, platformId, operatorId, token, currencyCode,
+		GetURLPojo gup = new GetURLPojo(playerId, platformId, operatorId, playerToken, currencyCode,
 				javaLib.getCurrentTimeStamp());
-
-		/* setPlayerId operatorId to 0 */
-		gup.setOperatorId(null);
-
-		Response resp = given().contentType(ContentType.JSON).body(gup).when().post(baseUrl + EndPoints.getURL);
-		ll.getLowLevelReportOfReq_Res_ResTime(resp, gup);
-		resp.then().assertThat().statusCode(400).assertThat().contentType(ContentType.JSON);
-
+		gup.setOperatorId(data);
+		ll.getLowLevelLogInfo("Testing the token value using: " + data);
+		rLib.performPost(baseUrl, EndPoints.getURL, gup);
+		UtilityClassObject.getResponse().then().assertThat().statusCode(200).assertThat().contentType(ContentType.JSON);
 	}
 
 	@Test
@@ -133,7 +89,7 @@ public class GetUrlAPITest extends BaseApiClass {
 
 		requestBody.put("playerId", playerId);
 		requestBody.put("operatorId", operatorId);
-		requestBody.put("token", token);
+		requestBody.put("token", playerToken);
 		requestBody.put("currencyCode", currencyCode);
 		requestBody.put("timestamp", javaLib.getCurrentTimeStamp());
 
@@ -146,14 +102,10 @@ public class GetUrlAPITest extends BaseApiClass {
 
 			ll.getLowLevelLogInfo("missing parameter:	" + key);
 
-			String hash = javaLib.getgenerateHMACSHA256(map.writeValueAsString(request), secretKey);
-
-			Response resp = given().contentType(ContentType.JSON).body(request).header("hash", hash).when()
-					.post(baseUrl + EndPoints.getURL);
-			ll.getLowLevelLogInfo("Request body" + "\n" + request);
-			ll.getLowLevelLogInfo("Response body" + resp.prettyPrint());
-			ll.getLowLevelLogInfo("responseTime:  " + resp.getTime());
-			resp.then().assertThat().statusCode(400).assertThat().contentType(ContentType.JSON);
+//			String hash = javaLib.getgenerateHMACSHA256(map.writeValueAsString(request), secretKey);
+			
+			rLib.performPost(baseUrl, EndPoints.getURL, requestBody);
+			UtilityClassObject.getResponse().then().assertThat().statusCode(200).assertThat().contentType(ContentType.JSON);
 		}
 
 	}

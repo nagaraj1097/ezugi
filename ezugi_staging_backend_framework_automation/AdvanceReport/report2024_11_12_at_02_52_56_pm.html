@@ -1,0 +1,2398 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>API testing</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">EZUGI</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Nov 12, 2024 02:52:56 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getURLAPIMissingParametersTest</p>
+            <p class="text-sm">
+              <span>2:52:57 pm</span> / <span>00:00:16:308</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getURLAPIMissingParametersTest</h5>
+<span class='badge badge-success'>11.12.2024 2:52:57 pm</span>
+<span class='badge badge-danger'>11.12.2024 2:53:14 pm</span>
+<span class='badge badge-default'>00:00:16:308</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:57 pm</td>
+        <td>
+          getURLAPIMissingParametersTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:57 pm</td>
+        <td>
+          <span class='badge white-text brown'>missing parameter:	operatorId</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:03 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/getURL</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:03 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:03 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:03 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:03 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:04 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-0'></div>
+ <script>
+  function jsonTreeCreate0() { 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create({"operatorId":"betvita","currencyCode":"KES","playerId":"1000002","token":"859e7645-a721-4649-b663-19de06fa5eca-1731486168660","timestamp":1731403377937}); 
+  }
+  jsonTreeCreate0();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:04 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:04 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response time is :	4545</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:04 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:04 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Tue, 12 Nov 2024 09:23:03 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>281</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"119-Ou7lZB0p1oKRAOH2bN2TyEeHQwY"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:04 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:04 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-1'></div>
+ <script>
+  function jsonTreeCreate1() { 
+   document.getElementById('code-block-json-1').innerHTML = JSONTree.create({
+    "operatorId": 10909001,
+    "uid": "1000002",
+    "launchToken": "f0ac34c3-3570-4d9f-b04d-e764fde4a140",
+    "currency": "KES",
+    "url": "https://playint.tableslive.com/auth/?operatorId=10909001&token=f0ac34c3-3570-4d9f-b04d-e764fde4a140",
+    "errorCode": 0,
+    "errorDescription": "ok",
+    "timestamp": 1731403383380
+}); 
+  }
+  jsonTreeCreate1();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:04 pm</td>
+        <td>
+          <span class='badge white-text brown'>missing parameter:	currencyCode</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:06 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/getURL</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:06 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:06 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:06 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:06 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:06 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-2'></div>
+ <script>
+  function jsonTreeCreate2() { 
+   document.getElementById('code-block-json-2').innerHTML = JSONTree.create({"operatorId":"betvita","currencyCode":"KES","playerId":"1000002","token":"859e7645-a721-4649-b663-19de06fa5eca-1731486168660","timestamp":1731403377937}); 
+  }
+  jsonTreeCreate2();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:06 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:06 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response time is :	2597</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:06 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:06 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Tue, 12 Nov 2024 09:23:06 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>281</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"119-vnZsXwOzjoGXK/xv3KAFGlKj58k"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:06 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:06 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-3'></div>
+ <script>
+  function jsonTreeCreate3() { 
+   document.getElementById('code-block-json-3').innerHTML = JSONTree.create({
+    "operatorId": 10909001,
+    "uid": "1000002",
+    "launchToken": "b753c64a-f6b2-4369-847d-c6e384c069c8",
+    "currency": "KES",
+    "url": "https://playint.tableslive.com/auth/?operatorId=10909001&token=b753c64a-f6b2-4369-847d-c6e384c069c8",
+    "errorCode": 0,
+    "errorDescription": "ok",
+    "timestamp": 1731403386086
+}); 
+  }
+  jsonTreeCreate3();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:06 pm</td>
+        <td>
+          <span class='badge white-text brown'>missing parameter:	playerId</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:09 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/getURL</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:09 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:09 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:09 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:09 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:09 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-4'></div>
+ <script>
+  function jsonTreeCreate4() { 
+   document.getElementById('code-block-json-4').innerHTML = JSONTree.create({"operatorId":"betvita","currencyCode":"KES","playerId":"1000002","token":"859e7645-a721-4649-b663-19de06fa5eca-1731486168660","timestamp":1731403377937}); 
+  }
+  jsonTreeCreate4();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:09 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:09 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response time is :	2397</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:09 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:09 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Tue, 12 Nov 2024 09:23:08 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>281</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"119-5dvXcF6spuYEJTG0biZeP7uDLlI"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:09 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:09 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-5'></div>
+ <script>
+  function jsonTreeCreate5() { 
+   document.getElementById('code-block-json-5').innerHTML = JSONTree.create({
+    "operatorId": 10909001,
+    "uid": "1000002",
+    "launchToken": "7a1c63fe-3ac9-4244-88f8-1b7ec50818e2",
+    "currency": "KES",
+    "url": "https://playint.tableslive.com/auth/?operatorId=10909001&token=7a1c63fe-3ac9-4244-88f8-1b7ec50818e2",
+    "errorCode": 0,
+    "errorDescription": "ok",
+    "timestamp": 1731403388502
+}); 
+  }
+  jsonTreeCreate5();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:09 pm</td>
+        <td>
+          <span class='badge white-text brown'>missing parameter:	token</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:12 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/getURL</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:12 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:12 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:12 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:12 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:12 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-6'></div>
+ <script>
+  function jsonTreeCreate6() { 
+   document.getElementById('code-block-json-6').innerHTML = JSONTree.create({"operatorId":"betvita","currencyCode":"KES","playerId":"1000002","token":"859e7645-a721-4649-b663-19de06fa5eca-1731486168660","timestamp":1731403377937}); 
+  }
+  jsonTreeCreate6();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:12 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:12 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response time is :	2838</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:12 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:12 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Tue, 12 Nov 2024 09:23:11 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>281</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"119-aC5xiVpkrPXvoESRfOCp5/r1QBg"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:12 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:12 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-7'></div>
+ <script>
+  function jsonTreeCreate7() { 
+   document.getElementById('code-block-json-7').innerHTML = JSONTree.create({
+    "operatorId": 10909001,
+    "uid": "1000002",
+    "launchToken": "1dad31aa-d39e-472b-b35e-13c87ca5e3f0",
+    "currency": "KES",
+    "url": "https://playint.tableslive.com/auth/?operatorId=10909001&token=1dad31aa-d39e-472b-b35e-13c87ca5e3f0",
+    "errorCode": 0,
+    "errorDescription": "ok",
+    "timestamp": 1731403391795
+}); 
+  }
+  jsonTreeCreate7();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:12 pm</td>
+        <td>
+          <span class='badge white-text brown'>missing parameter:	timestamp</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:14 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/getURL</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:14 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:14 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:14 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:14 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:14 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-8'></div>
+ <script>
+  function jsonTreeCreate8() { 
+   document.getElementById('code-block-json-8').innerHTML = JSONTree.create({"operatorId":"betvita","currencyCode":"KES","playerId":"1000002","token":"859e7645-a721-4649-b663-19de06fa5eca-1731486168660","timestamp":1731403377937}); 
+  }
+  jsonTreeCreate8();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:14 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:14 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response time is :	1960</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:14 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:14 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Tue, 12 Nov 2024 09:23:13 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>281</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"119-tE9mb9JULxh8tw7i1Jst9ZLiDLE"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:14 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:14 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-9'></div>
+ <script>
+  function jsonTreeCreate9() { 
+   document.getElementById('code-block-json-9').innerHTML = JSONTree.create({
+    "operatorId": 10909001,
+    "uid": "1000002",
+    "launchToken": "2c2d1402-34d3-4cc8-b9ca-6fef04013523",
+    "currency": "KES",
+    "url": "https://playint.tableslive.com/auth/?operatorId=10909001&token=2c2d1402-34d3-4cc8-b9ca-6fef04013523",
+    "errorCode": 0,
+    "errorDescription": "ok",
+    "timestamp": 1731403393844
+}); 
+  }
+  jsonTreeCreate9();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:53:14 pm</td>
+        <td>
+          getURLAPIMissingParametersTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getURLInvalidOperatorIdTest</p>
+            <p class="text-sm">
+              <span>2:53:14 pm</span> / <span>00:00:03:087</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getURLInvalidOperatorIdTest</h5>
+<span class='badge badge-success'>11.12.2024 2:53:14 pm</span>
+<span class='badge badge-danger'>11.12.2024 2:53:17 pm</span>
+<span class='badge badge-default'>00:00:03:087</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:14 pm</td>
+        <td>
+          getURLInvalidOperatorIdTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:17 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/getURL</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:17 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:17 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:17 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:17 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:17 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-10'></div>
+ <script>
+  function jsonTreeCreate10() { 
+   document.getElementById('code-block-json-10').innerHTML = JSONTree.create({"playerId":"1000002","platformId":1,"operatorId":"","token":"859e7645-a721-4649-b663-19de06fa5eca-1731486168660","currencyCode":"KES","timestamp":1731403394724}); 
+  }
+  jsonTreeCreate10();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:17 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:17 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response time is :	3002</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:17 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:17 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Tue, 12 Nov 2024 09:23:16 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>168</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"a8-p1W1xRpneoiktXKInyYOqUZQqUY"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:17 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:17 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-11'></div>
+ <script>
+  function jsonTreeCreate11() { 
+   document.getElementById('code-block-json-11').innerHTML = JSONTree.create({
+    "operatorId": "",
+    "token": "859e7645-a721-4649-b663-19de06fa5eca-1731486168660",
+    "balance": 0,
+    "errorCode": 1,
+    "errorDescription": "Invalid Operator",
+    "timestamp": 1731403396986
+}); 
+  }
+  jsonTreeCreate11();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:53:17 pm</td>
+        <td>
+          getURLInvalidOperatorIdTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getURLInvalidOperatorIdTest</p>
+            <p class="text-sm">
+              <span>2:53:18 pm</span> / <span>00:00:02:611</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getURLInvalidOperatorIdTest</h5>
+<span class='badge badge-success'>11.12.2024 2:53:18 pm</span>
+<span class='badge badge-danger'>11.12.2024 2:53:20 pm</span>
+<span class='badge badge-default'>00:00:02:611</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:18 pm</td>
+        <td>
+          getURLInvalidOperatorIdTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:20 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/getURL</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:20 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:20 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:20 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:20 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:20 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-12'></div>
+ <script>
+  function jsonTreeCreate12() { 
+   document.getElementById('code-block-json-12').innerHTML = JSONTree.create({"playerId":"1000002","platformId":1,"operatorId":null,"token":"859e7645-a721-4649-b663-19de06fa5eca-1731486168660","currencyCode":"KES","timestamp":1731403398170}); 
+  }
+  jsonTreeCreate12();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:20 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:20 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response time is :	2584</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:20 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:20 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Tue, 12 Nov 2024 09:23:19 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>170</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"aa-lwCATQ5cgAtWqAHVQmGCGbDBnK0"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:20 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:20 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-13'></div>
+ <script>
+  function jsonTreeCreate13() { 
+   document.getElementById('code-block-json-13').innerHTML = JSONTree.create({
+    "operatorId": null,
+    "token": "859e7645-a721-4649-b663-19de06fa5eca-1731486168660",
+    "balance": 0,
+    "errorCode": 1,
+    "errorDescription": "Invalid Operator",
+    "timestamp": 1731403399765
+}); 
+  }
+  jsonTreeCreate13();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:53:20 pm</td>
+        <td>
+          getURLInvalidOperatorIdTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getURLInvalidOperatorIdTest</p>
+            <p class="text-sm">
+              <span>2:53:21 pm</span> / <span>00:00:02:579</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getURLInvalidOperatorIdTest</h5>
+<span class='badge badge-success'>11.12.2024 2:53:21 pm</span>
+<span class='badge badge-danger'>11.12.2024 2:53:23 pm</span>
+<span class='badge badge-default'>00:00:02:579</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:21 pm</td>
+        <td>
+          getURLInvalidOperatorIdTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:23 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/getURL</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:23 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:23 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:23 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:23 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:23 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-14'></div>
+ <script>
+  function jsonTreeCreate14() { 
+   document.getElementById('code-block-json-14').innerHTML = JSONTree.create({"playerId":"1000002","platformId":1,"operatorId":"84c5ce1d-e6b5-4e64-80c6-805118b11366","token":"859e7645-a721-4649-b663-19de06fa5eca-1731486168660","currencyCode":"KES","timestamp":1731403401088}); 
+  }
+  jsonTreeCreate14();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:23 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:23 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response time is :	2562</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:23 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:23 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Tue, 12 Nov 2024 09:23:23 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>204</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"cc-ZwYbFmvGkCILfEdns9kV34W86PE"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:23 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:23 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-15'></div>
+ <script>
+  function jsonTreeCreate15() { 
+   document.getElementById('code-block-json-15').innerHTML = JSONTree.create({
+    "operatorId": "84c5ce1d-e6b5-4e64-80c6-805118b11366",
+    "token": "859e7645-a721-4649-b663-19de06fa5eca-1731486168660",
+    "balance": 0,
+    "errorCode": 1,
+    "errorDescription": "Invalid Operator",
+    "timestamp": 1731403403129
+}); 
+  }
+  jsonTreeCreate15();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:53:23 pm</td>
+        <td>
+          getURLInvalidOperatorIdTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getURLInvalidPlayerIdTest</p>
+            <p class="text-sm">
+              <span>2:53:23 pm</span> / <span>00:00:01:517</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getURLInvalidPlayerIdTest</h5>
+<span class='badge badge-success'>11.12.2024 2:53:23 pm</span>
+<span class='badge badge-danger'>11.12.2024 2:53:25 pm</span>
+<span class='badge badge-default'>00:00:01:517</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:23 pm</td>
+        <td>
+          getURLInvalidPlayerIdTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:23 pm</td>
+        <td>
+          <span class='badge white-text brown'>Testing the playerId value using :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:25 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/getURL</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:25 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:25 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:25 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:25 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:25 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-16'></div>
+ <script>
+  function jsonTreeCreate16() { 
+   document.getElementById('code-block-json-16').innerHTML = JSONTree.create({"playerId":"","platformId":1,"operatorId":"betvita","token":"859e7645-a721-4649-b663-19de06fa5eca-1731486168660","currencyCode":"KES","timestamp":1731403403972}); 
+  }
+  jsonTreeCreate16();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:25 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:25 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response time is :	1494</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:25 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:25 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Tue, 12 Nov 2024 09:23:24 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>183</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"b7-3hnJYAyCW5syDreh1o3SmiEiZnY"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:25 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:25 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-17'></div>
+ <script>
+  function jsonTreeCreate17() { 
+   document.getElementById('code-block-json-17').innerHTML = JSONTree.create({
+    "operatorId": "betvita",
+    "token": "859e7645-a721-4649-b663-19de06fa5eca-1731486168660",
+    "balance": 0,
+    "errorCode": 1,
+    "errorDescription": "playerId cannot be empty",
+    "timestamp": 1731403404876
+}); 
+  }
+  jsonTreeCreate17();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:53:25 pm</td>
+        <td>
+          getURLInvalidPlayerIdTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getURLInvalidPlayerIdTest</p>
+            <p class="text-sm">
+              <span>2:53:25 pm</span> / <span>00:00:01:980</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getURLInvalidPlayerIdTest</h5>
+<span class='badge badge-success'>11.12.2024 2:53:25 pm</span>
+<span class='badge badge-danger'>11.12.2024 2:53:27 pm</span>
+<span class='badge badge-default'>00:00:01:980</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:25 pm</td>
+        <td>
+          getURLInvalidPlayerIdTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:25 pm</td>
+        <td>
+          <span class='badge white-text brown'>Testing the playerId value using :null</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:27 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/getURL</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:27 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:27 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:27 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:27 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:27 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-18'></div>
+ <script>
+  function jsonTreeCreate18() { 
+   document.getElementById('code-block-json-18').innerHTML = JSONTree.create({"playerId":null,"platformId":1,"operatorId":"betvita","token":"859e7645-a721-4649-b663-19de06fa5eca-1731486168660","currencyCode":"KES","timestamp":1731403405766}); 
+  }
+  jsonTreeCreate18();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:27 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:27 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response time is :	1950</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:27 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:27 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Tue, 12 Nov 2024 09:23:27 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>190</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"be-XydIaNxDhKF6Hmycuxe+4SWkb2E"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:27 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:27 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-19'></div>
+ <script>
+  function jsonTreeCreate19() { 
+   document.getElementById('code-block-json-19').innerHTML = JSONTree.create({
+    "operatorId": "betvita",
+    "token": "859e7645-a721-4649-b663-19de06fa5eca-1731486168660",
+    "balance": 0,
+    "errorCode": 1,
+    "errorDescription": "playerId must be a valid string",
+    "timestamp": 1731403407018
+}); 
+  }
+  jsonTreeCreate19();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:53:27 pm</td>
+        <td>
+          getURLInvalidPlayerIdTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getURLInvalidPlayerIdTest</p>
+            <p class="text-sm">
+              <span>2:53:28 pm</span> / <span>00:00:02:621</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getURLInvalidPlayerIdTest</h5>
+<span class='badge badge-success'>11.12.2024 2:53:28 pm</span>
+<span class='badge badge-danger'>11.12.2024 2:53:30 pm</span>
+<span class='badge badge-default'>00:00:02:621</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:28 pm</td>
+        <td>
+          getURLInvalidPlayerIdTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:28 pm</td>
+        <td>
+          <span class='badge white-text brown'>Testing the playerId value using :015290dd-7753-465b-a254-0f34d3a6f759</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:30 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/getURL</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:30 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:30 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:30 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:30 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:30 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-20'></div>
+ <script>
+  function jsonTreeCreate20() { 
+   document.getElementById('code-block-json-20').innerHTML = JSONTree.create({"playerId":"015290dd-7753-465b-a254-0f34d3a6f759","platformId":1,"operatorId":"betvita","token":"859e7645-a721-4649-b663-19de06fa5eca-1731486168660","currencyCode":"KES","timestamp":1731403408025}); 
+  }
+  jsonTreeCreate20();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:30 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:30 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response time is :	2597</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:30 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:30 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Tue, 12 Nov 2024 09:23:30 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>77</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"4d-NBAz/AnkyUHXOOQ2VlhoNnrP7gU"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:30 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:30 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-21'></div>
+ <script>
+  function jsonTreeCreate21() { 
+   document.getElementById('code-block-json-21').innerHTML = JSONTree.create({
+    "errorCode": 7,
+    "errorDescription": "User not found",
+    "timestamp": 1731403410208
+}); 
+  }
+  jsonTreeCreate21();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:53:30 pm</td>
+        <td>
+          getURLInvalidPlayerIdTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getURLInvalidTokenTest</p>
+            <p class="text-sm">
+              <span>2:53:30 pm</span> / <span>00:00:01:862</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getURLInvalidTokenTest</h5>
+<span class='badge badge-success'>11.12.2024 2:53:30 pm</span>
+<span class='badge badge-danger'>11.12.2024 2:53:32 pm</span>
+<span class='badge badge-default'>00:00:01:862</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:30 pm</td>
+        <td>
+          getURLInvalidTokenTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:30 pm</td>
+        <td>
+          <span class='badge white-text brown'>Testing the token value using </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:32 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/getURL</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:32 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:32 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:32 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:32 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:32 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-22'></div>
+ <script>
+  function jsonTreeCreate22() { 
+   document.getElementById('code-block-json-22').innerHTML = JSONTree.create({"playerId":"1000002","platformId":1,"operatorId":"betvita","token":"","currencyCode":"KES","timestamp":1731403410897}); 
+  }
+  jsonTreeCreate22();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:32 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:32 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response time is :	1839</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:32 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:32 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Tue, 12 Nov 2024 09:23:31 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>124</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"7c-XIo2jCTgbYcS995YvdujX3YDVZs"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:32 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:32 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-23'></div>
+ <script>
+  function jsonTreeCreate23() { 
+   document.getElementById('code-block-json-23').innerHTML = JSONTree.create({
+    "operatorId": "betvita",
+    "token": "",
+    "balance": 0,
+    "errorCode": 6,
+    "errorDescription": "Token not found",
+    "timestamp": 1731403411988
+}); 
+  }
+  jsonTreeCreate23();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:53:32 pm</td>
+        <td>
+          getURLInvalidTokenTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getURLInvalidTokenTest</p>
+            <p class="text-sm">
+              <span>2:53:32 pm</span> / <span>00:00:01:244</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getURLInvalidTokenTest</h5>
+<span class='badge badge-success'>11.12.2024 2:53:32 pm</span>
+<span class='badge badge-danger'>11.12.2024 2:53:34 pm</span>
+<span class='badge badge-default'>00:00:01:244</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:32 pm</td>
+        <td>
+          getURLInvalidTokenTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:32 pm</td>
+        <td>
+          <span class='badge white-text brown'>Testing the token value using null</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:34 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/getURL</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:34 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:34 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:34 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:34 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:34 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-24'></div>
+ <script>
+  function jsonTreeCreate24() { 
+   document.getElementById('code-block-json-24').innerHTML = JSONTree.create({"playerId":"1000002","platformId":1,"operatorId":"betvita","token":null,"currencyCode":"KES","timestamp":1731403412999}); 
+  }
+  jsonTreeCreate24();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:34 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:34 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response time is :	1221</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:34 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:34 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Tue, 12 Nov 2024 09:23:33 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>139</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"8b-ZyjUl47NB1eMv01C5Sw+uvqWFiY"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:34 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:34 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-25'></div>
+ <script>
+  function jsonTreeCreate25() { 
+   document.getElementById('code-block-json-25').innerHTML = JSONTree.create({
+    "operatorId": "betvita",
+    "token": null,
+    "balance": 0,
+    "errorCode": 1,
+    "errorDescription": "token must be a valid string",
+    "timestamp": 1731403413833
+}); 
+  }
+  jsonTreeCreate25();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:53:34 pm</td>
+        <td>
+          getURLInvalidTokenTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getURLInvalidTokenTest</p>
+            <p class="text-sm">
+              <span>2:53:34 pm</span> / <span>00:00:02:409</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getURLInvalidTokenTest</h5>
+<span class='badge badge-success'>11.12.2024 2:53:34 pm</span>
+<span class='badge badge-danger'>11.12.2024 2:53:36 pm</span>
+<span class='badge badge-default'>00:00:02:409</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:34 pm</td>
+        <td>
+          getURLInvalidTokenTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:34 pm</td>
+        <td>
+          <span class='badge white-text brown'>Testing the token value using 66e04264-e690-42f1-a376-9a1c7b016615</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:36 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/getURL</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:36 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:36 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:36 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:36 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:36 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-26'></div>
+ <script>
+  function jsonTreeCreate26() { 
+   document.getElementById('code-block-json-26').innerHTML = JSONTree.create({"playerId":"1000002","platformId":1,"operatorId":"betvita","token":"66e04264-e690-42f1-a376-9a1c7b016615","currencyCode":"KES","timestamp":1731403414486}); 
+  }
+  jsonTreeCreate26();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:36 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:36 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response time is :	2390</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:36 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:36 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Tue, 12 Nov 2024 09:23:36 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>78</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"4e-2lU441e4Gq79qt3zuu7RE7p/Jmc"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:36 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:36 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-27'></div>
+ <script>
+  function jsonTreeCreate27() { 
+   document.getElementById('code-block-json-27').innerHTML = JSONTree.create({
+    "errorCode": 6,
+    "errorDescription": "Token not found",
+    "timestamp": 1731403416458
+}); 
+  }
+  jsonTreeCreate27();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:53:36 pm</td>
+        <td>
+          getURLInvalidTokenTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getURLValidTest</p>
+            <p class="text-sm">
+              <span>2:53:37 pm</span> / <span>00:00:03:287</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getURLValidTest</h5>
+<span class='badge badge-success'>11.12.2024 2:53:37 pm</span>
+<span class='badge badge-danger'>11.12.2024 2:53:40 pm</span>
+<span class='badge badge-default'>00:00:03:287</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:37 pm</td>
+        <td>
+          getURLValidTest >>>>> Started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:39 pm</td>
+        <td>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/getURL</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:39 pm</td>
+        <td>
+          <span class='badge white-text grey'>Method is :	POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:39 pm</td>
+        <td>
+          <span class='badge white-text grey'>Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:39 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:39 pm</td>
+        <td>
+          <span class='badge white-text grey'>Request body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:39 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-28'></div>
+ <script>
+  function jsonTreeCreate28() { 
+   document.getElementById('code-block-json-28').innerHTML = JSONTree.create({"playerId":"1000002","platformId":1,"operatorId":"betvita","token":"859e7645-a721-4649-b663-19de06fa5eca-1731486168660","currencyCode":"KES","timestamp":1731403417135}); 
+  }
+  jsonTreeCreate28();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:39 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response status is :	200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:39 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response time is :	2295</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:39 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are :	</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:39 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Tue, 12 Nov 2024 09:23:38 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>281</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"119-coQXEkp6x5PYeZ2Vu90/jU0EFHo"</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:39 pm</td>
+        <td>
+          <span class='badge white-text grey'>Response body is :</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:39 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-29'></div>
+ <script>
+  function jsonTreeCreate29() { 
+   document.getElementById('code-block-json-29').innerHTML = JSONTree.create({
+    "operatorId": 10909001,
+    "uid": "1000002",
+    "launchToken": "4e20d3c7-fb85-42ff-a13b-7a532f3da596",
+    "currency": "KES",
+    "url": "https://playint.tableslive.com/auth/?operatorId=10909001&token=4e20d3c7-fb85-42ff-a13b-7a532f3da596",
+    "errorCode": 0,
+    "errorDescription": "ok",
+    "timestamp": 1731403418999
+}); 
+  }
+  jsonTreeCreate29();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:53:40 pm</td>
+        <td>
+          <span class='badge white-text brown'>launch Token: 4e20d3c7-fb85-42ff-a13b-7a532f3da596</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:53:40 pm</td>
+        <td>
+          getURLValidTest >>>>> Pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Nov 12, 2024 02:52:56 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Nov 12, 2024 02:53:40 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>11</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>11</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='5%'><b>11</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>203</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"getURLAPIMissingParametersTest":16.308,"getURLInvalidOperatorIdTest":3.087,"getURLInvalidOperatorIdTest":2.611,"getURLInvalidOperatorIdTest":2.579,"getURLInvalidPlayerIdTest":1.517,"getURLInvalidPlayerIdTest":1.98,"getURLInvalidPlayerIdTest":2.621,"getURLInvalidTokenTest":1.862,"getURLInvalidTokenTest":1.244,"getURLInvalidTokenTest":2.409,"getURLValidTest":3.287
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 11,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 11,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 203
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c05cd28cde1617b9d0c05a831daff6cb97fd9fd5/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

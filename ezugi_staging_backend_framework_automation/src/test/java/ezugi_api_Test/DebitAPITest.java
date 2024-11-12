@@ -44,7 +44,7 @@ public class DebitAPITest extends BaseApiClass {
 		String debitTransactionId = javaLib.getUuid();
 		eu.setDataIntoExcel("ezugi", 17, 2, debitTransactionId);
 
-		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, debitTransactionId, currentToken,
+		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, debitTransactionId, authToken,
 				playerId, debitBetTypeId, tableId, seatId, currency, operatorId, roundID, javaLib.getCurrentTimeStamp());
 		
 
@@ -65,7 +65,7 @@ public class DebitAPITest extends BaseApiClass {
 	public void debitAPIwith_sameRoundId_UniqueTransactionID()
 			throws InvalidKeyException, JsonProcessingException, NoSuchAlgorithmException {
 
-		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, javaLib.getUuid(), currentToken,
+		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, javaLib.getUuid(), authToken,
 				playerId, debitBetTypeId, tableId, seatId, currency, operatorId, roundID, javaLib.getCurrentTimeStamp());
 
 		String hash = javaLib.getgenerateHMACSHA256(map.writeValueAsString(dp), secretKey);
@@ -84,7 +84,7 @@ public class DebitAPITest extends BaseApiClass {
 	public void debitAPIWith_Invalid_EmptyString_NullOperatorId(String data)
 			throws InvalidKeyException, JsonProcessingException, NoSuchAlgorithmException {
 
-		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, javaLib.getUuid(), currentToken,
+		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, javaLib.getUuid(), authToken,
 				playerId, debitBetTypeId, tableId, seatId, currency, operatorId, roundID, javaLib.getCurrentTimeStamp());
 
 		dp.setUid(data);
@@ -107,7 +107,7 @@ public class DebitAPITest extends BaseApiClass {
 		requestBody.put("platformId", platformId);
 		requestBody.put("serverId", serverId);
 		requestBody.put("transactionId", javaLib.getUuid());
-		requestBody.put("token", currentToken);
+		requestBody.put("token", authToken);
 		requestBody.put("uid", playerId);
 		requestBody.put("betTypeID", 1);
 		requestBody.put("tableId", 1);

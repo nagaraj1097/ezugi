@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 
 import api_endpoints.EndPoints;
 import baseapi.BaseApiClass;
+import commonobjectutility.UtilityClassObject;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import pojoutility.AuthenticationPojo;
@@ -18,18 +19,15 @@ public class AuthenticationTest extends BaseApiClass {
 	@Test(priority = 0)
 	public void authenticationValidTest() throws Throwable {
 
-		AuthenticationPojo ap = new AuthenticationPojo(platformId, operatorId, "a82b52bd-4229-4d28-8af7-4d87f6089f42",
+		AuthenticationPojo ap = new AuthenticationPojo(platformId, operatorId, playerTokenAtLaunch,
 				javaLib.getCurrentTimeStamp());
 
 		String hash = javaLib.getgenerateHMACSHA256(map.writeValueAsString(ap), secretKey);
 
-		Response resp = given().contentType(ContentType.JSON).body(ap).header("hash", hash).when()
-				.post(baseUrl + EndPoints.authentication);
-		ll.getLowLevelReportOfReq_Res_ResTime(resp, ap);
-		resp.then().assertThat().statusCode(200).assertThat().contentType(ContentType.JSON);
+		rLib.performPostWithHeader(baseUrl, EndPoints.authentication, ap, "hash", hash);
 
-		String token = (String) jsonLib.getValueJsonFromBody(resp, "token");
-		eu.setDataIntoExcel("ezugi", 11, 2, token);
+		String token = (String) jsonLib.getValueJsonFromBody(UtilityClassObject.getResponse(), "token");
+		eu.setDataIntoExcel("ez", 6, 0, token);
 
 	}
 
@@ -103,7 +101,7 @@ public class AuthenticationTest extends BaseApiClass {
 
 		Response resp = given().contentType(ContentType.JSON).body(requestBody).header("hash", hash).when()
 				.post(baseUrl + EndPoints.authentication);
-		
+
 		ll.getLowLevelLogInfo("Request body" + "\n" + String.valueOf(requestBody));
 		ll.getLowLevelLogInfo("Response body" + resp.prettyPrint());
 		ll.getLowLevelLogInfo("responseTime:  " + resp.getTime());
@@ -112,7 +110,5 @@ public class AuthenticationTest extends BaseApiClass {
 	}
 
 	/* verify authentication API with missing parameters */
-
-
 
 }

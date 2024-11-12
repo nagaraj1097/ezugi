@@ -41,7 +41,7 @@ public class DebitAPIForNegativeInputTest extends BaseApiClass {
 	public void debitAPIWithInvalid_EmptyString_nullTokenTest(String data)
 			throws InvalidKeyException, JsonProcessingException, NoSuchAlgorithmException {
 
-		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, javaLib.getUuid(), currentToken,
+		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, javaLib.getUuid(), authToken,
 				playerId, debitBetTypeId, tableId, seatId, currency, operatorId, roundID, javaLib.getCurrentTimeStamp());
 		dp.setToken(data);
 		ll.getLowLevelLogInfo("TokenTest for : "+data);
@@ -61,7 +61,7 @@ public class DebitAPIForNegativeInputTest extends BaseApiClass {
 	public void debitAPIWith_Invalid_EmptyString_NullPlayerId(String data)
 			throws InvalidKeyException, JsonProcessingException, NoSuchAlgorithmException {
 
-		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, javaLib.getUuid(), currentToken,
+		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, javaLib.getUuid(), authToken,
 				playerId, debitBetTypeId, tableId, seatId, currency, operatorId, roundID, javaLib.getCurrentTimeStamp());
 
 		dp.setUid(data);
@@ -80,7 +80,7 @@ public class DebitAPIForNegativeInputTest extends BaseApiClass {
 	public void debitAPIWith_Invalid_EmptyString_NullGameId(int data)
 			throws InvalidKeyException, JsonProcessingException, NoSuchAlgorithmException {
 
-		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, javaLib.getUuid(), currentToken,
+		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, javaLib.getUuid(), authToken,
 				playerId, debitBetTypeId, tableId, seatId, currency, operatorId, roundID, javaLib.getCurrentTimeStamp());
 
 		dp.setGameId(data);

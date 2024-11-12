@@ -27,7 +27,7 @@ public class Rollback_4_Test extends BaseApiClass {
 		String debitTransactionId = javaLib.getUuid();
 		eu.setDataIntoExcel("ezugi", 17, 2, debitTransactionId);
 
-		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, debitTransactionId, currentToken,
+		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, debitTransactionId, authToken,
 				playerId, debitBetTypeId, tableId, seatId, currency, operatorId, roundID,
 				javaLib.getCurrentTimeStamp());
 
@@ -46,7 +46,7 @@ public class Rollback_4_Test extends BaseApiClass {
 	public void rollback_4_RollbackTest()
 			throws InvalidKeyException, JsonProcessingException, NoSuchAlgorithmException {
 
-		RollBackPojo rp = new RollBackPojo(operatorId, playerId, debitTransactionId, gameId, currentToken,
+		RollBackPojo rp = new RollBackPojo(operatorId, playerId, debitTransactionId, gameId, authToken,
 				rollbackAmount, debitBetTypeId, serverId, roundID, currency, seatId, platformId, tableId,
 				javaLib.getCurrentTimeStamp());
 

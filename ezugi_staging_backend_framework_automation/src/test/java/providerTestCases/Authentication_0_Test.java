@@ -16,7 +16,7 @@ public class Authentication_0_Test extends BaseApiClass {
 
 	@Test
 	public void auth0_GetURLValidTest() throws Throwable {
-		GetURLPojo gup = new GetURLPojo(playerId, platformId, "betvita", token, currencyCode,
+		GetURLPojo gup = new GetURLPojo(playerId, platformId, "betvita", playerToken, currencyCode,
 				javaLib.getCurrentTimeStamp());
 
 		RequestSpecification request = given().contentType(ContentType.JSON).body(gup);

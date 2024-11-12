@@ -3,7 +3,9 @@ package baseapi;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 
@@ -14,6 +16,7 @@ import api_genericutility.FileUtility;
 import api_genericutility.JavaUtility;
 import api_genericutility.JsonUtility;
 import api_genericutility.LowLevelLogs;
+import api_genericutility.RestUtility;
 
 @Listeners(api_listnerimplementation.ListImpClass.class)
 public class BaseApiClass {
@@ -25,12 +28,13 @@ public class BaseApiClass {
 	public JsonUtility jsonLib = new JsonUtility();
 	public LowLevelLogs ll = new LowLevelLogs();
 	public JavaUtility javaLib = new JavaUtility();
+	public RestUtility rLib = new RestUtility();
 
 	public final static String baseUrl = "https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2";
 	public String secretKey = "5dbb6aed-a244-4e63-b5d9-95e5f118a545";
 
 	public String operatorId;
-	public String token;
+	public String playerToken;
 
 	public String clientType;
 	public String selectGame;
@@ -51,7 +55,7 @@ public class BaseApiClass {
 	public boolean isEndRound;
 	public String gameDataString;
 	public String creditIndex;
-	public String currentToken;
+	public String authToken;
 	public String uid;
 	public String playerTokenAtLaunch;
 	public String currency;
@@ -64,24 +68,24 @@ public class BaseApiClass {
 
 		/* getURL */
 
-		playerId = eu.getDataFromExcel("ezugi", 2, 2);
-		platformId = Integer.valueOf(eu.getDataFromExcel("ezugi", 5, 2));
-		operatorId = eu.getDataFromExcel("ezugi", 9, 2);
-		token = eu.getDataFromExcel("ezugi", 4, 2);
-		currencyCode = eu.getDataFromExcel("ezugi", 6, 2);
+		playerId = eu.getDataFromExcel("ez", 2, 0);
+		platformId = Integer.valueOf(eu.getDataFromExcel("ez", 2, 1));
+		operatorId = eu.getDataFromExcel("ez", 2, 2);
+		playerToken = eu.getDataFromExcel("ez", 2, 3);
+		currencyCode = eu.getDataFromExcel("ez", 2, 4);
 
 		/* AuthenticationTest */
-		playerTokenAtLaunch = eu.getDataFromExcel("ezugi", 10, 2);
+//		playerTokenAtLaunch = eu.getDataFromExcel("ez", 2, 3);
 
 		/* Debit API */
 
-		gameId = Integer.valueOf(eu.getDataFromExcel("ezugi", 7, 2));
+		gameId = Integer.valueOf(eu.getDataFromExcel("ez", 10, 0));
 //		debitAmount = Double.valueOf(eu.getDataFromExcel("ezugi", 16, 2));
 		debitAmount = 10.11;
-		currentToken = eu.getDataFromExcel("ezugi", 11, 2);
-		serverId = Integer.valueOf(eu.getDataFromExcel("ezugi", 12, 2));
-		seatId = eu.getDataFromExcel("ezugi", 13, 2);
-		currency = eu.getDataFromExcel("ezugi", 3, 2);
+		authToken = eu.getDataFromExcel("ez", 6, 1);
+		serverId = Integer.valueOf(eu.getDataFromExcel("ez", 10, 2));
+		seatId = eu.getDataFromExcel("ez", 10, 7);
+		currency = eu.getDataFromExcel("ez", 2, 4);
 		debitBetTypeId=1;
 
 		/* credit API */

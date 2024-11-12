@@ -19,7 +19,7 @@ public class Repeated_Authentication_1_Test extends BaseApiClass {
 
 	@Test
 	public void repeat_Auth_1_getURLValidTest() throws Throwable {
-		GetURLPojo gup = new GetURLPojo(playerId, platformId, "betvita", token, currencyCode,
+		GetURLPojo gup = new GetURLPojo(playerId, platformId, "betvita", playerToken, currencyCode,
 				javaLib.getCurrentTimeStamp());
 
 		RequestSpecification request = given().contentType(ContentType.JSON).body(gup);

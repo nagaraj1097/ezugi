@@ -25,7 +25,7 @@ public class Rollback_Before_Debit_6_Test extends BaseApiClass{
 	public void Rollback_Before_Debit_6_RollbackTest()
 			throws InvalidKeyException, JsonProcessingException, NoSuchAlgorithmException {
 
-		RollBackPojo rp = new RollBackPojo(operatorId, playerId, debitTransactionId, gameId, currentToken,
+		RollBackPojo rp = new RollBackPojo(operatorId, playerId, debitTransactionId, gameId, authToken,
 				rollbackAmount, debitBetTypeId, serverId, roundID, currency, seatId, platformId, tableId,
 				javaLib.getCurrentTimeStamp());
 

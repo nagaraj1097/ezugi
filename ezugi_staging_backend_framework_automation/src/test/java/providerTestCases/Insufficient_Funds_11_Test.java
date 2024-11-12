@@ -34,7 +34,7 @@ public class Insufficient_Funds_11_Test extends BaseApiClass {
 
 		double insuffbalance = 10000000.12;
 
-		DebitPojo dp = new DebitPojo(gameId, insuffbalance, platformId, serverId, debitTransactionId, currentToken,
+		DebitPojo dp = new DebitPojo(gameId, insuffbalance, platformId, serverId, debitTransactionId, authToken,
 				playerId, 1, tableId, seatId, currency, operatorId, roundID, javaLib.getCurrentTimeStamp());
 
 		String hash = javaLib.getgenerateHMACSHA256(map.writeValueAsString(dp), secretKey);

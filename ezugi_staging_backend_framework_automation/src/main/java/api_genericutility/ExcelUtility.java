@@ -15,7 +15,6 @@ public class ExcelUtility {
 		Workbook wb = WorkbookFactory.create(fis);
 		String data = wb.getSheet(sheet).getRow(row).getCell(col).getStringCellValue();
 		return data;
-
 	}
 
 	public void setDataIntoExcel(String sheetName, int rowNum, int celNum, String data) throws Throwable {

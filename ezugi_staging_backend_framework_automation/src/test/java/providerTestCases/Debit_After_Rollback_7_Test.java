@@ -26,7 +26,7 @@ public class Debit_After_Rollback_7_Test extends BaseApiClass {
 	public void Debit_After_Rollback_7_RollbackTest()
 			throws InvalidKeyException, JsonProcessingException, NoSuchAlgorithmException {
 
-		RollBackPojo rp = new RollBackPojo(operatorId, playerId, debitTransactionId, gameId, currentToken,
+		RollBackPojo rp = new RollBackPojo(operatorId, playerId, debitTransactionId, gameId, authToken,
 				rollbackAmount, debitBetTypeId, serverId, roundID, currency, seatId, platformId, tableId,
 				javaLib.getCurrentTimeStamp());
 
@@ -42,7 +42,7 @@ public class Debit_After_Rollback_7_Test extends BaseApiClass {
 	@Test(dependsOnMethods = "Debit_After_Rollback_7_RollbackTest")
 	public void Debit_After_Rollback_7_DebitValidTest() throws Throwable {
 
-		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, debitTransactionId, currentToken,
+		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, debitTransactionId, authToken,
 				playerId, 1, tableId, seatId, currency, operatorId, roundID, javaLib.getCurrentTimeStamp());
 
 		String hash = javaLib.getgenerateHMACSHA256(map.writeValueAsString(dp), secretKey);

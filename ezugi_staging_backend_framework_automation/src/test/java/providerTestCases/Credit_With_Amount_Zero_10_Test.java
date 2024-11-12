@@ -25,9 +25,9 @@ public class Credit_With_Amount_Zero_10_Test extends BaseApiClass {
 	@Test(priority = 1)
 	public void Credit_With_Amount_Zero_10_DebitValidTest() throws Throwable {
 
-		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, debitTransactionId, currentToken,
+		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, debitTransactionId, authToken,
 				playerId, 1, tableId, seatId, currency, operatorId, roundID, javaLib.getCurrentTimeStamp());
-
+		
 		String hash = javaLib.getgenerateHMACSHA256(map.writeValueAsString(dp), secretKey);
 
 		RequestSpecification header = given().contentType(ContentType.JSON).body(dp).header("hash", hash);
@@ -43,7 +43,7 @@ public class Credit_With_Amount_Zero_10_Test extends BaseApiClass {
 			throws InvalidKeyException, JsonProcessingException, NoSuchAlgorithmException {
 
 		CreditPojo cp = new CreditPojo(gameId, debitTransactionId, isEndRound, creditIndex, gameDataString, platformId,
-				serverId, javaLib.getUuid(), currentToken, playerId, returnReason, creditBetTypeId, tableId, seatId,
+				serverId, javaLib.getUuid(), authToken, playerId, returnReason, creditBetTypeId, tableId, seatId,
 				currency, creditAmount, operatorId, roundID, javaLib.getCurrentTimeStamp());
 
 		cp.setCreditAmount(0.0);

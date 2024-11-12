@@ -28,7 +28,7 @@ public class CreditAPITest extends BaseApiClass {
 
 		/* Debit API */
 
-		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, debitTransactionId, currentToken,
+		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, debitTransactionId, authToken,
 				playerId, debitBetTypeId, tableId, seatId, currency, operatorId, roundID, javaLib.getCurrentTimeStamp());
 	
 
@@ -42,7 +42,7 @@ public class CreditAPITest extends BaseApiClass {
 		/* Credit API */
 
 		CreditPojo cp = new CreditPojo(gameId, debitTransactionId, isEndRound, creditIndex, gameDataString, platformId,
-				serverId, javaLib.getUuid(), currentToken, playerId, returnReason, creditBetTypeId, tableId, seatId, currency,
+				serverId, javaLib.getUuid(), authToken, playerId, returnReason, creditBetTypeId, tableId, seatId, currency,
 				creditAmount, operatorId, roundID, javaLib.getCurrentTimeStamp());
 
 		String hashc = javaLib.getgenerateHMACSHA256(map.writeValueAsString(cp), secretKey);
@@ -58,7 +58,7 @@ public class CreditAPITest extends BaseApiClass {
 			throws InvalidKeyException, JsonProcessingException, NoSuchAlgorithmException {
 
 		CreditPojo cp = new CreditPojo(gameId, debitTransactionId, isEndRound, creditIndex, gameDataString, platformId,
-				serverId, javaLib.getUuid(), currentToken, playerId, returnReason, creditBetTypeId, tableId, seatId, currency,
+				serverId, javaLib.getUuid(), authToken, playerId, returnReason, creditBetTypeId, tableId, seatId, currency,
 				creditAmount, operatorId, roundID, javaLib.getCurrentTimeStamp());
 
 		String hashc = javaLib.getgenerateHMACSHA256(map.writeValueAsString(cp), secretKey);
@@ -84,7 +84,7 @@ public class CreditAPITest extends BaseApiClass {
 		requestBody.put("platformId", platformId);
 		requestBody.put("serverId", serverId);
 		requestBody.put("transactionId", javaLib.getUuid());
-		requestBody.put("token", currentToken);
+		requestBody.put("token", authToken);
 		requestBody.put("uid", playerId);
 		requestBody.put("returnReason", returnReason);
 		requestBody.put("betTypeID", creditBetTypeId);

@@ -21,7 +21,7 @@ public class Retry_For_Debit_3_Test extends BaseApiClass {
 	@Test(invocationCount = 2)
 	public void retry_For_Debit_3_debitValidTest() throws Throwable {
 
-		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, debitTransactionId, currentToken,
+		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, debitTransactionId, authToken,
 				playerId, 1, tableId, seatId, currency, operatorId, roundID, javaLib.getCurrentTimeStamp());
 
 		String hash = javaLib.getgenerateHMACSHA256(map.writeValueAsString(dp), secretKey);

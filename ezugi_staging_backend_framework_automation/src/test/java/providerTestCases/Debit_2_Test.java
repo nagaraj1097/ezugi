@@ -19,7 +19,7 @@ public class Debit_2_Test extends BaseApiClass {
 	@Test(priority = 1)
 	public void debit_2_DebitValidTest() throws Throwable {
 
-		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, debitTransactionId, currentToken,
+		DebitPojo dp = new DebitPojo(gameId, debitAmount, platformId, serverId, debitTransactionId, authToken,
 				playerId, 1, tableId, seatId, currency, operatorId, roundID, javaLib.getCurrentTimeStamp());
 
 		String hash = javaLib.getgenerateHMACSHA256(map.writeValueAsString(dp), secretKey);
