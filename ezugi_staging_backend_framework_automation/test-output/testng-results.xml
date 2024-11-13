@@ -1,154 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-12T14:52:56 IST" name="Default suite" finished-at="2024-11-12T14:53:40 IST" duration-ms="43947">
+  <suite started-at="2024-11-13T14:53:04 IST" name="Default suite" finished-at="2024-11-13T14:53:11 IST" duration-ms="6565">
     <groups>
     </groups>
-    <test started-at="2024-11-12T14:52:56 IST" name="Default test" finished-at="2024-11-12T14:53:40 IST" duration-ms="43947">
+    <test started-at="2024-11-13T14:53:04 IST" name="Default test" finished-at="2024-11-13T14:53:11 IST" duration-ms="6565">
+      <class name="authenticationTest.AuthenticationValidTest">
+        <test-method is-config="true" signature="variables()[pri:0, instance:authenticationTest.AuthenticationValidTest@6933b6c6]" started-at="2024-11-13T14:53:09 IST" name="variables" finished-at="2024-11-13T14:53:09 IST" duration-ms="254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- variables -->
+        <test-method signature="authenticationValidTest()[pri:0, instance:authenticationTest.AuthenticationValidTest@6933b6c6]" started-at="2024-11-13T14:53:09 IST" name="authenticationValidTest" finished-at="2024-11-13T14:53:11 IST" depends-on-methods="ezugi_api_Test.GetUrlAPITest.getURLValidTest" duration-ms="1160" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Mismatch in value for parameter: token expected [d628b6d5-cfe0-41d1-89c4-d4964e76995c] but found [2712dd32-8386-4610-b361-ebb1329f0aa5]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Mismatch in value for parameter: token expected [d628b6d5-cfe0-41d1-89c4-d4964e76995c] but found [2712dd32-8386-4610-b361-ebb1329f0aa5]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at api_genericutility.ApiResponseValidator2.validateResponse(ApiResponseValidator2.java:48)
+at authenticationTest.AuthenticationValidTest.authenticationValidTest(AuthenticationValidTest.java:42)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- authenticationValidTest -->
+      </class> <!-- authenticationTest.AuthenticationValidTest -->
       <class name="ezugi_api_Test.GetUrlAPITest">
-        <test-method is-config="true" signature="variables()[pri:0, instance:ezugi_api_Test.GetUrlAPITest@7fb4f2a9]" started-at="2024-11-12T14:52:56 IST" name="variables" finished-at="2024-11-12T14:52:57 IST" duration-ms="1375" status="PASS">
+        <test-method is-config="true" signature="variables()[pri:0, instance:ezugi_api_Test.GetUrlAPITest@503f91c3]" started-at="2024-11-13T14:53:04 IST" name="variables" finished-at="2024-11-13T14:53:05 IST" duration-ms="941" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- variables -->
-        <test-method signature="getURLAPIMissingParametersTest()[pri:0, instance:ezugi_api_Test.GetUrlAPITest@7fb4f2a9]" started-at="2024-11-12T14:52:57 IST" name="getURLAPIMissingParametersTest" finished-at="2024-11-12T14:53:14 IST" duration-ms="16307" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getURLAPIMissingParametersTest -->
-        <test-method is-config="true" signature="variables()[pri:0, instance:ezugi_api_Test.GetUrlAPITest@7fb4f2a9]" started-at="2024-11-12T14:53:14 IST" name="variables" finished-at="2024-11-12T14:53:14 IST" duration-ms="489" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="getURLInvalidOperatorIdTest(java.lang.String)[pri:0, instance:ezugi_api_Test.GetUrlAPITest@7fb4f2a9]" started-at="2024-11-12T14:53:14 IST" name="getURLInvalidOperatorIdTest" data-provider="testDataforString" finished-at="2024-11-12T14:53:17 IST" duration-ms="3084" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getURLInvalidOperatorIdTest -->
-        <test-method is-config="true" signature="variables()[pri:0, instance:ezugi_api_Test.GetUrlAPITest@7fb4f2a9]" started-at="2024-11-12T14:53:17 IST" name="variables" finished-at="2024-11-12T14:53:18 IST" duration-ms="358" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="getURLInvalidOperatorIdTest(java.lang.String)[pri:0, instance:ezugi_api_Test.GetUrlAPITest@7fb4f2a9]" started-at="2024-11-12T14:53:18 IST" name="getURLInvalidOperatorIdTest" data-provider="testDataforString" finished-at="2024-11-12T14:53:20 IST" duration-ms="2609" status="PASS">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getURLInvalidOperatorIdTest -->
-        <test-method is-config="true" signature="variables()[pri:0, instance:ezugi_api_Test.GetUrlAPITest@7fb4f2a9]" started-at="2024-11-12T14:53:20 IST" name="variables" finished-at="2024-11-12T14:53:21 IST" duration-ms="306" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="getURLInvalidOperatorIdTest(java.lang.String)[pri:0, instance:ezugi_api_Test.GetUrlAPITest@7fb4f2a9]" started-at="2024-11-12T14:53:21 IST" name="getURLInvalidOperatorIdTest" data-provider="testDataforString" finished-at="2024-11-12T14:53:23 IST" duration-ms="2576" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[84c5ce1d-e6b5-4e64-80c6-805118b11366]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getURLInvalidOperatorIdTest -->
-        <test-method is-config="true" signature="variables()[pri:0, instance:ezugi_api_Test.GetUrlAPITest@7fb4f2a9]" started-at="2024-11-12T14:53:23 IST" name="variables" finished-at="2024-11-12T14:53:23 IST" duration-ms="295" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="getURLInvalidPlayerIdTest(java.lang.String)[pri:0, instance:ezugi_api_Test.GetUrlAPITest@7fb4f2a9]" started-at="2024-11-12T14:53:23 IST" name="getURLInvalidPlayerIdTest" data-provider="testDataforString" finished-at="2024-11-12T14:53:25 IST" duration-ms="1515" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getURLInvalidPlayerIdTest -->
-        <test-method is-config="true" signature="variables()[pri:0, instance:ezugi_api_Test.GetUrlAPITest@7fb4f2a9]" started-at="2024-11-12T14:53:25 IST" name="variables" finished-at="2024-11-12T14:53:25 IST" duration-ms="278" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="getURLInvalidPlayerIdTest(java.lang.String)[pri:0, instance:ezugi_api_Test.GetUrlAPITest@7fb4f2a9]" started-at="2024-11-12T14:53:25 IST" name="getURLInvalidPlayerIdTest" data-provider="testDataforString" finished-at="2024-11-12T14:53:27 IST" duration-ms="1976" status="PASS">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getURLInvalidPlayerIdTest -->
-        <test-method is-config="true" signature="variables()[pri:0, instance:ezugi_api_Test.GetUrlAPITest@7fb4f2a9]" started-at="2024-11-12T14:53:27 IST" name="variables" finished-at="2024-11-12T14:53:28 IST" duration-ms="274" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="getURLInvalidPlayerIdTest(java.lang.String)[pri:0, instance:ezugi_api_Test.GetUrlAPITest@7fb4f2a9]" started-at="2024-11-12T14:53:28 IST" name="getURLInvalidPlayerIdTest" data-provider="testDataforString" finished-at="2024-11-12T14:53:30 IST" duration-ms="2619" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[015290dd-7753-465b-a254-0f34d3a6f759]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getURLInvalidPlayerIdTest -->
-        <test-method is-config="true" signature="variables()[pri:0, instance:ezugi_api_Test.GetUrlAPITest@7fb4f2a9]" started-at="2024-11-12T14:53:30 IST" name="variables" finished-at="2024-11-12T14:53:30 IST" duration-ms="247" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="getURLInvalidTokenTest(java.lang.String)[pri:0, instance:ezugi_api_Test.GetUrlAPITest@7fb4f2a9]" started-at="2024-11-12T14:53:30 IST" name="getURLInvalidTokenTest" data-provider="testDataforString" finished-at="2024-11-12T14:53:32 IST" duration-ms="1860" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getURLInvalidTokenTest -->
-        <test-method is-config="true" signature="variables()[pri:0, instance:ezugi_api_Test.GetUrlAPITest@7fb4f2a9]" started-at="2024-11-12T14:53:32 IST" name="variables" finished-at="2024-11-12T14:53:32 IST" duration-ms="237" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="getURLInvalidTokenTest(java.lang.String)[pri:0, instance:ezugi_api_Test.GetUrlAPITest@7fb4f2a9]" started-at="2024-11-12T14:53:32 IST" name="getURLInvalidTokenTest" data-provider="testDataforString" finished-at="2024-11-12T14:53:34 IST" duration-ms="1242" status="PASS">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getURLInvalidTokenTest -->
-        <test-method is-config="true" signature="variables()[pri:0, instance:ezugi_api_Test.GetUrlAPITest@7fb4f2a9]" started-at="2024-11-12T14:53:34 IST" name="variables" finished-at="2024-11-12T14:53:34 IST" duration-ms="241" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="getURLInvalidTokenTest(java.lang.String)[pri:0, instance:ezugi_api_Test.GetUrlAPITest@7fb4f2a9]" started-at="2024-11-12T14:53:34 IST" name="getURLInvalidTokenTest" data-provider="testDataforString" finished-at="2024-11-12T14:53:36 IST" duration-ms="2406" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[66e04264-e690-42f1-a376-9a1c7b016615]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getURLInvalidTokenTest -->
-        <test-method is-config="true" signature="variables()[pri:0, instance:ezugi_api_Test.GetUrlAPITest@7fb4f2a9]" started-at="2024-11-12T14:53:36 IST" name="variables" finished-at="2024-11-12T14:53:37 IST" duration-ms="233" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="getURLValidTest()[pri:1, instance:ezugi_api_Test.GetUrlAPITest@7fb4f2a9]" started-at="2024-11-12T14:53:37 IST" name="getURLValidTest" finished-at="2024-11-12T14:53:40 IST" duration-ms="3285" status="PASS">
+        <test-method signature="getURLValidTest()[pri:1, instance:ezugi_api_Test.GetUrlAPITest@503f91c3]" started-at="2024-11-13T14:53:05 IST" name="getURLValidTest" finished-at="2024-11-13T14:53:09 IST" duration-ms="4162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getURLValidTest -->

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\User183\AppData\Local\Temp\testng-eclipse-1856098984\testng-customsuite.xml</span>
+                    <span>C:\Users\User183\AppData\Local\Temp\testng-eclipse-1560210870\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods,   11 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="authenticationTest.AuthenticationValidTest" class="method navigator-link" hash-for-method="authenticationValidTest">authenticationValidTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,56 +115,6 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="ezugi_api_Test.GetUrlAPITest" class="method navigator-link" hash-for-method="getURLAPIMissingParametersTest">getURLAPIMissingParametersTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="ezugi_api_Test.GetUrlAPITest" class="method navigator-link" hash-for-method="getURLInvalidOperatorIdTest(null)">getURLInvalidOperatorIdTest(null)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="ezugi_api_Test.GetUrlAPITest" class="method navigator-link" hash-for-method="getURLInvalidOperatorIdTest()">getURLInvalidOperatorIdTest()</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="ezugi_api_Test.GetUrlAPITest" class="method navigator-link" hash-for-method="getURLInvalidOperatorIdTest(84c5ce1d-e6b5-4e64-80c6-805118b11366)">getURLInvalidOperatorIdTest(84c5ce1d-e6b5-4e64-80c6-805118b11366)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="ezugi_api_Test.GetUrlAPITest" class="method navigator-link" hash-for-method="getURLInvalidPlayerIdTest()">getURLInvalidPlayerIdTest()</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="ezugi_api_Test.GetUrlAPITest" class="method navigator-link" hash-for-method="getURLInvalidPlayerIdTest(null)">getURLInvalidPlayerIdTest(null)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="ezugi_api_Test.GetUrlAPITest" class="method navigator-link" hash-for-method="getURLInvalidPlayerIdTest(015290dd-7753-465b-a254-0f34d3a6f759)">getURLInvalidPlayerIdTest(015290dd-7753-465b-a254-0f34d3a6f759)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="ezugi_api_Test.GetUrlAPITest" class="method navigator-link" hash-for-method="getURLInvalidTokenTest()">getURLInvalidTokenTest()</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="ezugi_api_Test.GetUrlAPITest" class="method navigator-link" hash-for-method="getURLInvalidTokenTest(null)">getURLInvalidTokenTest(null)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="ezugi_api_Test.GetUrlAPITest" class="method navigator-link" hash-for-method="getURLInvalidTokenTest(66e04264-e690-42f1-a376-9a1c7b016615)">getURLInvalidTokenTest(66e04264-e690-42f1-a376-9a1c7b016615)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="ezugi_api_Test.GetUrlAPITest" class="method navigator-link" hash-for-method="getURLValidTest">getURLValidTest</a> <!-- method navigator-link -->
@@ -168,91 +132,61 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">authenticationTest.AuthenticationValidTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="authenticationValidTest">
+                  </a> <!-- authenticationValidTest -->
+                  <span class="method-name">authenticationValidTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Mismatch in value for parameter: token expected [d628b6d5-cfe0-41d1-89c4-d4964e76995c] but found [2712dd32-8386-4610-b361-ebb1329f0aa5]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at api_genericutility.ApiResponseValidator2.validateResponse(ApiResponseValidator2.java:48)
+	at authenticationTest.AuthenticationValidTest.authenticationValidTest(AuthenticationValidTest.java:42)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">ezugi_api_Test.GetUrlAPITest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getURLAPIMissingParametersTest">
-                  </a> <!-- getURLAPIMissingParametersTest -->
-                  <span class="method-name">getURLAPIMissingParametersTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="getURLInvalidOperatorIdTest(null)">
-                  </a> <!-- getURLInvalidOperatorIdTest(null) -->
-                  <span class="method-name">getURLInvalidOperatorIdTest</span>
-                  <span class="parameters">(null)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="getURLInvalidOperatorIdTest()">
-                  </a> <!-- getURLInvalidOperatorIdTest() -->
-                  <span class="method-name">getURLInvalidOperatorIdTest</span>
-                  <span class="parameters">()</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="getURLInvalidOperatorIdTest(84c5ce1d-e6b5-4e64-80c6-805118b11366)">
-                  </a> <!-- getURLInvalidOperatorIdTest(84c5ce1d-e6b5-4e64-80c6-805118b11366) -->
-                  <span class="method-name">getURLInvalidOperatorIdTest</span>
-                  <span class="parameters">(84c5ce1d-e6b5-4e64-80c6-805118b11366)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="getURLInvalidPlayerIdTest()">
-                  </a> <!-- getURLInvalidPlayerIdTest() -->
-                  <span class="method-name">getURLInvalidPlayerIdTest</span>
-                  <span class="parameters">()</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="getURLInvalidPlayerIdTest(null)">
-                  </a> <!-- getURLInvalidPlayerIdTest(null) -->
-                  <span class="method-name">getURLInvalidPlayerIdTest</span>
-                  <span class="parameters">(null)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="getURLInvalidPlayerIdTest(015290dd-7753-465b-a254-0f34d3a6f759)">
-                  </a> <!-- getURLInvalidPlayerIdTest(015290dd-7753-465b-a254-0f34d3a6f759) -->
-                  <span class="method-name">getURLInvalidPlayerIdTest</span>
-                  <span class="parameters">(015290dd-7753-465b-a254-0f34d3a6f759)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="getURLInvalidTokenTest()">
-                  </a> <!-- getURLInvalidTokenTest() -->
-                  <span class="method-name">getURLInvalidTokenTest</span>
-                  <span class="parameters">()</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="getURLInvalidTokenTest(null)">
-                  </a> <!-- getURLInvalidTokenTest(null) -->
-                  <span class="method-name">getURLInvalidTokenTest</span>
-                  <span class="parameters">(null)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="getURLInvalidTokenTest(66e04264-e690-42f1-a376-9a1c7b016615)">
-                  </a> <!-- getURLInvalidTokenTest(66e04264-e690-42f1-a376-9a1c7b016615) -->
-                  <span class="method-name">getURLInvalidTokenTest</span>
-                  <span class="parameters">(66e04264-e690-42f1-a376-9a1c7b016615)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="getURLValidTest">
@@ -265,7 +199,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\User183\AppData\Local\Temp\testng-eclipse-1856098984\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\User183\AppData\Local\Temp\testng-eclipse-1560210870\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -274,7 +208,16 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;ezugi_api_Test.GetUrlAPITest&quot;/&gt;
+      &lt;class name=&quot;authenticationTest.AuthenticationValidTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;authenticationValidTest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- authenticationTest.AuthenticationValidTest --&gt;
+      &lt;class name=&quot;ezugi_api_Test.GetUrlAPITest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;getURLValidTest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- ezugi_api_Test.GetUrlAPITest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -288,7 +231,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Default test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -314,56 +257,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(11);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'getURLAPIMissingParametersTest')
+data.setCell(0, 1, 'getURLValidTest')
 data.setCell(0, 2, 'ezugi_api_Test.GetUrlAPITest')
-data.setCell(0, 3, 16307);
+data.setCell(0, 3, 4162);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'getURLValidTest')
-data.setCell(1, 2, 'ezugi_api_Test.GetUrlAPITest')
-data.setCell(1, 3, 3285);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'getURLInvalidOperatorIdTest')
-data.setCell(2, 2, 'ezugi_api_Test.GetUrlAPITest')
-data.setCell(2, 3, 3084);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'getURLInvalidPlayerIdTest')
-data.setCell(3, 2, 'ezugi_api_Test.GetUrlAPITest')
-data.setCell(3, 3, 2619);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'getURLInvalidOperatorIdTest')
-data.setCell(4, 2, 'ezugi_api_Test.GetUrlAPITest')
-data.setCell(4, 3, 2609);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'getURLInvalidOperatorIdTest')
-data.setCell(5, 2, 'ezugi_api_Test.GetUrlAPITest')
-data.setCell(5, 3, 2576);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'getURLInvalidTokenTest')
-data.setCell(6, 2, 'ezugi_api_Test.GetUrlAPITest')
-data.setCell(6, 3, 2406);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'getURLInvalidPlayerIdTest')
-data.setCell(7, 2, 'ezugi_api_Test.GetUrlAPITest')
-data.setCell(7, 3, 1976);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'getURLInvalidTokenTest')
-data.setCell(8, 2, 'ezugi_api_Test.GetUrlAPITest')
-data.setCell(8, 3, 1860);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'getURLInvalidPlayerIdTest')
-data.setCell(9, 2, 'ezugi_api_Test.GetUrlAPITest')
-data.setCell(9, 3, 1515);
-data.setCell(10, 0, 10)
-data.setCell(10, 1, 'getURLInvalidTokenTest')
-data.setCell(10, 2, 'ezugi_api_Test.GetUrlAPITest')
-data.setCell(10, 3, 1242);
+data.setCell(1, 1, 'authenticationValidTest')
+data.setCell(1, 2, 'authenticationTest.AuthenticationValidTest')
+data.setCell(1, 3, 1160);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 39 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -378,9 +285,22 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">ezugi_api_Test.GetUrlAPITest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">getURLInvalidOperatorIdTest</span>
+                <br/>
+                <span class="ignored-method-name">getURLInvalidPlayerIdTest</span>
+                <br/>
+                <span class="ignored-method-name">getURLAPIMissingParametersTest</span>
+                <br/>
+                <span class="ignored-method-name">getURLInvalidTokenTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -395,88 +315,21 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">getURLAPIMissingParametersTest</span>
-                <span class="method-start">1377 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">variables</span>
-                <span class="method-start">17699 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getURLInvalidOperatorIdTest()</span>
-                <span class="method-start">18188 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">variables</span>
-                <span class="method-start">21276 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getURLInvalidOperatorIdTest(null)</span>
-                <span class="method-start">21634 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">variables</span>
-                <span class="method-start">24248 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getURLInvalidOperatorIdTest(84c5ce1d-e6b5-4e64-80c6-805118b11366)</span>
-                <span class="method-start">24554 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">variables</span>
-                <span class="method-start">27138 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getURLInvalidPlayerIdTest()</span>
-                <span class="method-start">27434 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">variables</span>
-                <span class="method-start">28953 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getURLInvalidPlayerIdTest(null)</span>
-                <span class="method-start">29232 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">variables</span>
-                <span class="method-start">31213 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getURLInvalidPlayerIdTest(015290dd-7753-465b-a254-0f34d3a6f759)</span>
-                <span class="method-start">31490 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">variables</span>
-                <span class="method-start">34115 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getURLInvalidTokenTest()</span>
-                <span class="method-start">34362 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">variables</span>
-                <span class="method-start">36227 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getURLInvalidTokenTest(null)</span>
-                <span class="method-start">36465 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">variables</span>
-                <span class="method-start">37710 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getURLInvalidTokenTest(66e04264-e690-42f1-a376-9a1c7b016615)</span>
-                <span class="method-start">37952 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">variables</span>
-                <span class="method-start">40363 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <span class="method-name">getURLValidTest</span>
-                <span class="method-start">40597 ms</span>
+                <span class="method-start">943 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">authenticationTest.AuthenticationValidTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">variables</span>
+                <span class="method-start">5114 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">authenticationValidTest</span>
+                <span class="method-start">5368 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

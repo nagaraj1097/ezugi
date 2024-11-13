@@ -7,6 +7,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -75,7 +76,7 @@ public class BaseApiClass {
 		currencyCode = eu.getDataFromExcel("ez", 2, 4);
 
 		/* AuthenticationTest */
-//		playerTokenAtLaunch = eu.getDataFromExcel("ez", 2, 3);
+		playerTokenAtLaunch = eu.getDataFromExcel("ez", 6, 0);
 
 		/* Debit API */
 
@@ -102,7 +103,16 @@ public class BaseApiClass {
 		/* RollBack API */
 
 		rollbackAmount = 100.11;
-
 	}
+	
+	
+	/* data for invalid, null and empty String */
+
+	@DataProvider(name = "testDataforString")
+	public Object[][] dataProviderString() {
+		return new Object[][] { { "" }, { null }, { javaLib.getUuid() } };
+	}
+	
+	
 
 }

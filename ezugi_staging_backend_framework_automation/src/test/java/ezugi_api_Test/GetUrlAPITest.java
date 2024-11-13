@@ -19,33 +19,29 @@ import pojoutility.GetURLPojo;
 
 public class GetUrlAPITest extends BaseApiClass {
 
-	String operatorId = "betvita";
+	String getURLOperatorId = "betvita";
 
 	/* verify getURL APi with all valid parameters */
 
 	@Test(priority = 1)
 	public void getURLValidTest() throws Throwable {
-		GetURLPojo gup = new GetURLPojo(playerId, platformId, operatorId, playerToken, currencyCode,
+		GetURLPojo gup = new GetURLPojo(playerId, platformId, getURLOperatorId, playerToken, currencyCode,
 				javaLib.getCurrentTimeStamp());
 		rLib.performPost(baseUrl, EndPoints.getURL, gup);
 		UtilityClassObject.getResponse().then().assertThat().statusCode(200).assertThat().contentType(ContentType.JSON);
-		String launchToken = (String) jsonLib.getValueJsonFromBody(UtilityClassObject.getResponse(), "launchToken");
-		ll.getLowLevelLogInfo("launch Token: " + launchToken);
-		playerTokenAtLaunch = launchToken;
-	}
-
-	/* data for invalid, null and empty String */
-
-	@DataProvider(name = "testDataforString")
-	public Object[][] dataProviderString() {
-		return new Object[][] { { "" }, { null }, { javaLib.getUuid() } };
+		String launchToken = String.valueOf(jsonLib.getValueJsonFromBody(UtilityClassObject.getResponse(), "launchToken"));
+		operatorId = String.valueOf(jsonLib.getValueJsonFromBody(UtilityClassObject.getResponse(), "operatorId")) ;
+		ll.getLowLevelLogInfo("launch Token:  " + launchToken);
+		ll.getLowLevelLogInfo("operatorId:  " + operatorId);
+		eu.setDataIntoExcel("ez", 2, 2, operatorId);
+		eu.setDataIntoExcel("ez", 6, 0, launchToken);
 	}
 
 	/* verify getURL APi with invalid token */
 	@Test(dataProvider = "testDataforString")
 	public void getURLInvalidTokenTest(String data) throws Throwable {
 
-		GetURLPojo gup = new GetURLPojo(playerId, platformId, operatorId, playerToken, currencyCode,
+		GetURLPojo gup = new GetURLPojo(playerId, platformId, getURLOperatorId, playerToken, currencyCode,
 				javaLib.getCurrentTimeStamp());
 		/* passing data to setter method */
 		gup.setToken(data);
@@ -59,7 +55,7 @@ public class GetUrlAPITest extends BaseApiClass {
 	@Test(dataProvider = "testDataforString")
 	public void getURLInvalidPlayerIdTest(String data) throws Throwable {
 
-		GetURLPojo gup = new GetURLPojo(playerId, platformId, operatorId, playerToken, currencyCode,
+		GetURLPojo gup = new GetURLPojo(playerId, platformId, getURLOperatorId, playerToken, currencyCode,
 				javaLib.getCurrentTimeStamp());
 
 		ll.getLowLevelLogInfo("Testing the playerId value using :" + data);
@@ -73,7 +69,7 @@ public class GetUrlAPITest extends BaseApiClass {
 	@Test(dataProvider = "testDataforString")
 	public void getURLInvalidOperatorIdTest(String data) throws Throwable {
 
-		GetURLPojo gup = new GetURLPojo(playerId, platformId, operatorId, playerToken, currencyCode,
+		GetURLPojo gup = new GetURLPojo(playerId, platformId, getURLOperatorId, playerToken, currencyCode,
 				javaLib.getCurrentTimeStamp());
 		gup.setOperatorId(data);
 		ll.getLowLevelLogInfo("Testing the token value using: " + data);
@@ -88,7 +84,7 @@ public class GetUrlAPITest extends BaseApiClass {
 		HashMap<String, Object> requestBody = new HashMap<>();
 
 		requestBody.put("playerId", playerId);
-		requestBody.put("operatorId", operatorId);
+		requestBody.put("operatorId", getURLOperatorId);
 		requestBody.put("token", playerToken);
 		requestBody.put("currencyCode", currencyCode);
 		requestBody.put("timestamp", javaLib.getCurrentTimeStamp());

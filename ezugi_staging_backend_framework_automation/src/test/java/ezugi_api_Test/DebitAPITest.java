@@ -54,7 +54,7 @@ public class DebitAPITest extends BaseApiClass {
 
 		Response resp = given().contentType(ContentType.JSON).body(dp).header("hash", hash).when()
 				.post(baseUrl + EndPoints.debit);
-		ll.getLowLevelReportOfReq_Res_ResTime(resp, dp);
+
 		resp.then().assertThat().statusCode(200).assertThat().contentType(ContentType.JSON);
 
 	}
@@ -72,7 +72,7 @@ public class DebitAPITest extends BaseApiClass {
 
 		Response resp = given().contentType(ContentType.JSON).body(dp).header("hash", hash).when()
 				.post(baseUrl + EndPoints.debit);
-		ll.getLowLevelReportOfReq_Res_ResTime(resp, dp);
+
 		resp.then().assertThat().statusCode(200).assertThat().contentType(ContentType.JSON);
 
 	}
@@ -92,7 +92,7 @@ public class DebitAPITest extends BaseApiClass {
 
 		Response resp = given().contentType(ContentType.JSON).body(dp).header("hash", hash).when()
 				.post(baseUrl + EndPoints.debit);
-		ll.getLowLevelReportOfReq_Res_ResTime(resp, dp);
+
 		resp.then().assertThat().statusCode(400).assertThat().contentType(ContentType.JSON);
 
 	}

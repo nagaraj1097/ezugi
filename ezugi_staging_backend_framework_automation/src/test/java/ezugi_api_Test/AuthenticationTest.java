@@ -4,6 +4,7 @@ import static io.restassured.RestAssured.given;
 
 import java.util.HashMap;
 
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import api_endpoints.EndPoints;
@@ -14,6 +15,9 @@ import io.restassured.response.Response;
 import pojoutility.AuthenticationPojo;
 
 public class AuthenticationTest extends BaseApiClass {
+	
+	String headerHash ="hash";
+	
 	/* Verify Authentication API with all valid parameters */
 
 	@Test(priority = 0)
@@ -21,31 +25,25 @@ public class AuthenticationTest extends BaseApiClass {
 
 		AuthenticationPojo ap = new AuthenticationPojo(platformId, operatorId, playerTokenAtLaunch,
 				javaLib.getCurrentTimeStamp());
-
 		String hash = javaLib.getgenerateHMACSHA256(map.writeValueAsString(ap), secretKey);
-
-		rLib.performPostWithHeader(baseUrl, EndPoints.authentication, ap, "hash", hash);
-
+		rLib.performPostWithHeader(baseUrl, EndPoints.authentication, ap, headerHash, hash);
 		String token = (String) jsonLib.getValueJsonFromBody(UtilityClassObject.getResponse(), "token");
-		eu.setDataIntoExcel("ez", 6, 0, token);
-
+		ll.getLowLevelLogInfo(token);
+		authToken=token;
 	}
 
 	/* Verify Authentication API with invalid launch token */
 
-	@Test
-	public void authenticationInvalidLaunchTokenTest() throws Throwable {
+	@Test(dataProvider = "testDataforString")
+	public void authenticationInvalidLaunchTokenTest(String data) throws Throwable {
 
 		AuthenticationPojo ap = new AuthenticationPojo(platformId, operatorId, playerTokenAtLaunch,
 				javaLib.getCurrentTimeStamp());
-		ap.setToken(javaLib.getUuid());
+		ap.setToken(data);
 
 		String hash = javaLib.getgenerateHMACSHA256(map.writeValueAsString(ap), secretKey);
-
-		Response resp = given().contentType(ContentType.JSON).body(ap).header("hash", hash).when()
-				.post(baseUrl + EndPoints.authentication);
-		ll.getLowLevelReportOfReq_Res_ResTime(resp, ap);
-		resp.then().assertThat().statusCode(400).assertThat().contentType(ContentType.JSON);
+		rLib.performPostWithHeader(baseUrl, EndPoints.authentication, ap, headerHash, hash);
+		UtilityClassObject.getResponse().then().assertThat().statusCode(400).assertThat().contentType(ContentType.JSON);
 
 	}
 
@@ -62,7 +60,7 @@ public class AuthenticationTest extends BaseApiClass {
 
 		Response resp = given().contentType(ContentType.JSON).body(ap).header("hash", hash).when()
 				.post(baseUrl + EndPoints.authentication);
-		ll.getLowLevelReportOfReq_Res_ResTime(resp, ap);
+
 		resp.then().assertThat().statusCode(400).assertThat().contentType(ContentType.JSON);
 
 	}
@@ -80,7 +78,7 @@ public class AuthenticationTest extends BaseApiClass {
 
 		Response resp = given().contentType(ContentType.JSON).body(ap).header("hash", hash).when()
 				.post(baseUrl + EndPoints.authentication);
-		ll.getLowLevelReportOfReq_Res_ResTime(resp, ap);
+
 		resp.then().assertThat().statusCode(400).assertThat().contentType(ContentType.JSON);
 
 	}

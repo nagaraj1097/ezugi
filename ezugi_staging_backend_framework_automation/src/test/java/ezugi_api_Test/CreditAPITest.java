@@ -36,7 +36,7 @@ public class CreditAPITest extends BaseApiClass {
 
 		Response resp = given().contentType(ContentType.JSON).body(dp).header("hash", hash).when()
 				.post(baseUrl + EndPoints.debit);
-		ll.getLowLevelReportOfReq_Res_ResTime(resp, dp);
+
 		resp.then().assertThat().statusCode(200).assertThat().contentType(ContentType.JSON);
 
 		/* Credit API */
@@ -49,7 +49,7 @@ public class CreditAPITest extends BaseApiClass {
 
 		Response respC = given().contentType(ContentType.JSON).body(cp).header("hash", hashc).when()
 				.post(baseUrl + EndPoints.credit);
-		ll.getLowLevelReportOfReq_Res_ResTime(resp, cp);
+
 		respC.then().assertThat().statusCode(200).assertThat().contentType(ContentType.JSON);
 
 	}
@@ -65,7 +65,7 @@ public class CreditAPITest extends BaseApiClass {
 
 		Response resp = given().contentType(ContentType.JSON).body(cp).header("hash", hashc).when()
 				.post(baseUrl + EndPoints.credit);
-		ll.getLowLevelReportOfReq_Res_ResTime(resp, cp);
+
 		resp.then().assertThat().statusCode(200).assertThat().contentType(ContentType.JSON);
 
 	}

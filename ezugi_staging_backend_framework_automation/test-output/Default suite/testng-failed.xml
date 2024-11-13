@@ -5,10 +5,16 @@
     <classes>
       <class name="ezugi_api_Test.GetUrlAPITest">
         <methods>
-          <include name="getURLAPIMissingParametersTest"/>
+          <include name="getURLValidTest"/>
           <include name="variables"/>
         </methods>
       </class> <!-- ezugi_api_Test.GetUrlAPITest -->
+      <class name="authenticationTest.AuthenticationValidTest">
+        <methods>
+          <include name="variables"/>
+          <include name="authenticationValidTest"/>
+        </methods>
+      </class> <!-- authenticationTest.AuthenticationValidTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

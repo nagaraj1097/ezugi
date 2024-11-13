@@ -34,7 +34,7 @@ public class RollbackAPITest extends BaseApiClass {
 
 		Response resp = given().contentType(ContentType.JSON).body(rp).header("hash", hash).when()
 				.post(baseUrl + EndPoints.rollback);
-		ll.getLowLevelReportOfReq_Res_ResTime(resp, rp);
+
 		resp.then().assertThat().statusCode(200).assertThat().contentType(ContentType.JSON);
 
 	}
