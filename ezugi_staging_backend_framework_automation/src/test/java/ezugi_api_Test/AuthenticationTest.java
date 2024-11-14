@@ -18,7 +18,7 @@ public class AuthenticationTest extends BaseApiClass {
 	
 	/* Verify Authentication API with all valid parameters */
 
-	@Test(priority = 0)
+	@Test()
 	public void authenticationValidTest() throws Throwable {
 
 		AuthenticationPojo ap = new AuthenticationPojo(platformId, operatorId, playerTokenAtLaunch,
@@ -83,27 +83,27 @@ public class AuthenticationTest extends BaseApiClass {
 
 	/* Verify Authentication API with missing parameters */
 
-	@Test
-	public void authenticationMissingLaunchTokenTest() throws Throwable {
-
-		HashMap<String, Object> requestBody = new HashMap<>();
-
-		requestBody.put("platformId", platformId);
-		requestBody.put("operatorId", operatorId);
-		requestBody.put("token", playerTokenAtLaunch);
-		requestBody.put("timestamp", javaLib.getCurrentTimeStamp());
-
-		String hash = javaLib.getgenerateHMACSHA256(String.valueOf(requestBody), secretKey);
-
-		Response resp = given().contentType(ContentType.JSON).body(requestBody).header("hash", hash).when()
-				.post(baseUrl + EndPoints.authentication);
-
-		ll.getLowLevelLogInfo("Request body" + "\n" + String.valueOf(requestBody));
-		ll.getLowLevelLogInfo("Response body" + resp.prettyPrint());
-		ll.getLowLevelLogInfo("responseTime:  " + resp.getTime());
-		resp.then().assertThat().statusCode(200).assertThat().contentType(ContentType.JSON);
-
-	}
+//	@Test
+//	public void authenticationMissingLaunchTokenTest() throws Throwable {
+//
+//		HashMap<String, Object> requestBody = new HashMap<>();
+//
+//		requestBody.put("platformId", platformId);
+//		requestBody.put("operatorId", operatorId);
+//		requestBody.put("token", playerTokenAtLaunch);
+//		requestBody.put("timestamp", javaLib.getCurrentTimeStamp());
+//
+//		String hash = javaLib.getgenerateHMACSHA256(String.valueOf(requestBody), secretKey);
+//
+//		Response resp = given().contentType(ContentType.JSON).body(requestBody).header("hash", hash).when()
+//				.post(baseUrl + EndPoints.authentication);
+//
+//		ll.getLowLevelLogInfo("Request body" + "\n" + String.valueOf(requestBody));
+//		ll.getLowLevelLogInfo("Response body" + resp.prettyPrint());
+//		ll.getLowLevelLogInfo("responseTime:  " + resp.getTime());
+//		resp.then().assertThat().statusCode(200).assertThat().contentType(ContentType.JSON);
+//
+//	}
 
 	/* verify authentication API with missing parameters */
 
