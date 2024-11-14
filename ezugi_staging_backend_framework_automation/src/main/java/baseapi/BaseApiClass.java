@@ -18,7 +18,7 @@ public class BaseApiClass {
     public ObjectMapper map = new ObjectMapper();
 
     public ExcelUtility eu = new ExcelUtility();
-    public FileUtility fLib = new FileUtility();
+//    public FileUtility fLib = new FileUtility();
     public JsonUtility jsonLib = new JsonUtility();
     public LowLevelLogs ll = new LowLevelLogs();
     public JavaUtility javaLib = new JavaUtility();
