@@ -25,7 +25,6 @@ public class AuthenticationValidTest extends BaseApiClass {
 		rLib.performPostWithHeader(baseUrl, EndPoints.authentication, ap, headerHash, hash);
 		String token = (String) jsonLib.getValueJsonFromBody(UtilityClassObject.getResponse(), "token");
 		ll.getLowLevelLogInfo("Authentication token:	"+token);
-		
 		eu.setDataIntoExcel("ez", 6, 1, token);
 		
 
