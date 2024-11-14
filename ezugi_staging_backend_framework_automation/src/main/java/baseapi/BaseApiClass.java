@@ -31,10 +31,7 @@ public class BaseApiClass {
     public String operatorId;
     public String playerToken;
 
-    public String clientType;
-    public String selectGame;
-    public int openTable;
-    public int tableLimits;
+
     public int platformId;
     public int serverId;
     public int gameId;

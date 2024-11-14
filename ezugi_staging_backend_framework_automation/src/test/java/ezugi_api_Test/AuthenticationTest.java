@@ -8,8 +8,6 @@ import io.restassured.response.Response;
 import org.testng.annotations.Test;
 import pojoutility.AuthenticationPojo;
 
-import java.util.HashMap;
-
 import static io.restassured.RestAssured.given;
 
 public class AuthenticationTest extends BaseApiClass {
