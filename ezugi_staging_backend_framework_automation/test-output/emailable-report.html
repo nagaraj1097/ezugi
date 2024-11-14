@@ -9,16 +9,13 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">6,565</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">4,041</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">authenticationTest.AuthenticationValidTest</td><td><a href="#m0">authenticationValidTest</a></td><td rowspan="1">1731489789893</td><td rowspan="1">1160</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">ezugi_api_Test.GetUrlAPITest</td><td><a href="#m1">getURLValidTest</a></td><td rowspan="1">1731489785468</td><td rowspan="1">4162</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">providerTest.DebitTest</td><td><a href="#m0">debitValidTest</a></td><td rowspan="1">1731563940097</td><td rowspan="1">3170</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">authenticationTest.AuthenticationValidTest#authenticationValidTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
-	Mismatch in value for parameter: token expected [d628b6d5-cfe0-41d1-89c4-d4964e76995c] but found [2712dd32-8386-4610-b361-ebb1329f0aa5]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at api_genericutility.ApiResponseValidator2.validateResponse(ApiResponseValidator2.java:48)
-	at authenticationTest.AuthenticationValidTest.authenticationValidTest(AuthenticationValidTest.java:42)
+<h2>Default test</h2><h3 id="m0">providerTest.DebitTest#debitValidTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader &apos;bootstrap&apos;)
+	at baseapi.BaseApiClass.getBalance(BaseApiClass.java:125)
+	at providerTest.DebitTest.debitValidTest(DebitTest.java:19)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -46,6 +43,5 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">ezugi_api_Test.GetUrlAPITest#getURLValidTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

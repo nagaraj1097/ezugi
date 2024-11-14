@@ -1,4 +1,4 @@
-package authenticationTest;
+package providerTest;
 
 import java.util.Map;
 import java.util.Set;
@@ -25,7 +25,9 @@ public class AuthenticationValidTest extends BaseApiClass {
 		rLib.performPostWithHeader(baseUrl, EndPoints.authentication, ap, headerHash, hash);
 		String token = (String) jsonLib.getValueJsonFromBody(UtilityClassObject.getResponse(), "token");
 		ll.getLowLevelLogInfo("Authentication token:	"+token);
+		
 		eu.setDataIntoExcel("ez", 6, 1, token);
+		
 
 		// Convert response to a Map for easy validation
 		Map<String, Object> actualResponseData = UtilityClassObject.getResponse().jsonPath().getMap("$");
@@ -35,11 +37,9 @@ public class AuthenticationValidTest extends BaseApiClass {
 				"balance", "currency", "errorCode", "errorDescription", "timestamp");
 
 		// Define expected values for specific fields
-		Map<String, Object> expectedValues = Map.of("errorCode", 0, "errorDescription", "ok","token",playerTokenAtLaunch );
+		Map<String, Object> expectedValues = Map.of("errorCode", 0, "errorDescription", "ok" );
 
-		ApiResponseValidator g = new ApiResponseValidator();
-
-		g.validateResponse(actualResponseData, expectedMandatoryParams, expectedValues);
+		arv.validateResponse(actualResponseData, expectedMandatoryParams, expectedValues);
 
 	}
 

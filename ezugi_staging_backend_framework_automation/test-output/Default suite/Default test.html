@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Nov 13 14:53:04 IST 2024</td>
+<td>Started on:</td><td>Thu Nov 14 11:28:59 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>6 seconds (6565 ms)</td>
+<tr><td>Total time:</td><td>4 seconds (4041 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,13 +76,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='authenticationTest.AuthenticationValidTest.authenticationValidTest()'><b>authenticationValidTest</b><br>Test class: authenticationTest.AuthenticationValidTest</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	Mismatch in value for parameter: token expected [d628b6d5-cfe0-41d1-89c4-d4964e76995c] but found [2712dd32-8386-4610-b361-ebb1329f0aa5]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at api_genericutility.ApiResponseValidator2.validateResponse(ApiResponseValidator2.java:48)
-	at authenticationTest.AuthenticationValidTest.authenticationValidTest(AuthenticationValidTest.java:42)
+<td title='providerTest.DebitTest.debitValidTest()'><b>debitValidTest</b><br>Test class: providerTest.DebitTest</td>
+<td><div><pre>java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader &apos;bootstrap&apos;)
+	at baseapi.BaseApiClass.getBalance(BaseApiClass.java:125)
+	at providerTest.DebitTest.debitValidTest(DebitTest.java:19)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -109,13 +106,10 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1411597673", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1411597673'><pre>java.lang.AssertionError: The following asserts failed:
-	Mismatch in value for parameter: token expected [d628b6d5-cfe0-41d1-89c4-d4964e76995c] but found [2712dd32-8386-4610-b361-ebb1329f0aa5]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at api_genericutility.ApiResponseValidator2.validateResponse(ApiResponseValidator2.java:48)
-	at authenticationTest.AuthenticationValidTest.authenticationValidTest(AuthenticationValidTest.java:42)
+</pre></div><a href='#' onClick='toggleBox("stack-trace391823939", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace391823939'><pre>java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader &apos;bootstrap&apos;)
+	at baseapi.BaseApiClass.getBalance(BaseApiClass.java:125)
+	at providerTest.DebitTest.debitValidTest(DebitTest.java:19)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -143,22 +137,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>1</td>
-<td>authenticationTest.AuthenticationValidTest@6933b6c6</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='ezugi_api_Test.GetUrlAPITest.getURLValidTest()'><b>getURLValidTest</b><br>Test class: ezugi_api_Test.GetUrlAPITest</td>
-<td></td>
-<td>4</td>
-<td>ezugi_api_Test.GetUrlAPITest@503f91c3</td></tr>
+<td>3</td>
+<td>providerTest.DebitTest@1807f5a7</td></tr>
 </table><p>
 </body>
 </html>

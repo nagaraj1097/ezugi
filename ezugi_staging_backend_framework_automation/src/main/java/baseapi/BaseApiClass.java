@@ -12,12 +12,16 @@ import org.testng.annotations.Listeners;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import api_endpoints.EndPoints;
+import api_genericutility.ApiResponseValidator;
 import api_genericutility.ExcelUtility;
 import api_genericutility.FileUtility;
 import api_genericutility.JavaUtility;
 import api_genericutility.JsonUtility;
 import api_genericutility.LowLevelLogs;
 import api_genericutility.RestUtility;
+import commonobjectutility.UtilityClassObject;
+import pojoutility.BalancePojo;
 
 @Listeners(api_listnerimplementation.ListImpClass.class)
 public class BaseApiClass {
@@ -30,6 +34,7 @@ public class BaseApiClass {
 	public LowLevelLogs ll = new LowLevelLogs();
 	public JavaUtility javaLib = new JavaUtility();
 	public RestUtility rLib = new RestUtility();
+	public ApiResponseValidator arv = new ApiResponseValidator();
 
 	public final static String baseUrl = "https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2";
 	public String secretKey = "5dbb6aed-a244-4e63-b5d9-95e5f118a545";
@@ -112,6 +117,18 @@ public class BaseApiClass {
 	public Object[][] dataProviderString() {
 		return new Object[][] { { "" }, { null }, { javaLib.getUuid() } };
 	}
+	
+	
+	public String getBalance() {
+		BalancePojo bp = new BalancePojo(playerId, platformId, operatorId, javaLib.getCurrentTimeStamp());
+		rLib.performPost(baseUrl, EndPoints.balance, bp);
+		String balance = (String)jsonLib.getValueJsonFromBody(UtilityClassObject.getResponse(), "balance");
+		return balance;
+	}
+	
+	
+	
+	
 	
 	
 

@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-13T14:53:04 IST" name="Default suite" finished-at="2024-11-13T14:53:11 IST" duration-ms="6565">
+  <suite started-at="2024-11-14T11:28:59 IST" name="Default suite" finished-at="2024-11-14T11:29:03 IST" duration-ms="4041">
     <groups>
     </groups>
-    <test started-at="2024-11-13T14:53:04 IST" name="Default test" finished-at="2024-11-13T14:53:11 IST" duration-ms="6565">
-      <class name="authenticationTest.AuthenticationValidTest">
-        <test-method is-config="true" signature="variables()[pri:0, instance:authenticationTest.AuthenticationValidTest@6933b6c6]" started-at="2024-11-13T14:53:09 IST" name="variables" finished-at="2024-11-13T14:53:09 IST" duration-ms="254" status="PASS">
+    <test started-at="2024-11-14T11:28:59 IST" name="Default test" finished-at="2024-11-14T11:29:03 IST" duration-ms="4041">
+      <class name="providerTest.DebitTest">
+        <test-method is-config="true" signature="variables()[pri:0, instance:providerTest.DebitTest@1807f5a7]" started-at="2024-11-14T11:28:59 IST" name="variables" finished-at="2024-11-14T11:29:00 IST" duration-ms="829" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- variables -->
-        <test-method signature="authenticationValidTest()[pri:0, instance:authenticationTest.AuthenticationValidTest@6933b6c6]" started-at="2024-11-13T14:53:09 IST" name="authenticationValidTest" finished-at="2024-11-13T14:53:11 IST" depends-on-methods="ezugi_api_Test.GetUrlAPITest.getURLValidTest" duration-ms="1160" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="debitValidTest()[pri:0, instance:providerTest.DebitTest@1807f5a7]" started-at="2024-11-14T11:29:00 IST" name="debitValidTest" finished-at="2024-11-14T11:29:03 IST" duration-ms="3170" status="FAIL">
+          <exception class="java.lang.ClassCastException">
             <message>
-              <![CDATA[The following asserts failed:
-Mismatch in value for parameter: token expected [d628b6d5-cfe0-41d1-89c4-d4964e76995c] but found [2712dd32-8386-4610-b361-ebb1329f0aa5]]]>
+              <![CDATA[class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Mismatch in value for parameter: token expected [d628b6d5-cfe0-41d1-89c4-d4964e76995c] but found [2712dd32-8386-4610-b361-ebb1329f0aa5]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at api_genericutility.ApiResponseValidator2.validateResponse(ApiResponseValidator2.java:48)
-at authenticationTest.AuthenticationValidTest.authenticationValidTest(AuthenticationValidTest.java:42)
+              <![CDATA[java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+at baseapi.BaseApiClass.getBalance(BaseApiClass.java:125)
+at providerTest.DebitTest.debitValidTest(DebitTest.java:19)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -52,21 +48,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.ClassCastException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- authenticationValidTest -->
-      </class> <!-- authenticationTest.AuthenticationValidTest -->
-      <class name="ezugi_api_Test.GetUrlAPITest">
-        <test-method is-config="true" signature="variables()[pri:0, instance:ezugi_api_Test.GetUrlAPITest@503f91c3]" started-at="2024-11-13T14:53:04 IST" name="variables" finished-at="2024-11-13T14:53:05 IST" duration-ms="941" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variables -->
-        <test-method signature="getURLValidTest()[pri:1, instance:ezugi_api_Test.GetUrlAPITest@503f91c3]" started-at="2024-11-13T14:53:05 IST" name="getURLValidTest" finished-at="2024-11-13T14:53:09 IST" duration-ms="4162" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getURLValidTest -->
-      </class> <!-- ezugi_api_Test.GetUrlAPITest -->
+        </test-method> <!-- debitValidTest -->
+      </class> <!-- providerTest.DebitTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

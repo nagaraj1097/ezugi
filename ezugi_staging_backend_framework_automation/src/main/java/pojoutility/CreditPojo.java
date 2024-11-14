@@ -1,6 +1,7 @@
 package pojoutility;
 
 public class CreditPojo {
+	
 
 	public int gameId;
 	public String debitTransactionId;

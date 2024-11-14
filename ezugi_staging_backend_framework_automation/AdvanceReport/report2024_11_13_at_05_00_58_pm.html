@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">EZUGI</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Nov 13, 2024 02:53:04 pm</span></a>
+<a href="#"><span class="badge badge-primary">Nov 13, 2024 05:00:58 pm</span></a>
 </li>
 </ul>
 </div>
@@ -66,7 +66,6 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
@@ -75,25 +74,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">getURLValidTest</p>
+            <p class="name">retryAuth</p>
             <p class="text-sm">
-              <span>2:53:05 pm</span> / <span>00:00:04:160</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>5:00:59 pm</span> / <span>00:00:04:002</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">getURLValidTest</h5>
-<span class='badge badge-success'>11.13.2024 2:53:05 pm</span>
-<span class='badge badge-danger'>11.13.2024 2:53:09 pm</span>
-<span class='badge badge-default'>00:00:04:160</span>
+<h5 class="test-status text-fail">retryAuth</h5>
+<span class='badge badge-success'>11.13.2024 5:00:59 pm</span>
+<span class='badge badge-danger'>11.13.2024 5:01:03 pm</span>
+<span class='badge badge-default'>00:00:04:002</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -106,54 +105,54 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:05 pm</td>
+        <td>5:00:59 pm</td>
         <td>
-          getURLValidTest >>>>> Started
+          retryAuth >>>>> Started
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:08 pm</td>
+        <td>5:01:02 pm</td>
         <td>
-          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/getURL</span>
+          <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/authentication</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:08 pm</td>
+        <td>5:01:02 pm</td>
         <td>
           <span class='badge white-text grey'>Method is :	POST</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:08 pm</td>
+        <td>5:01:02 pm</td>
         <td>
           <span class='badge white-text grey'>Headers are :	</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:08 pm</td>
+        <td>5:01:02 pm</td>
         <td>
-          <table class='markup-table table '><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+          <table class='markup-table table '><tr><td>hash</td><td>2sMPUwqUYWG3CEzCrRQEtNE+bPWM/XVQWvHA0JPPjw4=</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:08 pm</td>
+        <td>5:01:02 pm</td>
         <td>
           <span class='badge white-text grey'>Request body is :</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:08 pm</td>
+        <td>5:01:02 pm</td>
         <td>
            <div class='json-tree' id='code-block-json-0'></div>
  <script>
   function jsonTreeCreate0() { 
-   document.getElementById('code-block-json-0').innerHTML = JSONTree.create({"playerId":"1000041","platformId":1,"operatorId":"betvita","token":"c0987b11-c5d6-4746-a763-ac07fde2e4b8-1731498207823","currencyCode":"KES","timestamp":1731489785493}); 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create({"platformId":1,"operatorId":"10909001","token":"c5d73f7a-658b-4654-877c-2d3583a9e3cb","timestamp":1731497459891}); 
   }
   jsonTreeCreate0();
  </script>
@@ -162,55 +161,57 @@
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:08 pm</td>
+        <td>5:01:02 pm</td>
         <td>
           <span class='badge white-text grey'>Response status is :	200</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:08 pm</td>
+        <td>5:01:02 pm</td>
         <td>
-          <span class='badge white-text grey'>Response time is :	2082</span>
+          <span class='badge white-text grey'>Response time is :	1488</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:08 pm</td>
+        <td>5:01:02 pm</td>
         <td>
           <span class='badge white-text grey'>Response Headers are :	</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:08 pm</td>
+        <td>5:01:02 pm</td>
         <td>
-          <table class='markup-table table '><tr><td>Date</td><td>Wed, 13 Nov 2024 09:23:09 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>281</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"119-zI54SkOJvzRo+8shf0gh0AhIFNk"</td></tr></table>
+          <table class='markup-table table '><tr><td>Date</td><td>Wed, 13 Nov 2024 11:31:03 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>285</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"11d-12nLMEiGGnXT3tGPvhvcanjEDMk"</td></tr></table>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:08 pm</td>
+        <td>5:01:02 pm</td>
         <td>
           <span class='badge white-text grey'>Response body is :</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:08 pm</td>
+        <td>5:01:02 pm</td>
         <td>
            <div class='json-tree' id='code-block-json-1'></div>
  <script>
   function jsonTreeCreate1() { 
    document.getElementById('code-block-json-1').innerHTML = JSONTree.create({
-    "operatorId": 10909001,
+    "operatorId": "10909001",
     "uid": "1000041",
-    "launchToken": "d628b6d5-cfe0-41d1-89c4-d4964e76995c",
-    "currency": "KES",
-    "url": "https://playint.tableslive.com/auth/?operatorId=10909001&token=d628b6d5-cfe0-41d1-89c4-d4964e76995c",
+    "nickName": "778591025",
+    "token": "57126a96-3465-4234-a4e2-b7dd757fa145",
+    "playerTokenAtLaunch": "c5d73f7a-658b-4654-877c-2d3583a9e3cb",
+    "balance": "4020002195509201.62",
+    "currency": "UGX",
     "errorCode": 0,
     "errorDescription": "ok",
-    "timestamp": 1731489789395
+    "timestamp": 1731497463039
 }); 
   }
   jsonTreeCreate1();
@@ -220,109 +221,54 @@
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:09 pm</td>
+        <td>5:01:03 pm</td>
         <td>
-          <span class='badge white-text brown'>launch Token:  d628b6d5-cfe0-41d1-89c4-d4964e76995c</span>
+          <span class='badge white-text brown'>Authentication token:	57126a96-3465-4234-a4e2-b7dd757fa145</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:09 pm</td>
-        <td>
-          <span class='badge white-text brown'>operatorId:  10909001</span>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:53:09 pm</td>
-        <td>
-          getURLValidTest >>>>> Pass
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="2"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">authenticationValidTest</p>
-            <p class="text-sm">
-              <span>2:53:09 pm</span> / <span>00:00:01:164</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">authenticationValidTest</h5>
-<span class='badge badge-success'>11.13.2024 2:53:09 pm</span>
-<span class='badge badge-danger'>11.13.2024 2:53:11 pm</span>
-<span class='badge badge-default'>00:00:01:164</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:09 pm</td>
-        <td>
-          authenticationValidTest >>>>> Started
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:10 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           <span class='badge white-text grey'>URI is :	https://dev-beapi-games-rgs.sportsit-tech.net/rgs/api/ezugi/v2/authentication</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:10 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           <span class='badge white-text grey'>Method is :	POST</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:10 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           <span class='badge white-text grey'>Headers are :	</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:10 pm</td>
+        <td>5:01:03 pm</td>
         <td>
-          <table class='markup-table table '><tr><td>hash</td><td>5qXdmwG40hrynZMHkfOdJv5cUmen76AaHm1xjuY9i9w=</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+          <table class='markup-table table '><tr><td>hash</td><td>rkvQD43QB8G0rXZb8TW+qPpO4rsvPkx0bFyBTXa2aOk=</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:10 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           <span class='badge white-text grey'>Request body is :</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:10 pm</td>
+        <td>5:01:03 pm</td>
         <td>
            <div class='json-tree' id='code-block-json-2'></div>
  <script>
   function jsonTreeCreate2() { 
-   document.getElementById('code-block-json-2').innerHTML = JSONTree.create({"platformId":1,"operatorId":"10909001","token":"d628b6d5-cfe0-41d1-89c4-d4964e76995c","timestamp":1731489789896}); 
+   document.getElementById('code-block-json-2').innerHTML = JSONTree.create({"platformId":1,"operatorId":"10909001","token":"c5d73f7a-658b-4654-877c-2d3583a9e3cb","timestamp":1731497463057}); 
   }
   jsonTreeCreate2();
  </script>
@@ -331,57 +277,51 @@
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:10 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           <span class='badge white-text grey'>Response status is :	200</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:10 pm</td>
+        <td>5:01:03 pm</td>
         <td>
-          <span class='badge white-text grey'>Response time is :	1044</span>
+          <span class='badge white-text grey'>Response time is :	780</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:10 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           <span class='badge white-text grey'>Response Headers are :	</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:10 pm</td>
+        <td>5:01:03 pm</td>
         <td>
-          <table class='markup-table table '><tr><td>Date</td><td>Wed, 13 Nov 2024 09:23:11 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>285</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"11d-BLCGeSRsSF09xjA9CIkmYIAizUw"</td></tr></table>
+          <table class='markup-table table '><tr><td>Date</td><td>Wed, 13 Nov 2024 11:31:04 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>102</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Server</td><td>nginx/1.18.0 (Ubuntu)</td></tr><tr><td>X-Powered-By</td><td>Express</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>ETag</td><td>W/"66-LfXzKHoa9y9CRXG6iTSjGkRPoVs"</td></tr></table>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:10 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           <span class='badge white-text grey'>Response body is :</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:10 pm</td>
+        <td>5:01:03 pm</td>
         <td>
            <div class='json-tree' id='code-block-json-3'></div>
  <script>
   function jsonTreeCreate3() { 
    document.getElementById('code-block-json-3').innerHTML = JSONTree.create({
     "operatorId": "10909001",
-    "uid": "1000041",
-    "nickName": "778591025",
-    "token": "2712dd32-8386-4610-b361-ebb1329f0aa5",
-    "playerTokenAtLaunch": "d628b6d5-cfe0-41d1-89c4-d4964e76995c",
-    "balance": "4020002194712201.62",
-    "currency": "UGX",
-    "errorCode": 0,
-    "errorDescription": "ok",
-    "timestamp": 1731489791688
+    "errorCode": 6,
+    "errorDescription": "Token not found",
+    "timestamp": 1731497464480
 }); 
   }
   jsonTreeCreate3();
@@ -391,324 +331,284 @@
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:53:10 pm</td>
+        <td>5:01:03 pm</td>
         <td>
-          <span class='badge white-text brown'>Authentication token:	2712dd32-8386-4610-b361-ebb1329f0aa5</span>
+          <span class='badge white-text brown'>Authentication token:	null</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:53:11 pm</td>
-        <td>
-          <span class='badge white-text green'>Mandatory parameter 'nickName' is present.</span>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:53:11 pm</td>
-        <td>
-          <span class='badge white-text green'>Mandatory parameter 'timestamp' is present.</span>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:53:11 pm</td>
-        <td>
-          <span class='badge white-text green'>Mandatory parameter 'errorDescription' is present.</span>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:53:11 pm</td>
-        <td>
-          <span class='badge white-text green'>Mandatory parameter 'errorCode' is present.</span>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:53:11 pm</td>
-        <td>
-          <span class='badge white-text green'>Mandatory parameter 'playerTokenAtLaunch' is present.</span>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:53:11 pm</td>
-        <td>
-          <span class='badge white-text green'>Mandatory parameter 'currency' is present.</span>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:53:11 pm</td>
-        <td>
-          <span class='badge white-text green'>Mandatory parameter 'balance' is present.</span>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:53:11 pm</td>
-        <td>
-          <span class='badge white-text green'>Mandatory parameter 'token' is present.</span>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           <span class='badge white-text green'>Mandatory parameter 'operatorId' is present.</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
-          <span class='badge white-text green'>Mandatory parameter 'uid' is present.</span>
+          <span class='badge white-text green'>Mandatory parameter 'timestamp' is present.</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:01:03 pm</td>
+        <td>
+          <span class='badge white-text green'>Mandatory parameter 'errorCode' is present.</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:01:03 pm</td>
+        <td>
+          <span class='badge white-text green'>Mandatory parameter 'errorDescription' is present.</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
-          <span class='badge white-text red'>Expected value for parameter 'token' is incorrect.</span>
+          <span class='badge white-text red'>Expected value for parameter 'errorDescription' is incorrect.</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:53:11 pm</td>
-        <td>
-          <span class='badge white-text green'>Expected value for parameter 'errorDescription' is correct.</span>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           <span class='badge white-text green'>Expected value for parameter 'errorCode' is correct.</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
-          Test Failed: The following asserts failed:
-	Mismatch in value for parameter: token expected [d628b6d5-cfe0-41d1-89c4-d4964e76995c] but found [2712dd32-8386-4610-b361-ebb1329f0aa5]
+          <span class='badge white-text red'>Expected value for parameter 'operatorId' is incorrect.</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
+        <td>
+          Test Failed: The following asserts failed:
+	Mismatch in value for parameter: errorDescription expected [Token not found.] but found [Token not found],
+	Mismatch in value for parameter: operatorId expected [11000321] but found [10909001]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:01:03 pm</td>
         <td>
           Cause: java.lang.AssertionError: The following asserts failed:
-	Mismatch in value for parameter: token expected [d628b6d5-cfe0-41d1-89c4-d4964e76995c] but found [2712dd32-8386-4610-b361-ebb1329f0aa5]
+	Mismatch in value for parameter: errorDescription expected [Token not found.] but found [Token not found],
+	Mismatch in value for parameter: operatorId expected [11000321] but found [10909001]
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
-          api_genericutility.ApiResponseValidator2.validateResponse(ApiResponseValidator2.java:48)
+          api_genericutility.ApiResponseValidator.validateResponse(ApiResponseValidator.java:49)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
-          authenticationTest.AuthenticationValidTest.authenticationValidTest(AuthenticationValidTest.java:42)
+          authenticationTest.RetryAuthentication.retryAuth(RetryAuthentication.java:35)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           java.base/java.lang.reflect.Method.invoke(Method.java:580)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           org.testng.TestRunner.privateRun(TestRunner.java:739)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           org.testng.TestRunner.run(TestRunner.java:614)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           org.testng.SuiteRunner.run(SuiteRunner.java:312)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           org.testng.TestNG.runSuites(TestNG.java:1112)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           org.testng.TestNG.run(TestNG.java:1079)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log warning-bg">Warning</span></td>
-        <td>2:53:11 pm</td>
+        <td>5:01:03 pm</td>
         <td>
           org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
         </td>
@@ -732,19 +632,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Nov 13, 2024 02:53:04 pm</h3>
+<h3>Nov 13, 2024 05:00:58 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Nov 13, 2024 02:53:11 pm</h3>
+<h3>Nov 13, 2024 05:01:03 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -766,12 +666,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='50%'>
-<b>1</b> tests passed
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='50%'><b>1</b> tests failed,
+<small data-tooltip='100%'><b>1</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -789,10 +689,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='17%'><b>13</b> events passed</small></div>
+<div><small data-tooltip='7%'><b>5</b> events passed</small></div>
 <div>
-<small data-tooltip='4%'><b>3</b> events failed,
-<b data-tooltip='%'>59</b> others
+<small data-tooltip='6%'><b>4</b> events failed,
+<b data-tooltip='%'>57</b> others
 </small>
 </div>
 </div>
@@ -808,7 +708,7 @@
 </div></div>
 <script>
 var timeline = {
-"getURLValidTest":4.16,"authenticationValidTest":1.164
+"retryAuth":4.002
 };
 </script>
 <div class="row">
@@ -817,7 +717,7 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
+passParent: 0,
 failParent: 1,
 warningParent: 0,
 skipParent: 0,
@@ -834,11 +734,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 13,
-failEvents: 3,
+passEvents: 5,
+failEvents: 4,
 warningEvents: 30,
 skipEvents: 0,
-infoEvents: 29
+infoEvents: 27
 };
 </script>        </div>
       </div>

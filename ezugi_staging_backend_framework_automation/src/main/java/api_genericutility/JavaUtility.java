@@ -3,6 +3,8 @@ package api_genericutility;
 import java.nio.charset.StandardCharsets;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Base64;
 import java.util.Random;
 import java.util.UUID;
@@ -53,6 +55,13 @@ public class JavaUtility {
 		int lowerBound = (int) Math.pow(10, numDigits - 1); // Minimum value with the required digits
 		int upperBound = (int) Math.pow(10, numDigits); // Maximum value + 1
 		return random.nextInt(upperBound - lowerBound) + lowerBound;
+	}
+
+	public String getCurrentTimeInMilliseconds() {
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSSS");
+		String currentTime = LocalDateTime.now().format(formatter);
+		return currentTime;
+
 	}
 
 }
