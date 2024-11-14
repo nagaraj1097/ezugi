@@ -61,7 +61,7 @@ public class BaseApiClass {
         /* getURL */
 
         playerId = eu.getDataFromExcel("ez", 2, 0);
-        platformId = Integer.valueOf(eu.getDataFromExcel("ez", 2, 1));
+        platformId = Integer.parseInt(eu.getDataFromExcel("ez", 2, 1));
         operatorId = eu.getDataFromExcel("ez", 2, 2);
         playerToken = eu.getDataFromExcel("ez", 2, 3);
         currencyCode = eu.getDataFromExcel("ez", 2, 4);
@@ -71,11 +71,11 @@ public class BaseApiClass {
 
         /* Debit API */
 
-        gameId = Integer.valueOf(eu.getDataFromExcel("ez", 10, 0));
+        gameId = Integer.parseInt(eu.getDataFromExcel("ez", 10, 0));
 //		debitAmount = Double.valueOf(eu.getDataFromExcel("ezugi", 16, 2));
         debitAmount = 10.11;
         authToken = eu.getDataFromExcel("ez", 6, 1);
-        serverId = Integer.valueOf(eu.getDataFromExcel("ez", 10, 2));
+        serverId = Integer.parseInt(eu.getDataFromExcel("ez", 10, 2));
         seatId = eu.getDataFromExcel("ez", 10, 7);
         currency = eu.getDataFromExcel("ez", 2, 4);
         debitBetTypeId = 1;
