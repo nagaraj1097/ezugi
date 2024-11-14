@@ -108,8 +108,7 @@ public class BaseApiClass {
     public String getBalance() {
         BalancePojo bp = new BalancePojo(playerId, platformId, operatorId, javaLib.getCurrentTimeStamp());
         rLib.performPost(baseUrl, EndPoints.balance, bp);
-        String balance = (String) jsonLib.getValueJsonFromBody(UtilityClassObject.getResponse(), "balance");
-        return balance;
+        return String.valueOf(jsonLib.getValueJsonFromBody(UtilityClassObject.getResponse(), "balance"));
     }
 
 
