@@ -110,6 +110,4 @@ public class BaseApiClass {
         rLib.performPost(baseUrl, EndPoints.balance, bp);
         return String.valueOf(jsonLib.getValueJsonFromBody(UtilityClassObject.getResponse(), "balance"));
     }
-
-
 }
