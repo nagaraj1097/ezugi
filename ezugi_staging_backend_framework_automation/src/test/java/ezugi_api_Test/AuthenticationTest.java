@@ -1,18 +1,16 @@
 package ezugi_api_Test;
 
-import static io.restassured.RestAssured.given;
-
-import java.util.HashMap;
-
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
-
 import api_endpoints.EndPoints;
 import baseapi.BaseApiClass;
 import commonobjectutility.UtilityClassObject;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import org.testng.annotations.Test;
 import pojoutility.AuthenticationPojo;
+
+import java.util.HashMap;
+
+import static io.restassured.RestAssured.given;
 
 public class AuthenticationTest extends BaseApiClass {
 	
