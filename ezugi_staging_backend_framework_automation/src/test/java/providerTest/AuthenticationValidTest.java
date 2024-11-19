@@ -24,25 +24,18 @@ public class AuthenticationValidTest extends BaseApiClass {
 		String token = (String) jsonLib.getValueJsonFromBody(UtilityClassObject.getResponse(), "token");
 		ll.getLowLevelLogInfo("Authentication token:	"+token);
 		eu.setDataIntoExcel("ez", 6, 1, token);
-		
 
-		// Convert response to a Map for easy validation
+		// Convert response to a Map for validation
 		Map<String, Object> actualResponseData = UtilityClassObject.getResponse().jsonPath().getMap("$");
 
 		// Define expected mandatory and optional parameters
+
 		Set<String> expectedMandatoryParams = Set.of("operatorId", "uid", "nickName", "token", "playerTokenAtLaunch",
 				"balance", "currency", "errorCode", "errorDescription", "timestamp");
 
 		// Define expected values for specific fields
 		Map<String, Object> expectedValues = Map.of("errorCode", 0, "errorDescription", "ok" );
 
-
-
-
-
-
 		arv.validateResponse(actualResponseData, expectedMandatoryParams, expectedValues);
-
 	}
-
 }

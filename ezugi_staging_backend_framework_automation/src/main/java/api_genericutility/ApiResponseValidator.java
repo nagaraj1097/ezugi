@@ -120,35 +120,40 @@ public class ApiResponseValidator {
 		softAssert.assertEquals(responseData.get(param), expectedValue, "Mismatch in value for parameter: " + param);
 	}
 
-	/**
+	/*
 	 * Custom method to perform token difference validation. Verifies if the request
 	 * token matches the response token.
 	 */
-//	private void verifyTokenDifference(Map<String, Object> responseData, String requestToken) {
-//		// Extract the token from the response data
-//		String responseToken = (String) responseData.get("token"); // Change the key if needed
-//
-//		// Check if both tokens are present and compare them
-//		if (requestToken != null && responseToken != null) {
-//			if (requestToken.equals(responseToken)) {
-//				// Log success message
-//				ll.getLowLevelLogPass("Token validation passed: Request token matches Response token.");
-//			} else {
-//				// Log failure message
-//				ll.getLowLevelLogFail("Token validation failed: Request token does not match Response token.");
-//				ll.getLowLevelLogFail("Request Token: " + requestToken);
-//				ll.getLowLevelLogFail("Response Token: " + responseToken);
-//			}
-//		} else {
-//			// Log information if tokens are missing
-//			if (requestToken == null) {
-//				ll.getLowLevelLogFail("Request token is missing.");
-//			}
-//			if (responseToken == null) {
-//				ll.getLowLevelLogFail("Response token is missing.");
-//			}
-//		}
-//		System.out.println("Token difference check completed.");
-//	}
+
+
+	/*
+	private void verifyTokenDifference(Map<String, Object> responseData, String requestToken) {
+		// Extract the token from the response data
+		String responseToken = (String) responseData.get("token"); // Change the key if needed
+
+		// Check if both tokens are present and compare them
+		if (requestToken != null && responseToken != null) {
+			if (requestToken.equals(responseToken)) {
+				// Log success message
+				ll.getLowLevelLogPass("Token validation passed: Request token matches Response token.");
+			} else {
+				// Log failure message
+				ll.getLowLevelLogFail("Token validation failed: Request token does not match Response token.");
+				ll.getLowLevelLogFail("Request Token: " + requestToken);
+				ll.getLowLevelLogFail("Response Token: " + responseToken);
+			}
+		} else {
+			// Log information if tokens are missing
+			if (requestToken == null) {
+				ll.getLowLevelLogFail("Request token is missing.");
+			}
+			if (responseToken == null) {
+				ll.getLowLevelLogFail("Response token is missing.");
+			}
+		}
+		System.out.println("Token difference check completed.");
+	}
+
+	 */
 
 }

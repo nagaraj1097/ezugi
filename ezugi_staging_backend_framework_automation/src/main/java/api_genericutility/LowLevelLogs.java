@@ -1,14 +1,9 @@
 package api_genericutility;
 
-import java.util.List;
-
-import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.CodeLanguage;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
 import commonobjectutility.UtilityClassObject;
 import io.restassured.http.Header;
 import io.restassured.response.Response;
@@ -16,11 +11,13 @@ import io.restassured.specification.QueryableRequestSpecification;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.SpecificationQuerier;
 
+import java.util.List;
+
 public class LowLevelLogs {
 	public ObjectMapper map = new ObjectMapper();
 
 	public void getLowLevelLogInfo(String infoMessage) {
-		UtilityClassObject.getTest().info(MarkupHelper.createLabel(infoMessage, ExtentColor.BROWN));
+		UtilityClassObject.getTest().info(MarkupHelper.createLabel(infoMessage, ExtentColor.AMBER));
 	}
 
 	public void getLowLevelLogPass(String passMessage) {
@@ -80,7 +77,7 @@ public class LowLevelLogs {
 		QueryableRequestSpecification queryableRequestSpecification = SpecificationQuerier.query(requestSpecification);
 		LowLevelLogs.logInfoDetails("URI is :	" + queryableRequestSpecification.getURI());
 		LowLevelLogs.logInfoDetails("Method is :	" + queryableRequestSpecification.getMethod());
-		LowLevelLogs.logInfoDetails("Headers are :	");
+		LowLevelLogs.logInfoDetails("Request Headers are :	");
 		LowLevelLogs.logHeaders(queryableRequestSpecification.getHeaders().asList());
 		LowLevelLogs.logInfoDetails("Request body is :");
 		LowLevelLogs.logJson(queryableRequestSpecification.getBody());

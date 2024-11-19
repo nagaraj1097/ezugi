@@ -2,6 +2,7 @@ package baseapi;
 
 import api_endpoints.EndPoints;
 import api_genericutility.*;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import commonobjectutility.UtilityClassObject;
 import org.apache.poi.EncryptedDocumentException;
@@ -11,6 +12,8 @@ import org.testng.annotations.Listeners;
 import pojoutility.BalancePojo;
 
 import java.io.IOException;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
 
 @Listeners(api_listnerimplementation.ListImpClass.class)
 public class BaseApiClass {
@@ -105,9 +108,12 @@ public class BaseApiClass {
     }
 
 
-    public String getBalance() {
+    public String getBalance() throws JsonProcessingException, NoSuchAlgorithmException, InvalidKeyException {
         BalancePojo bp = new BalancePojo(playerId, platformId, operatorId, javaLib.getCurrentTimeStamp());
-        rLib.performPost(baseUrl, EndPoints.balance, bp);
+
+        /* hash generation */
+        String hash = javaLib.getgenerateHMACSHA256(map.writeValueAsString(bp), secretKey);
+        rLib.performPostWithHeader(baseUrl, EndPoints.balance, bp, "hash", hash);
         return String.valueOf(jsonLib.getValueJsonFromBody(UtilityClassObject.getResponse(), "balance"));
     }
 }

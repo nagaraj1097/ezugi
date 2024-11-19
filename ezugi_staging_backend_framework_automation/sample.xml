@@ -15,6 +15,7 @@
 			<class name="providerTestCases.Retry_For_Credit_9_Test" />
 			<class name="providerTestCases.Credit_With_Amount_Zero_10_Test" />
 		</classes>
+
 	</test> <!--
 	Test -->
 </suite> <!--
